@@ -140,6 +140,9 @@ def main():
     ap.add_argument("--train-on-val", type=int, default=None, metavar="EPOCH",
                     help="also train on the val crops and keep this epoch's weights (no val-based "
                          "selection is possible); use the best epoch of an earlier train-only run")
+    ap.add_argument("--keep-last", action="store_true",
+                    help="keep the last epoch's weights; val crops are only reported, never used to choose "
+                         "(for cross-validation, where val is the held-out fold)")
     args = ap.parse_args()
     rng = np.random.default_rng(args.seed)
     torch.manual_seed(args.seed)
@@ -182,7 +185,9 @@ def main():
         acc, types = evaluate(model, val, device)
         history.append({"epoch": epoch, "train_loss": total / len(train), "val_exact": acc})
         print(f"epoch {epoch} loss {total / len(train):.3f} val {acc:.3f} ({time.time() - t0:.0f}s)", flush=True)
-        if args.train_on_val:
+        if args.keep_last:
+            best = (acc, epoch, {k: v.detach().cpu().clone() for k, v in model.state_dict().items()}, types)
+        elif args.train_on_val:
             if epoch == args.train_on_val:
                 best = (acc, epoch, {k: v.detach().cpu().clone() for k, v in model.state_dict().items()}, types)
                 break

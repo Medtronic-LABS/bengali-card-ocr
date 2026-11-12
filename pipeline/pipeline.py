@@ -7,7 +7,7 @@ import io
 import time
 from PIL import Image
 from .alignment import register_page
-from .card_logic import apply_card_logic, review_priority
+from .card_logic import apply_card_logic, gate_reason, probability_correct, review_priority
 from .layout import iter_cells
 from .marks import mark_vocabulary
 from .preprocess import load_image, apply_orientation
@@ -161,7 +161,11 @@ def extract_card(
     if card_logic:
         fields = apply_card_logic(fields, card_type)
     for f in fields:
-        f["review_priority"] = "check" if photo_grid else review_priority(f, engine.engine_name)
+        f["probability_correct"] = probability_correct(f, engine.engine_name)
+        f["review_priority"] = "check" if photo_grid else review_priority(f, engine.engine_name, card_type)
+        reason = None if photo_grid else gate_reason(f, engine.engine_name, card_type)
+        if reason:
+            f["warnings"].append(reason)
         if photo_grid:
             f["warnings"].append("Phone-photo layout and reading require review against the source")
     counts = {

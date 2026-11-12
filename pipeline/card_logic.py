@@ -13,17 +13,23 @@ every conflict still requires human review.
 ANC: visit dates should increase from visit to visit. Out-of-order dates get a
 warning only; no value is changed.
 
-Review priority: every field still needs review. A field is "routine" only when
-its reading is a mark from the mark readers, or a syntax-valid, unflagged model
-reading whose score clears the per-type threshold in config/review_thresholds.json
-(chosen on validation pages for that engine); everything else is "check".
+Review priority: every field still needs review. With config/review_policy.json
+(evaluation/ship_gate.py, from cross-validation), a reading is "routine" only when
+its field has proven itself on cards the model never saw: a value whose calibrated
+probability of being right clears that field's cutoff, a mark on a field whose marks
+passed, or a blank on a card whose blank calls passed. A value read from very little
+ink is always "check". Without the policy file, the older per-value-type score
+thresholds in config/review_thresholds.json apply. Everything else is "check".
 """
 
 import json
+import math
 import re
 from collections import Counter
 from functools import lru_cache
 from pathlib import Path
+
+CONFIG = Path(__file__).resolve().parents[1] / "config"
 
 from .structured import BN2EN, syntax_ok
 from .date_grammar import is_valid_date
@@ -103,9 +109,9 @@ def anc_visit_order(fields):
 
 
 @lru_cache(maxsize=None)
-def _thresholds(engine_name):
-    """config/review_thresholds.json, when it was chosen for this engine."""
-    path = Path(__file__).resolve().parents[1] / "config" / "review_thresholds.json"
+def _config(name, engine_name):
+    """config/<name>, when it was chosen for this engine."""
+    path = CONFIG / name
     if path.exists():
         config = json.loads(path.read_text(encoding="utf-8"))
         if config.get("engine") == engine_name:
@@ -113,8 +119,55 @@ def _thresholds(engine_name):
     return None
 
 
-def review_priority(field, engine_name):
-    config = _thresholds(engine_name)
+def probability_correct(field, engine_name):
+    """Calibrated chance that a value reading is right (Platt scaling of the model score), or None."""
+    policy = _config("review_policy.json", engine_name)
+    params = policy and policy["calibration"].get(field.get("value_type"))
+    conf = field.get("confidence")
+    if not params or conf is None:
+        return None
+    c = min(max(conf, 1e-4), 1 - 1e-4)
+    z = params["a"] * math.log(c / (1 - c)) + params["b"]
+    return 1 / (1 + math.exp(-min(max(z, -30.0), 30.0)))
+
+
+def _low_ink(field, rule):
+    ink = field.get("ink_evidence") or {}
+    return (rule is not None and field["status"] != "blank"
+            and (ink.get("ink_pixels") or 0) < rule["max_ink_pixels"]
+            and (ink.get("largest_component") or 0) < rule["max_largest_component"])
+
+
+def gate_reason(field, engine_name, card_type):
+    """Why the review policy keeps this field at check, or None."""
+    policy = _config("review_policy.json", engine_name)
+    if policy is None or card_type is None or field["status"] == "blank":
+        return None
+    if _low_ink(field, policy.get("low_ink_rule")):
+        return "Very little ink for a written value; it may be print or a smudge"
+    entry = policy["fields"].get(f"{card_type}/{field.get('field_key')}")
+    if field["status"] == "mark" and not (entry and entry["marks_ship"]):
+        return "Marks in this field have not yet proven accurate enough to be auto-accepted"
+    if field["status"] == "readable" and not (entry and entry["min_probability"] is not None):
+        return "Readings of this field have not yet proven accurate enough to be auto-accepted"
+    return None
+
+
+def review_priority(field, engine_name, card_type=None):
+    policy = _config("review_policy.json", engine_name)
+    if policy is not None and card_type is not None:
+        if field["status"] == "blank":
+            return "routine" if policy["blank_routine"].get(card_type) else "check"
+        entry = policy["fields"].get(f"{card_type}/{field.get('field_key')}")
+        if entry is None or _low_ink(field, policy.get("low_ink_rule")):
+            return "check"
+        if field["status"] == "mark":
+            return "routine" if entry["marks_ship"] else "check"
+        if field["status"] != "readable" or entry["min_probability"] is None:
+            return "check"
+        p = probability_correct(field, engine_name)
+        return "routine" if p is not None and p >= entry["min_probability"] else "check"
+    config = _config("review_thresholds.json", engine_name)
     if field["status"] == "blank":
         usable = config and config.get("engine") == engine_name and config.get("blank_routine")
         return "routine" if usable else "check"

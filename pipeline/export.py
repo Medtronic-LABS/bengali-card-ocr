@@ -54,6 +54,8 @@ def build_export_payload(
                     "normalized_western": f.get("normalized_western"),
                     "status": f.get("status"),
                     "confidence": f.get("confidence"),
+                    "probability_correct": f.get("probability_correct"),
+                    "review_priority": f.get("review_priority"),
                     "engine": f.get("engine"),
                     "confidence_calibrated": False,
                     "candidates": f.get("candidates", []),

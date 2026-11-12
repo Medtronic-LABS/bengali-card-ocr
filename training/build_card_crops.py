@@ -96,14 +96,16 @@ def load_extra(path, split):
     return extra
 
 
-def main(out_dir, extra_path=None, out_name="crops.pkl"):
+def main(out_dir, extra_path=None, out_name="crops.pkl", pages_by_subset=None):
+    """pages_by_subset: {subset: [page ids]}; default the split's train and val pages."""
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     split = json.loads(SPLIT.read_text())
     extra = load_extra(extra_path, split) if extra_path else {}
+    pages_by_subset = pages_by_subset or {s: split[s] for s in ("train", "val")}
     samples = []
-    for subset in ("train", "val"):
-        for page in split[subset]:
+    for subset, pages in pages_by_subset.items():
+        for page in pages:
             image = load_image(str(PAGES / f"{page}.jpg"))
             aligned, reg = register_page(image, None)
             if aligned is None:
@@ -136,7 +138,7 @@ def main(out_dir, extra_path=None, out_name="crops.pkl"):
             print(subset, page, reg["card_type"], len(samples), flush=True)
     with open(out_dir / out_name, "wb") as f:
         pickle.dump(samples, f)
-    print("samples", {s: sum(x["subset"] == s for x in samples) for s in ("train", "val")})
+    print("samples", {s: sum(x["subset"] == s for x in samples) for s in pages_by_subset})
     print("by source", {src: sum(x["source"] == src for x in samples) for src in sorted({x["source"] for x in samples})})
 
 

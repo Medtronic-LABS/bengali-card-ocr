@@ -5,6 +5,7 @@ Claude) agree; fields they disagree on are not scored. This is agreement with AI
 labels, not accuracy. Use "val" for every decision; score "test" only for a final report.
 
 Usage: .venv/bin/python evaluation/ai_label_agreement.py <train|val|test> [--model other.onnx] [--tag NAME]
+       .venv/bin/python evaluation/ai_label_agreement.py pages --pages-file ids.json --model fold.onnx --tag cv0
 
 Writes data/work/eval_<subset>_<tag>.json: one row per field with the prediction,
 status, source, confidence, review priority and label, plus a summary.
@@ -74,7 +75,8 @@ def summarize(rows):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("subset", choices=["train", "val", "test"])
+    ap.add_argument("subset", choices=["train", "val", "test", "pages"])
+    ap.add_argument("--pages-file", type=Path, default=None, help='with subset "pages": a JSON list of page ids')
     ap.add_argument("--model", type=Path, default=None,
                     help="score this recognizer .onnx instead of the shipped one (e.g. a train-only model on val)")
     ap.add_argument("--no-card-logic", action="store_true")
@@ -90,7 +92,9 @@ def main():
     from pipeline.pipeline import extract_card
 
     rows = []
-    for page in json.loads(SPLIT.read_text())[args.subset]:
+    pages = (json.loads(args.pages_file.read_text()) if args.subset == "pages"
+             else json.loads(SPLIT.read_text())[args.subset])
+    for page in pages:
         r = extract_card(PAGES / f"{page}.jpg", include_crop_b64=False, card_logic=not args.no_card_logic)
         cx, kg = consensus(page)
         for f in r["fields"]:
@@ -101,7 +105,12 @@ def main():
             if any("Suggested from" in w for w in f["warnings"]):
                 source = "epi_same_day_column"
             rows.append({
-                "page": page, "card": r["card_type"], "field_id": f["field_id"], "value_type": f["value_type"],
+                "page": page, "card": r["card_type"], "field_id": f["field_id"], "field_key": f["field_key"],
+                "value_type": f["value_type"], "column_index": f.get("column_index"),
+                "ink_pixels": f["ink_evidence"].get("ink_pixels"),
+                "largest_component": f["ink_evidence"].get("largest_component"),
+                "ink_fraction": f["ink_evidence"].get("ink_fraction"),
+                "warnings": [w for w in f["warnings"] if not w.startswith("ocr_source=")],
                 "pred": f["value_bn_raw"], "status": f["status"], "confidence": f["confidence"], "source": source,
                 "priority": f.get("review_priority"), "truth": truth, "both_blank": both_blank,
                 "ok": truth is not None and norm(f["value_bn_raw"]) == norm(truth),

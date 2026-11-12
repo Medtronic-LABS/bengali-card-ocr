@@ -13,7 +13,45 @@ All numbers are for the shipped model (`models/ppocr-cards/ppocrv6_cards.onnx`) 
 | NCD | 27 | 7 | 14 | 48 |
 | **All** | **78** | **22** | **42** | **142** |
 
-Training labels come from two independent AI transcriptions (Codex and Claude). A cell is labeled only where both agree. Design choices and review thresholds were picked on validation pages. The shipped model was then retrained on train + validation with the same fixed schedule.
+Training labels come from two independent AI transcriptions (Codex and Claude). A cell is labeled only where both agree. Design choices were picked on validation pages. The shipped model was then retrained on train + validation with the same fixed schedule.
+
+## Cross-validation: every card, held out
+
+All 142 cards are dealt into 5 folds, balanced by card type (`training/cross_validate.py`). For each fold a recognizer is trained on the other four with the shipped recipe (the last epoch is kept, so nothing is chosen on the held-out fold) and the full pipeline is scored on the held-out cards. Every card is therefore read by a model that never saw it. Labels are the AI-agreed values, so these numbers run higher than the human-label ones below.
+
+| Filled fields | Exact | Same value |
+|---|---|---|
+| **All** (3,811) | **97.1%** (96.6–97.6%) | **97.9%** (97.4–98.3%) |
+| ANC (2,754) | 97.8% (97.2–98.3%) | 98.6% (98.1–99.0%) |
+| NCD (693) | 96.0% (94.2–97.2%) | 97.0% (95.4–98.0%) |
+| EPI (364) | 94.2% (91.3–96.2%) | 94.2% (91.3–96.2%) |
+
+The shared mark classifier was trained on the train pages, so mark results on those pages are not fully held out. The shipped model is not one of the five; it was trained on train + validation pages.
+
+## Ship gate, calibration and silent errors
+
+`evaluation/ship_gate.py` turns the cross-validation into the review policy in `config/review_policy.json`:
+
+1. **Calibration.** For numbers, dates and BP, a logistic fit (Platt scaling) maps the model's raw score to the probability that the reading is right. Expected calibration error, held out: **1.1 → 0.3 points**.
+2. **Ship gate per field.** For each card field (45 in all), the lowest probability cutoff at which the lower end of the 95% Wilson interval of held-out accuracy reaches **95%**, over at least 20 cells. Readings above the cutoff are routine; a field with no such cutoff is always check. Marks and blank calls pass or fail on the same test. 10 value fields (ANC fetal movement, fundal height, gestation month, glucose, hemoglobin, pulse, weight; NCD random glucose, height, weight), 7 ANC mark fields and the blank calls of all three cards pass.
+3. **Very little ink.** A value read from fewer than 30 ink pixels with no stroke of 30 pixels or more is always check. On the cross-validation it flags 39 of the 91 values read in cells both transcriptions call blank, and 3 of 3,811 real values.
+
+The cutoffs reported below were chosen on four folds and applied to the fifth, so they are held out too. A **silent error** is a wrong value that is marked routine.
+
+| Cross-validation, 11,417 scored cells (3,811 filled) | Before (one score cutoff per value type) | Now |
+|---|---|---|
+| Cells marked routine | 95.7% | 87.2% |
+| Accuracy of routine cells | 99.5% | **99.8%** (99.7–99.9%) |
+| Silent errors, share of all cells | 0.50% (57) | **0.17% (19)** |
+| Filled fields marked routine | 91.2% | 66.1% |
+| Silent errors, share of filled fields | 1.02% | **0.31%** |
+| Values in blank cells marked routine | 18 | 7 |
+
+| Routine share by card (all cells) | ANC | NCD | EPI |
+|---|---|---|---|
+| Now | 94% | 79% | 53% |
+
+EPI routine cells are its blank calls; no written EPI date passes the gate yet.
 
 ## Against human labels
 
@@ -33,14 +71,13 @@ On 9 test cards (3 per type), 349 fields were labeled by hand without seeing the
 | Blood pressure | 85.0% (17/20; 64–95%) | 85.0% (17/20; 64–95%) |
 | Dates | 53.4% (31/58; 41–66%) | 67.2% (39/58; 54–78%) |
 
-| Review flag (all labeled fields) | Correct |
-|---|---|
-| Routine | 94.1% (304/323) |
-| Check | 15.4% (4/26) |
+| Review flags (all 349 labeled fields) | Before (one score cutoff) | Now (per-field gate) |
+|---|---|---|
+| Marked routine | 323 (93%) | 238 (68%) |
+| Accuracy of routine fields | 94.1% | **98.3%** |
+| Silent errors (wrong and routine) | 19 (5.4%) | **4 (1.1%)** |
 
-All 54 cells the model called blank were blank.
-
-The date errors are mostly single-digit confusions, such as ৬ read as ৯ or ৫, or ২ read as ১. **13 of the 19 wrong dates were marked routine**, so for dates the routine flag is much less reliable than the overall numbers suggest. Writing a date across two lines instead of with `/` is not counted as an error.
+All 54 cells the model called blank were blank. The date errors are mostly single-digit confusions, such as ৬ read as ৯ or ৫, or ২ read as ১. Before the gate, 12 wrong dates were marked routine; now every written EPI date is flagged check. The 4 remaining silent errors are three numbers (২৪ read as 28, ৫৮ as ৫০, ৫.৬ as ৫.৯) and one mark. Writing a date across two lines instead of with `/` is not counted as an error.
 
 These labels were made by the project team. Labels from the clinical reviewer are still pending, and they will be the official number. Score a label file with:
 
@@ -48,9 +85,9 @@ These labels were made by the project team. Labels from the clinical reviewer ar
 .venv/bin/python evaluation/verified_accuracy.py --gold <labels.json>
 ```
 
-## Against AI labels
+## Against AI labels, fixed test split
 
-A larger but weaker check: agreement with fields where both AI transcriptions agree. Fields the AIs disagreed on are left out, and those tend to be the hard ones, so these numbers run higher than the human-label ones.
+The original fixed split, scored with the shipped model. Superseded by the cross-validation above, which covers every card.
 
 | | Overall | ANC | NCD | EPI |
 |---|---|---|---|---|

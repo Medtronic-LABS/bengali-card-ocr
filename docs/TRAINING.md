@@ -60,14 +60,18 @@ A small CNN that reads ✓, ×, (−) and − in fields whose printed label offe
 .venv/bin/python training/train_mark_classifier.py
 ```
 
-## Review thresholds (`config/review_thresholds.json`)
+## Cross-validation and the review policy (`config/review_policy.json`)
 
-The routine/check cutoff per value type is the lowest model score at which at least 95% of validation fields marked routine agree with the AI labels. It is chosen with the train-only model:
+What may be marked routine is decided from evidence on cards the model never saw:
 
 ```bash
-.venv/bin/python evaluation/ai_label_agreement.py val --model models/ppocr-cards/ppocrv6_cards_trainonly.onnx --tag trainonly
-.venv/bin/python evaluation/choose_thresholds.py trainonly
+.venv/bin/python training/cross_validate.py      # 5 folds by page: train, export and score each (about an hour on an M5)
+.venv/bin/python evaluation/ship_gate.py         # calibration, per-field ship gate, silent-error report
 ```
+
+`cross_validate.py` resumes where it stopped. `ship_gate.py` writes `config/review_policy.json` and a held-out report to `data/work/cv/ship_gate_report.json`. The "very little ink" rule it applies is `config/low_ink_rule.json`, chosen on the same cross-validation rows. Rerun both after retraining, so the gate always describes the model that ships.
+
+The older per-value-type thresholds (`config/review_thresholds.json`, from `evaluation/choose_thresholds.py` on validation pages) are used only when no review policy exists.
 
 ## Card templates
 

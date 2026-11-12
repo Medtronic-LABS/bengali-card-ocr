@@ -33,6 +33,7 @@ class Logits(torch.nn.Module):
 
 def main():
     src, dest = Path(sys.argv[1]), Path(sys.argv[2])
+    check = Path(sys.argv[3]) if len(sys.argv) > 3 else WORK / "crops.pkl"
     model = Logits(ft.build(str(src))).eval()
     torch.onnx.export(model, (torch.ones(1, 3, 48, 256),), str(dest), input_names=["x"], output_names=["logits"],
                       dynamic_axes={"x": {3: "width"}, "logits": {1: "steps"}}, opset_version=17, dynamo=False)
@@ -40,7 +41,7 @@ def main():
     import onnxruntime as ort
 
     session = ort.InferenceSession(str(dest), providers=["CPUExecutionProvider"])
-    val = [s for s in pickle.load(open(WORK / "crops.pkl", "rb"))
+    val = [s for s in pickle.load(open(check, "rb"))
            if s["subset"] == "val"][:40]
     worst = 0.0
     with torch.no_grad():

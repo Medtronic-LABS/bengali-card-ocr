@@ -1,0 +1,462 @@
+{
+ "engine": "ppocrv6-cards",
+ "evidence": "5-fold cross-validation by page over 142 cards, AI-agreed labels",
+ "target": 0.95,
+ "min_cells": 20,
+ "low_ink_rule": {
+  "max_ink_pixels": 30,
+  "max_largest_component": 30,
+  "chosen_on": "5-fold cross-validation rows (142 cards): flags 39 of 91 values read in cells both AI transcriptions call blank, and 3 of 3,811 real values"
+ },
+ "calibration": {
+  "date": {
+   "a": 0.443002,
+   "b": 1.044975
+  },
+  "numeric": {
+   "a": 0.750513,
+   "b": 0.399677
+  },
+  "blood_pressure": {
+   "a": 0.734125,
+   "b": 0.221752
+  }
+ },
+ "fields": {
+  "ANC/blood_pressure": {
+   "value_cells": 72,
+   "mark_cells": 0,
+   "min_probability": null,
+   "marks_ship": false
+  },
+  "ANC/calcium": {
+   "value_cells": 0,
+   "mark_cells": 183,
+   "min_probability": null,
+   "marks_ship": true,
+   "heldout_marks": {
+    "n": 183,
+    "correct": 183,
+    "ci95": [
+     0.9794,
+     1.0
+    ]
+   }
+  },
+  "ANC/complication_referral": {
+   "value_cells": 0,
+   "mark_cells": 1,
+   "min_probability": null,
+   "marks_ship": false,
+   "heldout_marks": {
+    "n": 1,
+    "correct": 1,
+    "ci95": [
+     0.2065,
+     1.0
+    ]
+   }
+  },
+  "ANC/discharge_pain": {
+   "value_cells": 0,
+   "mark_cells": 4,
+   "min_probability": null,
+   "marks_ship": false,
+   "heldout_marks": {
+    "n": 4,
+    "correct": 0,
+    "ci95": [
+     0.0,
+     0.4899
+    ]
+   }
+  },
+  "ANC/edema": {
+   "value_cells": 0,
+   "mark_cells": 187,
+   "min_probability": null,
+   "marks_ship": true,
+   "heldout_marks": {
+    "n": 187,
+    "correct": 185,
+    "ci95": [
+     0.9618,
+     0.9971
+    ]
+   }
+  },
+  "ANC/excess_bleeding": {
+   "value_cells": 0,
+   "mark_cells": 0,
+   "min_probability": null,
+   "marks_ship": false
+  },
+  "ANC/eyes": {
+   "value_cells": 0,
+   "mark_cells": 0,
+   "min_probability": null,
+   "marks_ship": false
+  },
+  "ANC/fetal_movement": {
+   "value_cells": 168,
+   "mark_cells": 0,
+   "heldout_routine": {
+    "n": 164,
+    "correct": 162,
+    "ci95": [
+     0.9566,
+     0.9966
+    ]
+   },
+   "min_probability": 0.77,
+   "marks_ship": false
+  },
+  "ANC/fundal_height": {
+   "value_cells": 139,
+   "mark_cells": 0,
+   "heldout_routine": {
+    "n": 133,
+    "correct": 132,
+    "ci95": [
+     0.9586,
+     0.9987
+    ]
+   },
+   "min_probability": 0.88,
+   "marks_ship": false
+  },
+  "ANC/gestation_month": {
+   "value_cells": 171,
+   "mark_cells": 0,
+   "heldout_routine": {
+    "n": 171,
+    "correct": 169,
+    "ci95": [
+     0.9584,
+     0.9968
+    ]
+   },
+   "min_probability": 0.5,
+   "marks_ship": false
+  },
+  "ANC/glucose": {
+   "value_cells": 167,
+   "mark_cells": 0,
+   "heldout_routine": {
+    "n": 167,
+    "correct": 165,
+    "ci95": [
+     0.9574,
+     0.9967
+    ]
+   },
+   "min_probability": 0.5,
+   "marks_ship": false
+  },
+  "ANC/healthworker_contact": {
+   "value_cells": 0,
+   "mark_cells": 0,
+   "min_probability": null,
+   "marks_ship": false
+  },
+  "ANC/hemoglobin": {
+   "value_cells": 173,
+   "mark_cells": 0,
+   "heldout_routine": {
+    "n": 166,
+    "correct": 165,
+    "ci95": [
+     0.9667,
+     0.9989
+    ]
+   },
+   "min_probability": 0.89,
+   "marks_ship": false
+  },
+  "ANC/household_number": {
+   "value_cells": 0,
+   "mark_cells": 0,
+   "min_probability": null,
+   "marks_ship": false
+  },
+  "ANC/iron": {
+   "value_cells": 0,
+   "mark_cells": 185,
+   "min_probability": null,
+   "marks_ship": true,
+   "heldout_marks": {
+    "n": 185,
+    "correct": 184,
+    "ci95": [
+     0.97,
+     0.999
+    ]
+   }
+  },
+  "ANC/last_day_feed": {
+   "value_cells": 0,
+   "mark_cells": 0,
+   "min_probability": null,
+   "marks_ship": false
+  },
+  "ANC/perineal_suture": {
+   "value_cells": 0,
+   "mark_cells": 0,
+   "min_probability": null,
+   "marks_ship": false
+  },
+  "ANC/previous_pregnancy": {
+   "value_cells": 0,
+   "mark_cells": 0,
+   "min_probability": null,
+   "marks_ship": false
+  },
+  "ANC/pulse": {
+   "value_cells": 156,
+   "mark_cells": 0,
+   "heldout_routine": {
+    "n": 156,
+    "correct": 154,
+    "ci95": [
+     0.9545,
+     0.9965
+    ]
+   },
+   "min_probability": 0.5,
+   "marks_ship": false
+  },
+  "ANC/respiration": {
+   "value_cells": 0,
+   "mark_cells": 0,
+   "min_probability": null,
+   "marks_ship": false
+  },
+  "ANC/skin": {
+   "value_cells": 0,
+   "mark_cells": 0,
+   "min_probability": null,
+   "marks_ship": false
+  },
+  "ANC/temperature": {
+   "value_cells": 150,
+   "mark_cells": 0,
+   "min_probability": null,
+   "marks_ship": false
+  },
+  "ANC/tt": {
+   "value_cells": 0,
+   "mark_cells": 181,
+   "min_probability": null,
+   "marks_ship": true,
+   "heldout_marks": {
+    "n": 181,
+    "correct": 179,
+    "ci95": [
+     0.9606,
+     0.997
+    ]
+   }
+  },
+  "ANC/umbilicus": {
+   "value_cells": 0,
+   "mark_cells": 0,
+   "min_probability": null,
+   "marks_ship": false
+  },
+  "ANC/urine_albumin": {
+   "value_cells": 0,
+   "mark_cells": 189,
+   "min_probability": null,
+   "marks_ship": true,
+   "heldout_marks": {
+    "n": 189,
+    "correct": 188,
+    "ci95": [
+     0.9706,
+     0.9991
+    ]
+   }
+  },
+  "ANC/urine_bilirubin": {
+   "value_cells": 0,
+   "mark_cells": 190,
+   "min_probability": null,
+   "marks_ship": true,
+   "heldout_marks": {
+    "n": 190,
+    "correct": 190,
+    "ci95": [
+     0.9802,
+     1.0
+    ]
+   }
+  },
+  "ANC/usg": {
+   "value_cells": 0,
+   "mark_cells": 188,
+   "min_probability": null,
+   "marks_ship": true,
+   "heldout_marks": {
+    "n": 188,
+    "correct": 188,
+    "ci95": [
+     0.98,
+     1.0
+    ]
+   }
+  },
+  "ANC/visit_date": {
+   "value_cells": 98,
+   "mark_cells": 0,
+   "min_probability": null,
+   "marks_ship": false
+  },
+  "ANC/weight": {
+   "value_cells": 151,
+   "mark_cells": 0,
+   "heldout_routine": {
+    "n": 151,
+    "correct": 150,
+    "ci95": [
+     0.9634,
+     0.9988
+    ]
+   },
+   "min_probability": 0.5,
+   "marks_ship": false
+  },
+  "EPI/bcg": {
+   "value_cells": 10,
+   "mark_cells": 0,
+   "min_probability": null,
+   "marks_ship": false
+  },
+  "EPI/ipv": {
+   "value_cells": 47,
+   "mark_cells": 0,
+   "min_probability": null,
+   "marks_ship": false
+  },
+  "EPI/mr": {
+   "value_cells": 24,
+   "mark_cells": 0,
+   "min_probability": null,
+   "marks_ship": false
+  },
+  "EPI/opv": {
+   "value_cells": 83,
+   "mark_cells": 0,
+   "min_probability": null,
+   "marks_ship": false
+  },
+  "EPI/pcv": {
+   "value_cells": 79,
+   "mark_cells": 0,
+   "min_probability": null,
+   "marks_ship": false
+  },
+  "EPI/penta": {
+   "value_cells": 76,
+   "mark_cells": 0,
+   "min_probability": null,
+   "marks_ship": false
+  },
+  "EPI/unlabeled_entry": {
+   "value_cells": 3,
+   "mark_cells": 0,
+   "min_probability": null,
+   "marks_ship": false
+  },
+  "NCD/blood_pressure": {
+   "value_cells": 84,
+   "mark_cells": 0,
+   "min_probability": null,
+   "marks_ship": false
+  },
+  "NCD/comment": {
+   "value_cells": 29,
+   "mark_cells": 0,
+   "min_probability": null,
+   "marks_ship": false
+  },
+  "NCD/date": {
+   "value_cells": 54,
+   "mark_cells": 0,
+   "min_probability": null,
+   "marks_ship": false
+  },
+  "NCD/eye_exam": {
+   "value_cells": 0,
+   "mark_cells": 2,
+   "min_probability": null,
+   "marks_ship": false,
+   "heldout_marks": {
+    "n": 2,
+    "correct": 0,
+    "ci95": [
+     0.0,
+     0.6576
+    ]
+   }
+  },
+  "NCD/glucose_fasting": {
+   "value_cells": 0,
+   "mark_cells": 0,
+   "min_probability": null,
+   "marks_ship": false
+  },
+  "NCD/glucose_random": {
+   "value_cells": 91,
+   "mark_cells": 0,
+   "heldout_routine": {
+    "n": 81,
+    "correct": 81,
+    "ci95": [
+     0.9547,
+     1.0
+    ]
+   },
+   "min_probability": 0.93,
+   "marks_ship": false
+  },
+  "NCD/height": {
+   "value_cells": 105,
+   "mark_cells": 0,
+   "heldout_routine": {
+    "n": 95,
+    "correct": 95,
+    "ci95": [
+     0.9611,
+     1.0
+    ]
+   },
+   "min_probability": 0.98,
+   "marks_ship": false
+  },
+  "NCD/referral": {
+   "value_cells": 70,
+   "mark_cells": 0,
+   "min_probability": null,
+   "marks_ship": false
+  },
+  "NCD/weight": {
+   "value_cells": 84,
+   "mark_cells": 0,
+   "heldout_routine": {
+    "n": 84,
+    "correct": 84,
+    "ci95": [
+     0.9563,
+     1.0
+    ]
+   },
+   "min_probability": 0.5,
+   "marks_ship": false
+  }
+ },
+ "blank_routine": {
+  "EPI": true,
+  "ANC": true,
+  "NCD": true
+ }
+}

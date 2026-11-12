@@ -1,0 +1,5 @@
+{
+ "max_ink_pixels": 30,
+ "max_largest_component": 30,
+ "chosen_on": "5-fold cross-validation rows (142 cards): flags 39 of 91 values read in cells both AI transcriptions call blank, and 3 of 3,811 real values"
+}

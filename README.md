@@ -2,7 +2,7 @@
 
 Reads handwritten values from BRAC paper health cards (**EPI** vaccination, **ANC** antenatal, **NCD** chronic disease) and turns them into structured fields that a health worker reviews before they are saved. Everything runs locally on the CPU: no network calls, no cloud APIs.
 
-**Status: proof of concept.** It is not accurate enough for unattended use, and every field must be reviewed by a person. See [Results](#results).
+**Status: pilot-ready as a review tool.** A person confirms every card, but fields that have proven accurate on cards the model never saw are pre-marked **routine** and can be accepted in one click; everything else is flagged **check** with a reason. See [Results](#results).
 
 ## How it works
 
@@ -15,30 +15,37 @@ image / PDF ─► align to card template ─► cut out each field ─► read 
 1. **Align.** The photo or scan is matched to a template of each card type and warped onto it. A card that can't be matched safely is rejected; the app never guesses field positions.
 2. **Locate fields.** Field boxes come from `config/layout_templates.json`. Empty cells are detected from the pixels and never sent to the model.
 3. **Read.** A [PP-OCRv6_small_rec](https://huggingface.co/PaddlePaddle/PP-OCRv6_small_rec_safetensors) recognizer, fine-tuned on card cells, reads each cell. Decoding is restricted per field type (a number field can only produce digits) and to one numeral script per value. Tick/cross/(±) marks are read by a small separate classifier.
-4. **Check.** Dates and blood pressure must be well-formed. Impossible two-line EPI dates are replaced by the most likely valid date. Each field is marked **routine** (confident and valid) or **check** (needs a closer look).
+4. **Check.** Dates and blood pressure must be well-formed. Impossible two-line EPI dates are replaced by the most likely valid date. The model's score is calibrated into a **probability that the reading is right**, and a **per-field ship gate** decides what may be routine: a field (e.g. ANC weight) earns that only if, on cards the model never saw, the low end of the 95% interval of its accuracy reaches 95%. Values read from very little ink are always check.
 5. **Review.** The reviewer accepts or corrects each field, or accepts all routine fields with one logged click. Unreviewed values stay `null` in the export.
 
 The export JSON (schema 2.0) keeps the model's reading, the reviewer's decision and the source image hash separately. It also includes a grouping by the LEAPWELL app's form sections ([docs/LEAPWELL_FORM_MAPPING.md](docs/LEAPWELL_FORM_MAPPING.md)).
 
 ## Results
 
-Measured on held-out cards that were not used for training or tuning, with 95% intervals. Full details are in [docs/RESULTS.md](docs/RESULTS.md).
+All numbers are held out: measured on cards the model did not train on. Full details, with 95% intervals: [docs/RESULTS.md](docs/RESULTS.md).
 
-**Against human labels** (9 cards, 289 filled fields):
+**Safety: wrong values that would be auto-accepted.** This is the number that matters for a review tool.
+
+| | Before (one score cutoff) | Now (per-field gate) |
+|---|---|---|
+| Silent errors, human labels (9 cards) | 19 of 349 cells (5.4%) | **4 (1.1%)** |
+| Accuracy of routine fields, human labels | 94.1% | **98.3%** |
+| Silent errors, cross-validation (142 cards, filled fields) | 1.0% | **0.3%** |
+| Filled fields auto-accepted, cross-validation | 91% | 66% |
+
+**Accuracy per card**, filled fields, exact match:
 
 | | Overall | ANC | NCD | EPI |
 |---|---|---|---|---|
-| **Exact match** | **81.7%** (77–86%) | 85.5% (80–90%) | 79.5% (66–89%) | 63.2% (47–77%) |
-| Same value | 87.9% (84–91%) | 94.2% (90–97%) | 79.5% (66–89%) | 63.2% (47–77%) |
+| Cross-validation, AI labels (142 cards, 3,811 fields) | **97.1%** | 97.8% | 96.0% | 94.2% |
+| Human labels (9 cards, 289 fields) | **81.7%** | 85.5% | 79.5% | 63.2% |
 
-*Exact* means the text is identical; only a line break between the two lines of a written date counts as `/`. *Same value* also treats Bengali and Western digits, mark spellings (✓ / y) and date separators (`/ . -`) as equal.
-
-Against AI labels on 42 cards (1,126 filled fields) the model scores 96.3% exact and 97.3% same value. Those labels skip the fields the two AIs disagreed on, which are the hard ones, so they run high.
-
-- The human-label number is the one that counts. The **95% target is not met yet**, mainly because handwritten dates are read at 67%.
-- Flags mostly point to the errors: fields marked routine were right 94% of the time, fields marked check 15%. **Dates are the exception:** most wrong dates were still marked routine.
-- All 54 cells called blank really were blank.
-- Speed: about 0.4 s per card on a laptop CPU (Apple M5), up to 1 s for the first card.
+- **Cross-validation:** 5 models, each trained without one fifth of the cards and scored on that fifth, so every card is read by a model that never saw it. The labels are fields where two independent AI transcriptions agree; they skip the hardest fields, so these numbers run higher than the human-label ones.
+- **Human labels** are the stricter test, but cover only 9 cards. *Exact* allows only a line break between the two lines of a date to stand for `/`.
+- **What ships:** 10 value fields (7 ANC, 3 NCD) and 7 ANC mark fields pass the gate, plus blank calls on all three cards. EPI dates do not yet, so every written EPI date is flagged check.
+- **Review load:** routine covers 94% of ANC cells, 79% of NCD and 53% of EPI (its blank cells), counting blanks.
+- **Calibration:** the gap between the predicted and the observed chance of being right (ECE) fell from 1.1 to 0.3 points.
+- **Speed:** about 0.4 s per card on a laptop CPU (Apple M5), up to 1 s for the first card.
 
 ## Quick start
 
@@ -106,10 +113,10 @@ Tests that need the alignment templates or real card scans are skipped without t
 ```
 app.py                  Streamlit review app
 pipeline/               alignment, field layout, recognition, review, export
-config/                 card layouts, form schemas, review thresholds, LEAPWELL form mapping
+config/                 card layouts, form schemas, review policy (ship gate + calibration), LEAPWELL form mapping
 models/                 recognizer and mark classifier (not committed; see Quick start)
 training/               scripts that built the models (need the private card data)
-evaluation/             human labeling page builder and accuracy scoring
+evaluation/             accuracy scoring, ship gate and calibration, human labeling page builder
 scripts/                preflight check, notebook runner
 tests/                  unit and regression tests
 docs/                   results, training notes, LEAPWELL mapping
@@ -140,13 +147,20 @@ How the models were trained: [docs/TRAINING.md](docs/TRAINING.md).
 
 No non-commercial model or code is included. A license for this repository's own code has not been chosen yet.
 
-## Known limitations
+## How it stays safe
 
-- **Accuracy is below target**, especially handwritten dates, and wrong dates are often still marked routine. Every value needs human review, and confidence scores are not calibrated.
-- **"Readable" means well-formed, not correct.** A wrong number can still be a valid number.
-- **Phone photos are not measured.** Accuracy figures are for flat scans. EPI phone photos are always flagged for review.
-- **Small, narrow data.** 142 scanned cards from one clinic's writers, with only 44 EPI cards. The human-label test covers 9 cards.
-- **Only three card layouts.** Other forms, or heavily redesigned versions of these, are rejected at alignment.
-- **Values in blank cells.** The model sometimes reads print or noise in empty ANC last-column cells as a value. Most are flagged check, but not all.
-- **No persistence or sign-in.** Reviews live in the browser session until exported. There is no user identity or audit signature.
-- **Not integrated yet.** This is a desktop review app. Running on the phone inside the LEAPWELL app is future work.
+- **Nothing is saved without a person.** Unreviewed values are `null` in the export; "accept all routine" is one explicit, logged click.
+- **Routine must be earned per field**, on held-out cards, with enough cells for a 95% interval. The gate is refitted from evidence (`evaluation/ship_gate.py`), not set by hand.
+- **Every check says why:** not yet proven for this field, too little ink, a date or BP that doesn't parse, an alternative reading, or a same-day suggestion from other vaccines.
+- **Unknown cards are refused.** A scan that does not match one of the three layouts is rejected, not guessed.
+- **Patient data never leaves the machine**, and a test blocks it from being committed.
+
+## Limits and roadmap
+
+| Limit today | Next step |
+|---|---|
+| EPI dates (94% held out, 63% on human labels) do not pass the gate | More labeled EPI cards; retrain on all 44 EPI cards; card-level date checks |
+| Labels for training and cross-validation come from AI transcriptions | Score against the clinical reviewer's labels as they arrive |
+| 142 flat scans from one clinic's writers | Writer-disjoint testing; a new scan batch from another clinic |
+| Phone photos not measured | Label a set of phone photos; EPI phone photos are always flagged meanwhile |
+| Desktop review app | Card pack + TFLite export for the LEAPWELL phone app |
