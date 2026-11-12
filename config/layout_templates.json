@@ -1,0 +1,6539 @@
+{
+  "EPI": {
+    "card_type": "EPI",
+    "oriented_size": [
+      1755,
+      1240
+    ],
+    "source": "geometry_only_from_reference-codex_bboxes",
+    "note": "Templates store layout boxes and labels only. Never used as OCR predictions.",
+    "cells": [
+      {
+        "printed_label_bn": "",
+        "printed_label_en": "Unlabeled margin name",
+        "section": "margin",
+        "field_key": "margin_name",
+        "row_index": 0,
+        "column_index": 1,
+        "bbox_xyxy": [
+          0,
+          0,
+          540,
+          210
+        ],
+        "field_id": "margin__margin_name__r0__c1",
+        "value_type": "text",
+        "n_template_pages": 5
+      },
+      {
+        "printed_label_bn": "",
+        "printed_label_en": "Unlabeled margin number",
+        "section": "margin",
+        "field_key": "margin_number",
+        "row_index": 1,
+        "column_index": 1,
+        "bbox_xyxy": [
+          80,
+          50,
+          420,
+          330
+        ],
+        "field_id": "margin__margin_number__r1__c1",
+        "value_type": "text",
+        "n_template_pages": 22
+      },
+      {
+        "printed_label_bn": "",
+        "printed_label_en": "Circled margin number",
+        "section": "margin",
+        "field_key": "margin_circled",
+        "row_index": 1,
+        "column_index": 1,
+        "bbox_xyxy": [
+          170,
+          10,
+          280,
+          100
+        ],
+        "field_id": "margin__margin_circled__r1__c1",
+        "value_type": "text",
+        "n_template_pages": 1
+      },
+      {
+        "printed_label_bn": "বিসিজি",
+        "printed_label_en": "BCG",
+        "section": "table",
+        "field_key": "bcg",
+        "row_index": 1,
+        "column_index": 1,
+        "bbox_xyxy": [
+          757,
+          258,
+          859,
+          360
+        ],
+        "field_id": "table__bcg__r1__c1",
+        "value_type": "date",
+        "n_template_pages": 44,
+        "bbox_xyxy_unsnapped": [
+          747,
+          262,
+          845,
+          356
+        ]
+      },
+      {
+        "printed_label_bn": "পেন্টা (ডিপিটি, হেপ-বি, হিব)",
+        "printed_label_en": "Penta (DPT, hepatitis B, Hib)",
+        "section": "table",
+        "field_key": "penta",
+        "row_index": 2,
+        "column_index": 1,
+        "bbox_xyxy": [
+          757,
+          352,
+          857,
+          448
+        ],
+        "field_id": "table__penta__r2__c1",
+        "value_type": "date",
+        "n_template_pages": 44,
+        "bbox_xyxy_unsnapped": [
+          747,
+          356,
+          845,
+          445
+        ]
+      },
+      {
+        "printed_label_bn": "পেন্টা (ডিপিটি, হেপ-বি, হিব)",
+        "printed_label_en": "Penta (DPT, hepatitis B, Hib)",
+        "section": "table",
+        "field_key": "penta",
+        "row_index": 2,
+        "column_index": 2,
+        "bbox_xyxy": [
+          857,
+          351,
+          953,
+          448
+        ],
+        "field_id": "table__penta__r2__c2",
+        "value_type": "date",
+        "n_template_pages": 44,
+        "bbox_xyxy_unsnapped": [
+          845,
+          356,
+          942,
+          445
+        ]
+      },
+      {
+        "printed_label_bn": "পেন্টা (ডিপিটি, হেপ-বি, হিব)",
+        "printed_label_en": "Penta (DPT, hepatitis B, Hib)",
+        "section": "table",
+        "field_key": "penta",
+        "row_index": 2,
+        "column_index": 3,
+        "bbox_xyxy": [
+          953,
+          351,
+          1062,
+          448
+        ],
+        "field_id": "table__penta__r2__c3",
+        "value_type": "date",
+        "n_template_pages": 44,
+        "bbox_xyxy_unsnapped": [
+          942,
+          356,
+          1049,
+          445
+        ]
+      },
+      {
+        "printed_label_bn": "ওপিভি",
+        "printed_label_en": "OPV label-area annotation",
+        "section": "table",
+        "field_key": "opv_label_annotation",
+        "row_index": 3,
+        "column_index": 0,
+        "bbox_xyxy": [
+          644,
+          449,
+          752,
+          532
+        ],
+        "field_id": "table__opv_label_annotation__r3__c0",
+        "value_type": "text",
+        "n_template_pages": 2
+      },
+      {
+        "printed_label_bn": "ওপিভি",
+        "printed_label_en": "OPV (oral polio vaccine)",
+        "section": "table",
+        "field_key": "opv",
+        "row_index": 3,
+        "column_index": 1,
+        "bbox_xyxy": [
+          759,
+          440,
+          857,
+          551
+        ],
+        "field_id": "table__opv__r3__c1",
+        "value_type": "date",
+        "n_template_pages": 44,
+        "bbox_xyxy_unsnapped": [
+          747,
+          445,
+          845,
+          548
+        ]
+      },
+      {
+        "printed_label_bn": "ওপিভি",
+        "printed_label_en": "OPV (oral polio vaccine)",
+        "section": "table",
+        "field_key": "opv",
+        "row_index": 3,
+        "column_index": 2,
+        "bbox_xyxy": [
+          857,
+          441,
+          953,
+          551
+        ],
+        "field_id": "table__opv__r3__c2",
+        "value_type": "date",
+        "n_template_pages": 44,
+        "bbox_xyxy_unsnapped": [
+          845,
+          445,
+          942,
+          548
+        ]
+      },
+      {
+        "printed_label_bn": "ওপিভি",
+        "printed_label_en": "OPV (oral polio vaccine)",
+        "section": "table",
+        "field_key": "opv",
+        "row_index": 3,
+        "column_index": 3,
+        "bbox_xyxy": [
+          952,
+          439,
+          1062,
+          547
+        ],
+        "field_id": "table__opv__r3__c3",
+        "value_type": "date",
+        "n_template_pages": 44,
+        "bbox_xyxy_unsnapped": [
+          942,
+          445,
+          1049,
+          548
+        ]
+      },
+      {
+        "printed_label_bn": "পিসিভি",
+        "printed_label_en": "PCV (pneumococcal conjugate vaccine)",
+        "section": "table",
+        "field_key": "pcv",
+        "row_index": 4,
+        "column_index": 1,
+        "bbox_xyxy": [
+          761,
+          544,
+          858,
+          658
+        ],
+        "field_id": "table__pcv__r4__c1",
+        "value_type": "date",
+        "n_template_pages": 44,
+        "bbox_xyxy_unsnapped": [
+          747,
+          548,
+          845,
+          654
+        ]
+      },
+      {
+        "printed_label_bn": "পিসিভি",
+        "printed_label_en": "PCV (pneumococcal conjugate vaccine)",
+        "section": "table",
+        "field_key": "pcv",
+        "row_index": 4,
+        "column_index": 2,
+        "bbox_xyxy": [
+          858,
+          547,
+          953,
+          656
+        ],
+        "field_id": "table__pcv__r4__c2",
+        "value_type": "date",
+        "n_template_pages": 44,
+        "bbox_xyxy_unsnapped": [
+          845,
+          548,
+          942,
+          654
+        ]
+      },
+      {
+        "printed_label_bn": "পিসিভি",
+        "printed_label_en": "PCV (pneumococcal conjugate vaccine)",
+        "section": "table",
+        "field_key": "pcv",
+        "row_index": 4,
+        "column_index": 3,
+        "bbox_xyxy": [
+          953,
+          544,
+          1060,
+          655
+        ],
+        "field_id": "table__pcv__r4__c3",
+        "value_type": "date",
+        "n_template_pages": 44,
+        "bbox_xyxy_unsnapped": [
+          942,
+          548,
+          1049,
+          654
+        ]
+      },
+      {
+        "printed_label_bn": "আইপিভি",
+        "printed_label_en": "IPV (inactivated polio vaccine)",
+        "section": "table",
+        "field_key": "ipv",
+        "row_index": 5,
+        "column_index": 1,
+        "bbox_xyxy": [
+          761,
+          650,
+          857,
+          765
+        ],
+        "field_id": "table__ipv__r5__c1",
+        "value_type": "date",
+        "n_template_pages": 44,
+        "bbox_xyxy_unsnapped": [
+          747,
+          654,
+          845,
+          764
+        ]
+      },
+      {
+        "printed_label_bn": "আইপিভি",
+        "printed_label_en": "IPV (inactivated polio vaccine)",
+        "section": "table",
+        "field_key": "ipv",
+        "row_index": 5,
+        "column_index": 3,
+        "bbox_xyxy": [
+          954,
+          653,
+          1060,
+          764
+        ],
+        "field_id": "table__ipv__r5__c3",
+        "value_type": "date",
+        "n_template_pages": 44,
+        "bbox_xyxy_unsnapped": [
+          942,
+          654,
+          1049,
+          764
+        ]
+      },
+      {
+        "printed_label_bn": "এমআর (হাম ও রুবেলা)",
+        "printed_label_en": "MR (measles and rubella)",
+        "section": "table",
+        "field_key": "mr",
+        "row_index": 6,
+        "column_index": 4,
+        "bbox_xyxy": [
+          1049,
+          764,
+          1147,
+          863
+        ],
+        "field_id": "table__mr__r6__c4",
+        "value_type": "date",
+        "n_template_pages": 44
+      },
+      {
+        "printed_label_bn": "এমআর (হাম ও রুবেলা)",
+        "printed_label_en": "MR (measles and rubella)",
+        "section": "table",
+        "field_key": "mr",
+        "row_index": 6,
+        "column_index": 5,
+        "bbox_xyxy": [
+          1160,
+          762,
+          1263,
+          864
+        ],
+        "field_id": "table__mr__r6__c5",
+        "value_type": "date",
+        "n_template_pages": 44,
+        "bbox_xyxy_unsnapped": [
+          1147,
+          764,
+          1255,
+          863
+        ]
+      },
+      {
+        "printed_label_bn": "",
+        "printed_label_en": "Unlabeled vaccine name",
+        "section": "table",
+        "field_key": "unlabeled_row_heading",
+        "row_index": 7,
+        "column_index": 0,
+        "bbox_xyxy": [
+          588,
+          860,
+          759,
+          946
+        ],
+        "field_id": "table__unlabeled_row_heading__r7__c0",
+        "value_type": "text",
+        "n_template_pages": 44,
+        "bbox_xyxy_unsnapped": [
+          578,
+          863,
+          747,
+          943
+        ]
+      },
+      {
+        "printed_label_bn": "",
+        "printed_label_en": "Unlabeled entry",
+        "section": "table",
+        "field_key": "unlabeled_entry",
+        "row_index": 7,
+        "column_index": 1,
+        "bbox_xyxy": [
+          759,
+          859,
+          857,
+          947
+        ],
+        "field_id": "table__unlabeled_entry__r7__c1",
+        "value_type": "text",
+        "n_template_pages": 44,
+        "bbox_xyxy_unsnapped": [
+          747,
+          863,
+          845,
+          943
+        ]
+      },
+      {
+        "printed_label_bn": "",
+        "printed_label_en": "Unlabeled entry",
+        "section": "table",
+        "field_key": "unlabeled_entry",
+        "row_index": 7,
+        "column_index": 2,
+        "bbox_xyxy": [
+          857,
+          859,
+          952,
+          946
+        ],
+        "field_id": "table__unlabeled_entry__r7__c2",
+        "value_type": "text",
+        "n_template_pages": 44,
+        "bbox_xyxy_unsnapped": [
+          845,
+          863,
+          942,
+          943
+        ]
+      },
+      {
+        "printed_label_bn": "",
+        "printed_label_en": "Unlabeled entry",
+        "section": "table",
+        "field_key": "unlabeled_entry",
+        "row_index": 7,
+        "column_index": 3,
+        "bbox_xyxy": [
+          952,
+          859,
+          1060,
+          946
+        ],
+        "field_id": "table__unlabeled_entry__r7__c3",
+        "value_type": "text",
+        "n_template_pages": 44,
+        "bbox_xyxy_unsnapped": [
+          942,
+          863,
+          1049,
+          943
+        ]
+      },
+      {
+        "printed_label_bn": "",
+        "printed_label_en": "Unlabeled entry",
+        "section": "table",
+        "field_key": "unlabeled_entry",
+        "row_index": 7,
+        "column_index": 4,
+        "bbox_xyxy": [
+          1060,
+          857,
+          1155,
+          945
+        ],
+        "field_id": "table__unlabeled_entry__r7__c4",
+        "value_type": "text",
+        "n_template_pages": 44,
+        "bbox_xyxy_unsnapped": [
+          1049,
+          863,
+          1147,
+          943
+        ]
+      },
+      {
+        "printed_label_bn": "",
+        "printed_label_en": "Unlabeled entry",
+        "section": "table",
+        "field_key": "unlabeled_entry",
+        "row_index": 7,
+        "column_index": 5,
+        "bbox_xyxy": [
+          1155,
+          857,
+          1264,
+          944
+        ],
+        "field_id": "table__unlabeled_entry__r7__c5",
+        "value_type": "text",
+        "n_template_pages": 44,
+        "bbox_xyxy_unsnapped": [
+          1147,
+          863,
+          1255,
+          943
+        ]
+      },
+      {
+        "printed_label_bn": "",
+        "printed_label_en": "Unlabeled vaccine name",
+        "section": "table",
+        "field_key": "unlabeled_row_heading",
+        "row_index": 8,
+        "column_index": 0,
+        "bbox_xyxy": [
+          588,
+          938,
+          759,
+          1027
+        ],
+        "field_id": "table__unlabeled_row_heading__r8__c0",
+        "value_type": "text",
+        "n_template_pages": 44,
+        "bbox_xyxy_unsnapped": [
+          578,
+          943,
+          747,
+          1024
+        ]
+      },
+      {
+        "printed_label_bn": "",
+        "printed_label_en": "Unlabeled entry",
+        "section": "table",
+        "field_key": "unlabeled_entry",
+        "row_index": 8,
+        "column_index": 1,
+        "bbox_xyxy": [
+          759,
+          939,
+          857,
+          1028
+        ],
+        "field_id": "table__unlabeled_entry__r8__c1",
+        "value_type": "text",
+        "n_template_pages": 44,
+        "bbox_xyxy_unsnapped": [
+          747,
+          943,
+          845,
+          1024
+        ]
+      },
+      {
+        "printed_label_bn": "",
+        "printed_label_en": "Unlabeled entry",
+        "section": "table",
+        "field_key": "unlabeled_entry",
+        "row_index": 8,
+        "column_index": 2,
+        "bbox_xyxy": [
+          857,
+          938,
+          952,
+          1028
+        ],
+        "field_id": "table__unlabeled_entry__r8__c2",
+        "value_type": "text",
+        "n_template_pages": 44,
+        "bbox_xyxy_unsnapped": [
+          845,
+          943,
+          942,
+          1024
+        ]
+      },
+      {
+        "printed_label_bn": "",
+        "printed_label_en": "Unlabeled entry",
+        "section": "table",
+        "field_key": "unlabeled_entry",
+        "row_index": 8,
+        "column_index": 3,
+        "bbox_xyxy": [
+          952,
+          938,
+          1060,
+          1027
+        ],
+        "field_id": "table__unlabeled_entry__r8__c3",
+        "value_type": "text",
+        "n_template_pages": 44,
+        "bbox_xyxy_unsnapped": [
+          942,
+          943,
+          1049,
+          1024
+        ]
+      },
+      {
+        "printed_label_bn": "",
+        "printed_label_en": "Unlabeled entry",
+        "section": "table",
+        "field_key": "unlabeled_entry",
+        "row_index": 8,
+        "column_index": 4,
+        "bbox_xyxy": [
+          1060,
+          937,
+          1155,
+          1027
+        ],
+        "field_id": "table__unlabeled_entry__r8__c4",
+        "value_type": "text",
+        "n_template_pages": 44,
+        "bbox_xyxy_unsnapped": [
+          1049,
+          943,
+          1147,
+          1024
+        ]
+      },
+      {
+        "printed_label_bn": "",
+        "printed_label_en": "Unlabeled entry",
+        "section": "table",
+        "field_key": "unlabeled_entry",
+        "row_index": 8,
+        "column_index": 5,
+        "bbox_xyxy": [
+          1155,
+          936,
+          1264,
+          1026
+        ],
+        "field_id": "table__unlabeled_entry__r8__c5",
+        "value_type": "text",
+        "n_template_pages": 44,
+        "bbox_xyxy_unsnapped": [
+          1147,
+          943,
+          1255,
+          1024
+        ]
+      }
+    ],
+    "geometry_snap": "table boxes snapped to printed lines of assets/registration/EPI.png by scripts/snap_layout_to_template.py"
+  },
+  "ANC": {
+    "card_type": "ANC",
+    "oriented_size": [
+      1755,
+      1240
+    ],
+    "source": "geometry_only_from_reference-codex_bboxes",
+    "note": "Templates store layout boxes and labels only. Never used as OCR predictions.",
+    "cells": [
+      {
+        "printed_label_bn": "গর্ভবতীর নাম",
+        "printed_label_en": "Pregnant woman’s name",
+        "section": "header",
+        "field_key": "name",
+        "row_index": 1,
+        "column_index": 1,
+        "bbox_xyxy": [
+          125,
+          242,
+          530,
+          281
+        ],
+        "field_id": "header__name__r1__c1",
+        "value_type": "text",
+        "n_template_pages": 50
+      },
+      {
+        "printed_label_bn": "বয়স",
+        "printed_label_en": "Age",
+        "section": "header",
+        "field_key": "age",
+        "row_index": 1,
+        "column_index": 2,
+        "bbox_xyxy": [
+          530,
+          226,
+          710,
+          267
+        ],
+        "field_id": "header__age__r1__c2",
+        "value_type": "numeric",
+        "n_template_pages": 50
+      },
+      {
+        "printed_label_bn": "খানা নং",
+        "printed_label_en": "Household number",
+        "section": "header",
+        "field_key": "household_number",
+        "row_index": 1,
+        "column_index": 3,
+        "bbox_xyxy": [
+          710,
+          218,
+          911,
+          262
+        ],
+        "field_id": "header__household_number__r1__c3",
+        "value_type": "text",
+        "n_template_pages": 50
+      },
+      {
+        "printed_label_bn": "স্বাস্থ্যকর্মীর নাম ও মোবাইল নম্বর",
+        "printed_label_en": "Health worker’s name and mobile number",
+        "section": "header",
+        "field_key": "healthworker_contact",
+        "row_index": 1,
+        "column_index": 4,
+        "bbox_xyxy": [
+          911,
+          190,
+          1632,
+          251
+        ],
+        "field_id": "header__healthworker_contact__r1__c4",
+        "value_type": "text",
+        "n_template_pages": 50
+      },
+      {
+        "printed_label_bn": "শেষ মাসিকের তারিখ",
+        "printed_label_en": "Last menstrual period (LMP) date",
+        "section": "header",
+        "field_key": "last_menstrual_period",
+        "row_index": 2,
+        "column_index": 1,
+        "bbox_xyxy": [
+          125,
+          280,
+          465,
+          320
+        ],
+        "field_id": "header__last_menstrual_period__r2__c1",
+        "value_type": "date",
+        "n_template_pages": 50
+      },
+      {
+        "printed_label_bn": "প্রসবের সম্ভাব্য তারিখ",
+        "printed_label_en": "Expected date of delivery (EDD)",
+        "section": "header",
+        "field_key": "expected_delivery",
+        "row_index": 2,
+        "column_index": 2,
+        "bbox_xyxy": [
+          465,
+          265,
+          805,
+          310
+        ],
+        "field_id": "header__expected_delivery__r2__c2",
+        "value_type": "date",
+        "n_template_pages": 50
+      },
+      {
+        "printed_label_bn": "পূর্বের গর্ভের তথ্য",
+        "printed_label_en": "Previous pregnancy history",
+        "section": "header",
+        "field_key": "previous_pregnancy",
+        "row_index": 2,
+        "column_index": 3,
+        "bbox_xyxy": [
+          805,
+          231,
+          1632,
+          299
+        ],
+        "field_id": "header__previous_pregnancy__r2__c3",
+        "value_type": "text",
+        "n_template_pages": 50
+      },
+      {
+        "printed_label_bn": "",
+        "printed_label_en": "Unlabeled margin annotation",
+        "section": "margin",
+        "field_key": "margin_annotation",
+        "row_index": 0,
+        "column_index": 1,
+        "bbox_xyxy": [
+          0,
+          0,
+          1755,
+          190
+        ],
+        "field_id": "margin__margin_annotation__r0__c1",
+        "value_type": "text",
+        "n_template_pages": 32
+      },
+      {
+        "printed_label_bn": "",
+        "printed_label_en": "Unlabeled left-margin marks",
+        "section": "margin",
+        "field_key": "left_margin_marks",
+        "row_index": 1,
+        "column_index": 1,
+        "bbox_xyxy": [
+          20,
+          225,
+          125,
+          1140
+        ],
+        "field_id": "margin__left_margin_marks__r1__c1",
+        "value_type": "text",
+        "n_template_pages": 1
+      },
+      {
+        "printed_label_bn": "ভিজিটের তারিখ",
+        "printed_label_en": "Visit date",
+        "section": "maternal_table",
+        "field_key": "visit_date",
+        "row_index": 1,
+        "column_index": 1,
+        "bbox_xyxy": [
+          348,
+          347,
+          479,
+          404
+        ],
+        "field_id": "maternal_table__visit_date__r1__c1",
+        "value_type": "date",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          345,
+          347,
+          483,
+          409
+        ]
+      },
+      {
+        "printed_label_bn": "ভিজিটের তারিখ",
+        "printed_label_en": "Visit date",
+        "section": "maternal_table",
+        "field_key": "visit_date",
+        "row_index": 1,
+        "column_index": 2,
+        "bbox_xyxy": [
+          479,
+          343,
+          629,
+          401
+        ],
+        "field_id": "maternal_table__visit_date__r1__c2",
+        "value_type": "date",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          477,
+          343,
+          633,
+          404
+        ]
+      },
+      {
+        "printed_label_bn": "ভিজিটের তারিখ",
+        "printed_label_en": "Visit date",
+        "section": "maternal_table",
+        "field_key": "visit_date",
+        "row_index": 1,
+        "column_index": 3,
+        "bbox_xyxy": [
+          629,
+          340,
+          764,
+          397
+        ],
+        "field_id": "maternal_table__visit_date__r1__c3",
+        "value_type": "date",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          628,
+          338,
+          767,
+          398
+        ]
+      },
+      {
+        "printed_label_bn": "ভিজিটের তারিখ",
+        "printed_label_en": "Visit date",
+        "section": "maternal_table",
+        "field_key": "visit_date",
+        "row_index": 1,
+        "column_index": 4,
+        "bbox_xyxy": [
+          764,
+          336,
+          900,
+          394
+        ],
+        "field_id": "maternal_table__visit_date__r1__c4",
+        "value_type": "date",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          762,
+          334,
+          903,
+          393
+        ]
+      },
+      {
+        "printed_label_bn": "ভিজিটের তারিখ",
+        "printed_label_en": "Visit date",
+        "section": "maternal_table",
+        "field_key": "visit_date",
+        "row_index": 1,
+        "column_index": 5,
+        "bbox_xyxy": [
+          901,
+          331,
+          1048,
+          390
+        ],
+        "field_id": "maternal_table__visit_date__r1__c5",
+        "value_type": "date",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          899,
+          329,
+          1050,
+          388
+        ]
+      },
+      {
+        "printed_label_bn": "ভিজিটের তারিখ",
+        "printed_label_en": "Visit date",
+        "section": "maternal_table",
+        "field_key": "visit_date",
+        "row_index": 1,
+        "column_index": 6,
+        "bbox_xyxy": [
+          1048,
+          327,
+          1192,
+          385
+        ],
+        "field_id": "maternal_table__visit_date__r1__c6",
+        "value_type": "date",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1046,
+          325,
+          1191,
+          383
+        ]
+      },
+      {
+        "printed_label_bn": "ভিজিটের তারিখ",
+        "printed_label_en": "Visit date",
+        "section": "maternal_table",
+        "field_key": "visit_date",
+        "row_index": 1,
+        "column_index": 7,
+        "bbox_xyxy": [
+          1191,
+          322,
+          1334,
+          380
+        ],
+        "field_id": "maternal_table__visit_date__r1__c7",
+        "value_type": "date",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1187,
+          321,
+          1333,
+          378
+        ]
+      },
+      {
+        "printed_label_bn": "ভিজিটের তারিখ",
+        "printed_label_en": "Visit date",
+        "section": "maternal_table",
+        "field_key": "visit_date",
+        "row_index": 1,
+        "column_index": 8,
+        "bbox_xyxy": [
+          1334,
+          318,
+          1482,
+          376
+        ],
+        "field_id": "maternal_table__visit_date__r1__c8",
+        "value_type": "date",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1330,
+          316,
+          1481,
+          373
+        ]
+      },
+      {
+        "printed_label_bn": "ভিজিটের তারিখ",
+        "printed_label_en": "Visit date",
+        "section": "maternal_table",
+        "field_key": "visit_date",
+        "row_index": 1,
+        "column_index": 9,
+        "bbox_xyxy": [
+          1484,
+          314,
+          1631,
+          372
+        ],
+        "field_id": "maternal_table__visit_date__r1__c9",
+        "value_type": "date",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1477,
+          312,
+          1629,
+          368
+        ]
+      },
+      {
+        "printed_label_bn": "গর্ভের মাস",
+        "printed_label_en": "Month of pregnancy",
+        "section": "maternal_table",
+        "field_key": "gestation_month",
+        "row_index": 2,
+        "column_index": 1,
+        "bbox_xyxy": [
+          350,
+          396,
+          480,
+          434
+        ],
+        "field_id": "maternal_table__gestation_month__r2__c1",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          348,
+          401,
+          484,
+          435
+        ]
+      },
+      {
+        "printed_label_bn": "গর্ভের মাস",
+        "printed_label_en": "Month of pregnancy",
+        "section": "maternal_table",
+        "field_key": "gestation_month",
+        "row_index": 2,
+        "column_index": 2,
+        "bbox_xyxy": [
+          480,
+          393,
+          630,
+          431
+        ],
+        "field_id": "maternal_table__gestation_month__r2__c2",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          479,
+          395,
+          634,
+          431
+        ]
+      },
+      {
+        "printed_label_bn": "গর্ভের মাস",
+        "printed_label_en": "Month of pregnancy",
+        "section": "maternal_table",
+        "field_key": "gestation_month",
+        "row_index": 2,
+        "column_index": 3,
+        "bbox_xyxy": [
+          630,
+          389,
+          765,
+          427
+        ],
+        "field_id": "maternal_table__gestation_month__r2__c3",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          629,
+          390,
+          768,
+          427
+        ]
+      },
+      {
+        "printed_label_bn": "গর্ভের মাস",
+        "printed_label_en": "Month of pregnancy",
+        "section": "maternal_table",
+        "field_key": "gestation_month",
+        "row_index": 2,
+        "column_index": 4,
+        "bbox_xyxy": [
+          765,
+          386,
+          902,
+          423
+        ],
+        "field_id": "maternal_table__gestation_month__r2__c4",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          764,
+          385,
+          904,
+          422
+        ]
+      },
+      {
+        "printed_label_bn": "গর্ভের মাস",
+        "printed_label_en": "Month of pregnancy",
+        "section": "maternal_table",
+        "field_key": "gestation_month",
+        "row_index": 2,
+        "column_index": 5,
+        "bbox_xyxy": [
+          902,
+          381,
+          1049,
+          419
+        ],
+        "field_id": "maternal_table__gestation_month__r2__c5",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          900,
+          379,
+          1050,
+          417
+        ]
+      },
+      {
+        "printed_label_bn": "গর্ভের মাস",
+        "printed_label_en": "Month of pregnancy",
+        "section": "maternal_table",
+        "field_key": "gestation_month",
+        "row_index": 2,
+        "column_index": 6,
+        "bbox_xyxy": [
+          1049,
+          377,
+          1192,
+          415
+        ],
+        "field_id": "maternal_table__gestation_month__r2__c6",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1047,
+          375,
+          1191,
+          412
+        ]
+      },
+      {
+        "printed_label_bn": "গর্ভের মাস",
+        "printed_label_en": "Month of pregnancy",
+        "section": "maternal_table",
+        "field_key": "gestation_month",
+        "row_index": 2,
+        "column_index": 7,
+        "bbox_xyxy": [
+          1192,
+          367,
+          1630,
+          405
+        ],
+        "field_id": "maternal_table__gestation_month__r2__c7",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1188,
+          360,
+          1629,
+          408
+        ]
+      },
+      {
+        "printed_label_bn": "ওজন (Kg)",
+        "printed_label_en": "Weight (kg)",
+        "section": "maternal_table",
+        "field_key": "weight",
+        "row_index": 3,
+        "column_index": 1,
+        "bbox_xyxy": [
+          351,
+          426,
+          482,
+          462
+        ],
+        "field_id": "maternal_table__weight__r3__c1",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          349,
+          428,
+          485,
+          462
+        ]
+      },
+      {
+        "printed_label_bn": "ওজন (Kg)",
+        "printed_label_en": "Weight (kg)",
+        "section": "maternal_table",
+        "field_key": "weight",
+        "row_index": 3,
+        "column_index": 2,
+        "bbox_xyxy": [
+          482,
+          422,
+          631,
+          458
+        ],
+        "field_id": "maternal_table__weight__r3__c2",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          481,
+          424,
+          634,
+          458
+        ]
+      },
+      {
+        "printed_label_bn": "ওজন (Kg)",
+        "printed_label_en": "Weight (kg)",
+        "section": "maternal_table",
+        "field_key": "weight",
+        "row_index": 3,
+        "column_index": 3,
+        "bbox_xyxy": [
+          630,
+          419,
+          766,
+          455
+        ],
+        "field_id": "maternal_table__weight__r3__c3",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          630,
+          419,
+          769,
+          454
+        ]
+      },
+      {
+        "printed_label_bn": "ওজন (Kg)",
+        "printed_label_en": "Weight (kg)",
+        "section": "maternal_table",
+        "field_key": "weight",
+        "row_index": 3,
+        "column_index": 4,
+        "bbox_xyxy": [
+          766,
+          415,
+          902,
+          451
+        ],
+        "field_id": "maternal_table__weight__r3__c4",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          764,
+          414,
+          904,
+          449
+        ]
+      },
+      {
+        "printed_label_bn": "ওজন (Kg)",
+        "printed_label_en": "Weight (kg)",
+        "section": "maternal_table",
+        "field_key": "weight",
+        "row_index": 3,
+        "column_index": 5,
+        "bbox_xyxy": [
+          901,
+          411,
+          1049,
+          447
+        ],
+        "field_id": "maternal_table__weight__r3__c5",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          901,
+          409,
+          1050,
+          445
+        ]
+      },
+      {
+        "printed_label_bn": "ওজন (Kg)",
+        "printed_label_en": "Weight (kg)",
+        "section": "maternal_table",
+        "field_key": "weight",
+        "row_index": 3,
+        "column_index": 6,
+        "bbox_xyxy": [
+          1049,
+          407,
+          1192,
+          443
+        ],
+        "field_id": "maternal_table__weight__r3__c6",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1047,
+          405,
+          1191,
+          440
+        ]
+      },
+      {
+        "printed_label_bn": "ওজন (Kg)",
+        "printed_label_en": "Weight (kg)",
+        "section": "maternal_table",
+        "field_key": "weight",
+        "row_index": 3,
+        "column_index": 7,
+        "bbox_xyxy": [
+          1192,
+          402,
+          1334,
+          439
+        ],
+        "field_id": "maternal_table__weight__r3__c7",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1188,
+          401,
+          1333,
+          436
+        ]
+      },
+      {
+        "printed_label_bn": "ওজন (Kg)",
+        "printed_label_en": "Weight (kg)",
+        "section": "maternal_table",
+        "field_key": "weight",
+        "row_index": 3,
+        "column_index": 8,
+        "bbox_xyxy": [
+          1334,
+          398,
+          1481,
+          434
+        ],
+        "field_id": "maternal_table__weight__r3__c8",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1330,
+          396,
+          1480,
+          432
+        ]
+      },
+      {
+        "printed_label_bn": "ওজন (Kg)",
+        "printed_label_en": "Weight (kg)",
+        "section": "maternal_table",
+        "field_key": "weight",
+        "row_index": 3,
+        "column_index": 9,
+        "bbox_xyxy": [
+          1481,
+          392,
+          1631,
+          430
+        ],
+        "field_id": "maternal_table__weight__r3__c9",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1477,
+          392,
+          1628,
+          427
+        ]
+      },
+      {
+        "printed_label_bn": "উচ্চতা (cm)",
+        "printed_label_en": "Height (cm)",
+        "section": "maternal_table",
+        "field_key": "height",
+        "row_index": 4,
+        "column_index": 1,
+        "bbox_xyxy": [
+          348,
+          420,
+          1193,
+          489
+        ],
+        "field_id": "maternal_table__height__r4__c1",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "column_span": 6,
+        "geometry_origin": "six_ANC_columns_native_printed_grid"
+      },
+      {
+        "printed_label_bn": "তাপমাত্রা (F)",
+        "printed_label_en": "Temperature (°F)",
+        "section": "maternal_table",
+        "field_key": "temperature",
+        "row_index": 5,
+        "column_index": 1,
+        "bbox_xyxy": [
+          354,
+          481,
+          484,
+          517
+        ],
+        "field_id": "maternal_table__temperature__r5__c1",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          352,
+          481,
+          488,
+          518
+        ]
+      },
+      {
+        "printed_label_bn": "তাপমাত্রা (F)",
+        "printed_label_en": "Temperature (°F)",
+        "section": "maternal_table",
+        "field_key": "temperature",
+        "row_index": 5,
+        "column_index": 2,
+        "bbox_xyxy": [
+          484,
+          478,
+          633,
+          514
+        ],
+        "field_id": "maternal_table__temperature__r5__c2",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          483,
+          477,
+          637,
+          514
+        ]
+      },
+      {
+        "printed_label_bn": "তাপমাত্রা (F)",
+        "printed_label_en": "Temperature (°F)",
+        "section": "maternal_table",
+        "field_key": "temperature",
+        "row_index": 5,
+        "column_index": 3,
+        "bbox_xyxy": [
+          633,
+          474,
+          768,
+          510
+        ],
+        "field_id": "maternal_table__temperature__r5__c3",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          632,
+          473,
+          770,
+          510
+        ]
+      },
+      {
+        "printed_label_bn": "তাপমাত্রা (F)",
+        "printed_label_en": "Temperature (°F)",
+        "section": "maternal_table",
+        "field_key": "temperature",
+        "row_index": 5,
+        "column_index": 4,
+        "bbox_xyxy": [
+          768,
+          471,
+          903,
+          507
+        ],
+        "field_id": "maternal_table__temperature__r5__c4",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          766,
+          469,
+          905,
+          505
+        ]
+      },
+      {
+        "printed_label_bn": "তাপমাত্রা (F)",
+        "printed_label_en": "Temperature (°F)",
+        "section": "maternal_table",
+        "field_key": "temperature",
+        "row_index": 5,
+        "column_index": 5,
+        "bbox_xyxy": [
+          903,
+          467,
+          1050,
+          503
+        ],
+        "field_id": "maternal_table__temperature__r5__c5",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          902,
+          465,
+          1051,
+          501
+        ]
+      },
+      {
+        "printed_label_bn": "তাপমাত্রা (F)",
+        "printed_label_en": "Temperature (°F)",
+        "section": "maternal_table",
+        "field_key": "temperature",
+        "row_index": 5,
+        "column_index": 6,
+        "bbox_xyxy": [
+          1050,
+          463,
+          1192,
+          499
+        ],
+        "field_id": "maternal_table__temperature__r5__c6",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1048,
+          461,
+          1192,
+          496
+        ]
+      },
+      {
+        "printed_label_bn": "তাপমাত্রা (F)",
+        "printed_label_en": "Temperature (°F)",
+        "section": "maternal_table",
+        "field_key": "temperature",
+        "row_index": 5,
+        "column_index": 7,
+        "bbox_xyxy": [
+          1192,
+          459,
+          1334,
+          495
+        ],
+        "field_id": "maternal_table__temperature__r5__c7",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1188,
+          457,
+          1333,
+          492
+        ]
+      },
+      {
+        "printed_label_bn": "তাপমাত্রা (F)",
+        "printed_label_en": "Temperature (°F)",
+        "section": "maternal_table",
+        "field_key": "temperature",
+        "row_index": 5,
+        "column_index": 8,
+        "bbox_xyxy": [
+          1330,
+          455,
+          1480,
+          491
+        ],
+        "field_id": "maternal_table__temperature__r5__c8",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1330,
+          453,
+          1480,
+          488
+        ]
+      },
+      {
+        "printed_label_bn": "তাপমাত্রা (F)",
+        "printed_label_en": "Temperature (°F)",
+        "section": "maternal_table",
+        "field_key": "temperature",
+        "row_index": 5,
+        "column_index": 9,
+        "bbox_xyxy": [
+          1477,
+          450,
+          1628,
+          486
+        ],
+        "field_id": "maternal_table__temperature__r5__c9",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1477,
+          450,
+          1628,
+          484
+        ]
+      },
+      {
+        "printed_label_bn": "নাড়ির গতি (বার)",
+        "printed_label_en": "Pulse rate (beats)",
+        "section": "maternal_table",
+        "field_key": "pulse",
+        "row_index": 6,
+        "column_index": 1,
+        "bbox_xyxy": [
+          355,
+          509,
+          485,
+          544
+        ],
+        "field_id": "maternal_table__pulse__r6__c1",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          353,
+          510,
+          489,
+          543
+        ]
+      },
+      {
+        "printed_label_bn": "নাড়ির গতি (বার)",
+        "printed_label_en": "Pulse rate (beats)",
+        "section": "maternal_table",
+        "field_key": "pulse",
+        "row_index": 6,
+        "column_index": 2,
+        "bbox_xyxy": [
+          485,
+          506,
+          634,
+          541
+        ],
+        "field_id": "maternal_table__pulse__r6__c2",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          484,
+          506,
+          637,
+          539
+        ]
+      },
+      {
+        "printed_label_bn": "নাড়ির গতি (বার)",
+        "printed_label_en": "Pulse rate (beats)",
+        "section": "maternal_table",
+        "field_key": "pulse",
+        "row_index": 6,
+        "column_index": 3,
+        "bbox_xyxy": [
+          633,
+          502,
+          768,
+          537
+        ],
+        "field_id": "maternal_table__pulse__r6__c3",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          633,
+          501,
+          771,
+          535
+        ]
+      },
+      {
+        "printed_label_bn": "নাড়ির গতি (বার)",
+        "printed_label_en": "Pulse rate (beats)",
+        "section": "maternal_table",
+        "field_key": "pulse",
+        "row_index": 6,
+        "column_index": 4,
+        "bbox_xyxy": [
+          768,
+          499,
+          903,
+          534
+        ],
+        "field_id": "maternal_table__pulse__r6__c4",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          767,
+          497,
+          906,
+          531
+        ]
+      },
+      {
+        "printed_label_bn": "নাড়ির গতি (বার)",
+        "printed_label_en": "Pulse rate (beats)",
+        "section": "maternal_table",
+        "field_key": "pulse",
+        "row_index": 6,
+        "column_index": 5,
+        "bbox_xyxy": [
+          904,
+          495,
+          1050,
+          530
+        ],
+        "field_id": "maternal_table__pulse__r6__c5",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          902,
+          493,
+          1051,
+          527
+        ]
+      },
+      {
+        "printed_label_bn": "নাড়ির গতি (বার)",
+        "printed_label_en": "Pulse rate (beats)",
+        "section": "maternal_table",
+        "field_key": "pulse",
+        "row_index": 6,
+        "column_index": 6,
+        "bbox_xyxy": [
+          1050,
+          491,
+          1192,
+          526
+        ],
+        "field_id": "maternal_table__pulse__r6__c6",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1048,
+          489,
+          1192,
+          523
+        ]
+      },
+      {
+        "printed_label_bn": "নাড়ির গতি (বার)",
+        "printed_label_en": "Pulse rate (beats)",
+        "section": "maternal_table",
+        "field_key": "pulse",
+        "row_index": 6,
+        "column_index": 7,
+        "bbox_xyxy": [
+          1192,
+          487,
+          1335,
+          522
+        ],
+        "field_id": "maternal_table__pulse__r6__c7",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1189,
+          485,
+          1333,
+          520
+        ]
+      },
+      {
+        "printed_label_bn": "নাড়ির গতি (বার)",
+        "printed_label_en": "Pulse rate (beats)",
+        "section": "maternal_table",
+        "field_key": "pulse",
+        "row_index": 6,
+        "column_index": 8,
+        "bbox_xyxy": [
+          1330,
+          483,
+          1480,
+          519
+        ],
+        "field_id": "maternal_table__pulse__r6__c8",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1330,
+          481,
+          1480,
+          516
+        ]
+      },
+      {
+        "printed_label_bn": "নাড়ির গতি (বার)",
+        "printed_label_en": "Pulse rate (beats)",
+        "section": "maternal_table",
+        "field_key": "pulse",
+        "row_index": 6,
+        "column_index": 9,
+        "bbox_xyxy": [
+          1477,
+          479,
+          1628,
+          514
+        ],
+        "field_id": "maternal_table__pulse__r6__c9",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1477,
+          477,
+          1628,
+          512
+        ]
+      },
+      {
+        "printed_label_bn": "রক্তচাপ (mm of Hg)",
+        "printed_label_en": "Blood pressure (mmHg)",
+        "section": "maternal_table",
+        "field_key": "blood_pressure",
+        "row_index": 7,
+        "column_index": 1,
+        "bbox_xyxy": [
+          357,
+          536,
+          487,
+          571
+        ],
+        "field_id": "maternal_table__blood_pressure__r7__c1",
+        "value_type": "blood_pressure",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          355,
+          536,
+          490,
+          569
+        ]
+      },
+      {
+        "printed_label_bn": "রক্তচাপ (mm of Hg)",
+        "printed_label_en": "Blood pressure (mmHg)",
+        "section": "maternal_table",
+        "field_key": "blood_pressure",
+        "row_index": 7,
+        "column_index": 2,
+        "bbox_xyxy": [
+          487,
+          533,
+          633,
+          568
+        ],
+        "field_id": "maternal_table__blood_pressure__r7__c2",
+        "value_type": "blood_pressure",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          485,
+          532,
+          638,
+          565
+        ]
+      },
+      {
+        "printed_label_bn": "রক্তচাপ (mm of Hg)",
+        "printed_label_en": "Blood pressure (mmHg)",
+        "section": "maternal_table",
+        "field_key": "blood_pressure",
+        "row_index": 7,
+        "column_index": 3,
+        "bbox_xyxy": [
+          636,
+          530,
+          769,
+          565
+        ],
+        "field_id": "maternal_table__blood_pressure__r7__c3",
+        "value_type": "blood_pressure",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          634,
+          528,
+          772,
+          562
+        ]
+      },
+      {
+        "printed_label_bn": "রক্তচাপ (mm of Hg)",
+        "printed_label_en": "Blood pressure (mmHg)",
+        "section": "maternal_table",
+        "field_key": "blood_pressure",
+        "row_index": 7,
+        "column_index": 4,
+        "bbox_xyxy": [
+          769,
+          526,
+          904,
+          561
+        ],
+        "field_id": "maternal_table__blood_pressure__r7__c4",
+        "value_type": "blood_pressure",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          768,
+          524,
+          906,
+          558
+        ]
+      },
+      {
+        "printed_label_bn": "রক্তচাপ (mm of Hg)",
+        "printed_label_en": "Blood pressure (mmHg)",
+        "section": "maternal_table",
+        "field_key": "blood_pressure",
+        "row_index": 7,
+        "column_index": 5,
+        "bbox_xyxy": [
+          904,
+          522,
+          1050,
+          558
+        ],
+        "field_id": "maternal_table__blood_pressure__r7__c5",
+        "value_type": "blood_pressure",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          903,
+          520,
+          1051,
+          555
+        ]
+      },
+      {
+        "printed_label_bn": "রক্তচাপ (mm of Hg)",
+        "printed_label_en": "Blood pressure (mmHg)",
+        "section": "maternal_table",
+        "field_key": "blood_pressure",
+        "row_index": 7,
+        "column_index": 6,
+        "bbox_xyxy": [
+          1050,
+          518,
+          1192,
+          554
+        ],
+        "field_id": "maternal_table__blood_pressure__r7__c6",
+        "value_type": "blood_pressure",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1048,
+          516,
+          1192,
+          551
+        ]
+      },
+      {
+        "printed_label_bn": "রক্তচাপ (mm of Hg)",
+        "printed_label_en": "Blood pressure (mmHg)",
+        "section": "maternal_table",
+        "field_key": "blood_pressure",
+        "row_index": 7,
+        "column_index": 7,
+        "bbox_xyxy": [
+          1192,
+          514,
+          1335,
+          550
+        ],
+        "field_id": "maternal_table__blood_pressure__r7__c7",
+        "value_type": "blood_pressure",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1189,
+          513,
+          1333,
+          547
+        ]
+      },
+      {
+        "printed_label_bn": "রক্তচাপ (mm of Hg)",
+        "printed_label_en": "Blood pressure (mmHg)",
+        "section": "maternal_table",
+        "field_key": "blood_pressure",
+        "row_index": 7,
+        "column_index": 8,
+        "bbox_xyxy": [
+          1334,
+          511,
+          1481,
+          547
+        ],
+        "field_id": "maternal_table__blood_pressure__r7__c8",
+        "value_type": "blood_pressure",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1330,
+          509,
+          1480,
+          544
+        ]
+      },
+      {
+        "printed_label_bn": "রক্তচাপ (mm of Hg)",
+        "printed_label_en": "Blood pressure (mmHg)",
+        "section": "maternal_table",
+        "field_key": "blood_pressure",
+        "row_index": 7,
+        "column_index": 9,
+        "bbox_xyxy": [
+          1481,
+          506,
+          1629,
+          542
+        ],
+        "field_id": "maternal_table__blood_pressure__r7__c9",
+        "value_type": "blood_pressure",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1477,
+          506,
+          1627,
+          541
+        ]
+      },
+      {
+        "printed_label_bn": "জরায়ুর উচ্চতা (cm)",
+        "printed_label_en": "Uterine (fundal) height (cm)",
+        "section": "maternal_table",
+        "field_key": "fundal_height",
+        "row_index": 8,
+        "column_index": 1,
+        "bbox_xyxy": [
+          358,
+          563,
+          488,
+          598
+        ],
+        "field_id": "maternal_table__fundal_height__r8__c1",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          356,
+          562,
+          491,
+          596
+        ]
+      },
+      {
+        "printed_label_bn": "জরায়ুর উচ্চতা (cm)",
+        "printed_label_en": "Uterine (fundal) height (cm)",
+        "section": "maternal_table",
+        "field_key": "fundal_height",
+        "row_index": 8,
+        "column_index": 2,
+        "bbox_xyxy": [
+          488,
+          560,
+          637,
+          595
+        ],
+        "field_id": "maternal_table__fundal_height__r8__c2",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          487,
+          559,
+          639,
+          593
+        ]
+      },
+      {
+        "printed_label_bn": "জরায়ুর উচ্চতা (cm)",
+        "printed_label_en": "Uterine (fundal) height (cm)",
+        "section": "maternal_table",
+        "field_key": "fundal_height",
+        "row_index": 8,
+        "column_index": 3,
+        "bbox_xyxy": [
+          637,
+          557,
+          770,
+          592
+        ],
+        "field_id": "maternal_table__fundal_height__r8__c3",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          634,
+          555,
+          773,
+          589
+        ]
+      },
+      {
+        "printed_label_bn": "জরায়ুর উচ্চতা (cm)",
+        "printed_label_en": "Uterine (fundal) height (cm)",
+        "section": "maternal_table",
+        "field_key": "fundal_height",
+        "row_index": 8,
+        "column_index": 4,
+        "bbox_xyxy": [
+          770,
+          553,
+          905,
+          588
+        ],
+        "field_id": "maternal_table__fundal_height__r8__c4",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          769,
+          552,
+          907,
+          586
+        ]
+      },
+      {
+        "printed_label_bn": "জরায়ুর উচ্চতা (cm)",
+        "printed_label_en": "Uterine (fundal) height (cm)",
+        "section": "maternal_table",
+        "field_key": "fundal_height",
+        "row_index": 8,
+        "column_index": 5,
+        "bbox_xyxy": [
+          905,
+          550,
+          1051,
+          585
+        ],
+        "field_id": "maternal_table__fundal_height__r8__c5",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          903,
+          548,
+          1052,
+          582
+        ]
+      },
+      {
+        "printed_label_bn": "জরায়ুর উচ্চতা (cm)",
+        "printed_label_en": "Uterine (fundal) height (cm)",
+        "section": "maternal_table",
+        "field_key": "fundal_height",
+        "row_index": 8,
+        "column_index": 6,
+        "bbox_xyxy": [
+          1050,
+          546,
+          1192,
+          581
+        ],
+        "field_id": "maternal_table__fundal_height__r8__c6",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1048,
+          544,
+          1193,
+          579
+        ]
+      },
+      {
+        "printed_label_bn": "জরায়ুর উচ্চতা (cm)",
+        "printed_label_en": "Uterine (fundal) height (cm)",
+        "section": "maternal_table",
+        "field_key": "fundal_height",
+        "row_index": 8,
+        "column_index": 7,
+        "bbox_xyxy": [
+          1189,
+          535,
+          1627,
+          575
+        ],
+        "field_id": "maternal_table__fundal_height__r8__c7",
+        "value_type": "numeric",
+        "n_template_pages": 50
+      },
+      {
+        "printed_label_bn": "বাচ্চার নড়াচড়া (বার)",
+        "printed_label_en": "Baby’s movements (times)",
+        "section": "maternal_table",
+        "field_key": "fetal_movement",
+        "row_index": 9,
+        "column_index": 1,
+        "bbox_xyxy": [
+          359,
+          590,
+          489,
+          625
+        ],
+        "field_id": "maternal_table__fetal_movement__r9__c1",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          357,
+          590,
+          492,
+          621
+        ]
+      },
+      {
+        "printed_label_bn": "বাচ্চার নড়াচড়া (বার)",
+        "printed_label_en": "Baby’s movements (times)",
+        "section": "maternal_table",
+        "field_key": "fetal_movement",
+        "row_index": 9,
+        "column_index": 2,
+        "bbox_xyxy": [
+          489,
+          587,
+          635,
+          622
+        ],
+        "field_id": "maternal_table__fetal_movement__r9__c2",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          488,
+          586,
+          639,
+          618
+        ]
+      },
+      {
+        "printed_label_bn": "বাচ্চার নড়াচড়া (বার)",
+        "printed_label_en": "Baby’s movements (times)",
+        "section": "maternal_table",
+        "field_key": "fetal_movement",
+        "row_index": 9,
+        "column_index": 3,
+        "bbox_xyxy": [
+          635,
+          584,
+          771,
+          619
+        ],
+        "field_id": "maternal_table__fetal_movement__r9__c3",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          635,
+          583,
+          773,
+          615
+        ]
+      },
+      {
+        "printed_label_bn": "বাচ্চার নড়াচড়া (বার)",
+        "printed_label_en": "Baby’s movements (times)",
+        "section": "maternal_table",
+        "field_key": "fetal_movement",
+        "row_index": 9,
+        "column_index": 4,
+        "bbox_xyxy": [
+          771,
+          581,
+          905,
+          615
+        ],
+        "field_id": "maternal_table__fetal_movement__r9__c4",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          769,
+          579,
+          907,
+          612
+        ]
+      },
+      {
+        "printed_label_bn": "বাচ্চার নড়াচড়া (বার)",
+        "printed_label_en": "Baby’s movements (times)",
+        "section": "maternal_table",
+        "field_key": "fetal_movement",
+        "row_index": 9,
+        "column_index": 5,
+        "bbox_xyxy": [
+          905,
+          577,
+          1051,
+          612
+        ],
+        "field_id": "maternal_table__fetal_movement__r9__c5",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          904,
+          576,
+          1052,
+          609
+        ]
+      },
+      {
+        "printed_label_bn": "বাচ্চার নড়াচড়া (বার)",
+        "printed_label_en": "Baby’s movements (times)",
+        "section": "maternal_table",
+        "field_key": "fetal_movement",
+        "row_index": 9,
+        "column_index": 6,
+        "bbox_xyxy": [
+          1051,
+          573,
+          1193,
+          609
+        ],
+        "field_id": "maternal_table__fetal_movement__r9__c6",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1049,
+          572,
+          1192,
+          606
+        ]
+      },
+      {
+        "printed_label_bn": "বাচ্চার নড়াচড়া (বার)",
+        "printed_label_en": "Baby’s movements (times)",
+        "section": "maternal_table",
+        "field_key": "fetal_movement",
+        "row_index": 9,
+        "column_index": 7,
+        "bbox_xyxy": [
+          1193,
+          566,
+          1629,
+          602
+        ],
+        "field_id": "maternal_table__fetal_movement__r9__c7",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1189,
+          562,
+          1626,
+          602
+        ]
+      },
+      {
+        "printed_label_bn": "ইডিমা (+/-)",
+        "printed_label_en": "Edema (+/−)",
+        "section": "maternal_table",
+        "field_key": "edema",
+        "row_index": 10,
+        "column_index": 1,
+        "bbox_xyxy": [
+          361,
+          617,
+          490,
+          652
+        ],
+        "field_id": "maternal_table__edema__r10__c1",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          359,
+          615,
+          493,
+          647
+        ]
+      },
+      {
+        "printed_label_bn": "ইডিমা (+/-)",
+        "printed_label_en": "Edema (+/−)",
+        "section": "maternal_table",
+        "field_key": "edema",
+        "row_index": 10,
+        "column_index": 2,
+        "bbox_xyxy": [
+          490,
+          614,
+          636,
+          649
+        ],
+        "field_id": "maternal_table__edema__r10__c2",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          489,
+          612,
+          640,
+          644
+        ]
+      },
+      {
+        "printed_label_bn": "ইডিমা (+/-)",
+        "printed_label_en": "Edema (+/−)",
+        "section": "maternal_table",
+        "field_key": "edema",
+        "row_index": 10,
+        "column_index": 3,
+        "bbox_xyxy": [
+          636,
+          611,
+          772,
+          646
+        ],
+        "field_id": "maternal_table__edema__r10__c3",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          636,
+          609,
+          774,
+          642
+        ]
+      },
+      {
+        "printed_label_bn": "ইডিমা (+/-)",
+        "printed_label_en": "Edema (+/−)",
+        "section": "maternal_table",
+        "field_key": "edema",
+        "row_index": 10,
+        "column_index": 4,
+        "bbox_xyxy": [
+          771,
+          608,
+          906,
+          643
+        ],
+        "field_id": "maternal_table__edema__r10__c4",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          770,
+          606,
+          907,
+          639
+        ]
+      },
+      {
+        "printed_label_bn": "ইডিমা (+/-)",
+        "printed_label_en": "Edema (+/−)",
+        "section": "maternal_table",
+        "field_key": "edema",
+        "row_index": 10,
+        "column_index": 5,
+        "bbox_xyxy": [
+          906,
+          604,
+          1051,
+          639
+        ],
+        "field_id": "maternal_table__edema__r10__c5",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          904,
+          603,
+          1053,
+          636
+        ]
+      },
+      {
+        "printed_label_bn": "ইডিমা (+/-)",
+        "printed_label_en": "Edema (+/−)",
+        "section": "maternal_table",
+        "field_key": "edema",
+        "row_index": 10,
+        "column_index": 6,
+        "bbox_xyxy": [
+          1051,
+          601,
+          1193,
+          636
+        ],
+        "field_id": "maternal_table__edema__r10__c6",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1049,
+          599,
+          1192,
+          633
+        ]
+      },
+      {
+        "printed_label_bn": "ইডিমা (+/-)",
+        "printed_label_en": "Edema (+/−)",
+        "section": "maternal_table",
+        "field_key": "edema",
+        "row_index": 10,
+        "column_index": 7,
+        "bbox_xyxy": [
+          1189,
+          594,
+          1626,
+          629
+        ],
+        "field_id": "maternal_table__edema__r10__c7",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1189,
+          591,
+          1626,
+          630
+        ]
+      },
+      {
+        "printed_label_bn": "রক্ত পরীক্ষা — গ্লুকোজ (mmol/L)",
+        "printed_label_en": "Blood test — glucose (mmol/L)",
+        "section": "maternal_table",
+        "field_key": "glucose",
+        "row_index": 11,
+        "column_index": 1,
+        "bbox_xyxy": [
+          363,
+          644,
+          492,
+          702
+        ],
+        "field_id": "maternal_table__glucose__r11__c1",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          360,
+          641,
+          494,
+          696
+        ]
+      },
+      {
+        "printed_label_bn": "রক্ত পরীক্ষা — গ্লুকোজ (mmol/L)",
+        "printed_label_en": "Blood test — glucose (mmol/L)",
+        "section": "maternal_table",
+        "field_key": "glucose",
+        "row_index": 11,
+        "column_index": 2,
+        "bbox_xyxy": [
+          492,
+          641,
+          639,
+          699
+        ],
+        "field_id": "maternal_table__glucose__r11__c2",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          489,
+          639,
+          641,
+          694
+        ]
+      },
+      {
+        "printed_label_bn": "রক্ত পরীক্ষা — গ্লুকোজ (mmol/L)",
+        "printed_label_en": "Blood test — glucose (mmol/L)",
+        "section": "maternal_table",
+        "field_key": "glucose",
+        "row_index": 11,
+        "column_index": 3,
+        "bbox_xyxy": [
+          638,
+          638,
+          772,
+          696
+        ],
+        "field_id": "maternal_table__glucose__r11__c3",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          636,
+          636,
+          775,
+          691
+        ]
+      },
+      {
+        "printed_label_bn": "রক্ত পরীক্ষা — গ্লুকোজ (mmol/L)",
+        "printed_label_en": "Blood test — glucose (mmol/L)",
+        "section": "maternal_table",
+        "field_key": "glucose",
+        "row_index": 11,
+        "column_index": 4,
+        "bbox_xyxy": [
+          773,
+          635,
+          907,
+          692
+        ],
+        "field_id": "maternal_table__glucose__r11__c4",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          771,
+          633,
+          908,
+          689
+        ]
+      },
+      {
+        "printed_label_bn": "রক্ত পরীক্ষা — গ্লুকোজ (mmol/L)",
+        "printed_label_en": "Blood test — glucose (mmol/L)",
+        "section": "maternal_table",
+        "field_key": "glucose",
+        "row_index": 11,
+        "column_index": 5,
+        "bbox_xyxy": [
+          906,
+          632,
+          1052,
+          689
+        ],
+        "field_id": "maternal_table__glucose__r11__c5",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          904,
+          630,
+          1053,
+          686
+        ]
+      },
+      {
+        "printed_label_bn": "রক্ত পরীক্ষা — গ্লুকোজ (mmol/L)",
+        "printed_label_en": "Blood test — glucose (mmol/L)",
+        "section": "maternal_table",
+        "field_key": "glucose",
+        "row_index": 11,
+        "column_index": 6,
+        "bbox_xyxy": [
+          1052,
+          628,
+          1193,
+          686
+        ],
+        "field_id": "maternal_table__glucose__r11__c6",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1050,
+          627,
+          1193,
+          684
+        ]
+      },
+      {
+        "printed_label_bn": "রক্ত পরীক্ষা — গ্লুকোজ (mmol/L)",
+        "printed_label_en": "Blood test — glucose (mmol/L)",
+        "section": "maternal_table",
+        "field_key": "glucose",
+        "row_index": 11,
+        "column_index": 7,
+        "bbox_xyxy": [
+          1193,
+          624,
+          1335,
+          683
+        ],
+        "field_id": "maternal_table__glucose__r11__c7",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1189,
+          623,
+          1333,
+          680
+        ]
+      },
+      {
+        "printed_label_bn": "রক্ত পরীক্ষা — গ্লুকোজ (mmol/L)",
+        "printed_label_en": "Blood test — glucose (mmol/L)",
+        "section": "maternal_table",
+        "field_key": "glucose",
+        "row_index": 11,
+        "column_index": 8,
+        "bbox_xyxy": [
+          1334,
+          621,
+          1481,
+          680
+        ],
+        "field_id": "maternal_table__glucose__r11__c8",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1330,
+          621,
+          1479,
+          678
+        ]
+      },
+      {
+        "printed_label_bn": "রক্ত পরীক্ষা — গ্লুকোজ (mmol/L)",
+        "printed_label_en": "Blood test — glucose (mmol/L)",
+        "section": "maternal_table",
+        "field_key": "glucose",
+        "row_index": 11,
+        "column_index": 9,
+        "bbox_xyxy": [
+          1484,
+          617,
+          1628,
+          676
+        ],
+        "field_id": "maternal_table__glucose__r11__c9",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1476,
+          619,
+          1626,
+          676
+        ]
+      },
+      {
+        "printed_label_bn": "রক্ত পরীক্ষা — হিমোগ্লোবিন (gm/dl)",
+        "printed_label_en": "Blood test — hemoglobin (g/dL)",
+        "section": "maternal_table",
+        "field_key": "hemoglobin",
+        "row_index": 12,
+        "column_index": 1,
+        "bbox_xyxy": [
+          365,
+          694,
+          495,
+          755
+        ],
+        "field_id": "maternal_table__hemoglobin__r12__c1",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          361,
+          691,
+          496,
+          751
+        ]
+      },
+      {
+        "printed_label_bn": "রক্ত পরীক্ষা — হিমোগ্লোবিন (gm/dl)",
+        "printed_label_en": "Blood test — hemoglobin (g/dL)",
+        "section": "maternal_table",
+        "field_key": "hemoglobin",
+        "row_index": 12,
+        "column_index": 2,
+        "bbox_xyxy": [
+          494,
+          691,
+          641,
+          752
+        ],
+        "field_id": "maternal_table__hemoglobin__r12__c2",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          491,
+          688,
+          642,
+          748
+        ]
+      },
+      {
+        "printed_label_bn": "রক্ত পরীক্ষা — হিমোগ্লোবিন (gm/dl)",
+        "printed_label_en": "Blood test — hemoglobin (g/dL)",
+        "section": "maternal_table",
+        "field_key": "hemoglobin",
+        "row_index": 12,
+        "column_index": 3,
+        "bbox_xyxy": [
+          641,
+          688,
+          774,
+          749
+        ],
+        "field_id": "maternal_table__hemoglobin__r12__c3",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          638,
+          686,
+          776,
+          745
+        ]
+      },
+      {
+        "printed_label_bn": "রক্ত পরীক্ষা — হিমোগ্লোবিন (gm/dl)",
+        "printed_label_en": "Blood test — hemoglobin (g/dL)",
+        "section": "maternal_table",
+        "field_key": "hemoglobin",
+        "row_index": 12,
+        "column_index": 4,
+        "bbox_xyxy": [
+          774,
+          684,
+          908,
+          746
+        ],
+        "field_id": "maternal_table__hemoglobin__r12__c4",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          772,
+          683,
+          909,
+          743
+        ]
+      },
+      {
+        "printed_label_bn": "রক্ত পরীক্ষা — হিমোগ্লোবিন (gm/dl)",
+        "printed_label_en": "Blood test — hemoglobin (g/dL)",
+        "section": "maternal_table",
+        "field_key": "hemoglobin",
+        "row_index": 12,
+        "column_index": 5,
+        "bbox_xyxy": [
+          908,
+          681,
+          1053,
+          743
+        ],
+        "field_id": "maternal_table__hemoglobin__r12__c5",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          905,
+          681,
+          1053,
+          740
+        ]
+      },
+      {
+        "printed_label_bn": "রক্ত পরীক্ষা — হিমোগ্লোবিন (gm/dl)",
+        "printed_label_en": "Blood test — hemoglobin (g/dL)",
+        "section": "maternal_table",
+        "field_key": "hemoglobin",
+        "row_index": 12,
+        "column_index": 6,
+        "bbox_xyxy": [
+          1052,
+          678,
+          1193,
+          740
+        ],
+        "field_id": "maternal_table__hemoglobin__r12__c6",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1050,
+          677,
+          1193,
+          737
+        ]
+      },
+      {
+        "printed_label_bn": "রক্ত পরীক্ষা — হিমোগ্লোবিন (gm/dl)",
+        "printed_label_en": "Blood test — hemoglobin (g/dL)",
+        "section": "maternal_table",
+        "field_key": "hemoglobin",
+        "row_index": 12,
+        "column_index": 7,
+        "bbox_xyxy": [
+          1193,
+          675,
+          1334,
+          737
+        ],
+        "field_id": "maternal_table__hemoglobin__r12__c7",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1190,
+          675,
+          1333,
+          735
+        ]
+      },
+      {
+        "printed_label_bn": "রক্ত পরীক্ষা — হিমোগ্লোবিন (gm/dl)",
+        "printed_label_en": "Blood test — hemoglobin (g/dL)",
+        "section": "maternal_table",
+        "field_key": "hemoglobin",
+        "row_index": 12,
+        "column_index": 8,
+        "bbox_xyxy": [
+          1334,
+          672,
+          1484,
+          734
+        ],
+        "field_id": "maternal_table__hemoglobin__r12__c8",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1330,
+          673,
+          1479,
+          732
+        ]
+      },
+      {
+        "printed_label_bn": "রক্ত পরীক্ষা — হিমোগ্লোবিন (gm/dl)",
+        "printed_label_en": "Blood test — hemoglobin (g/dL)",
+        "section": "maternal_table",
+        "field_key": "hemoglobin",
+        "row_index": 12,
+        "column_index": 9,
+        "bbox_xyxy": [
+          1484,
+          668,
+          1628,
+          730
+        ],
+        "field_id": "maternal_table__hemoglobin__r12__c9",
+        "value_type": "numeric",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1476,
+          671,
+          1625,
+          729
+        ]
+      },
+      {
+        "printed_label_bn": "প্রস্রাব পরীক্ষা — এলবুমিন (+/-)",
+        "printed_label_en": "Urine test — albumin (+/−)",
+        "section": "maternal_table",
+        "field_key": "urine_albumin",
+        "row_index": 13,
+        "column_index": 1,
+        "bbox_xyxy": [
+          367,
+          747,
+          496,
+          779
+        ],
+        "field_id": "maternal_table__urine_albumin__r13__c1",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          363,
+          745,
+          497,
+          774
+        ]
+      },
+      {
+        "printed_label_bn": "প্রস্রাব পরীক্ষা — এলবুমিন (+/-)",
+        "printed_label_en": "Urine test — albumin (+/−)",
+        "section": "maternal_table",
+        "field_key": "urine_albumin",
+        "row_index": 13,
+        "column_index": 2,
+        "bbox_xyxy": [
+          496,
+          744,
+          643,
+          776
+        ],
+        "field_id": "maternal_table__urine_albumin__r13__c2",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          493,
+          742,
+          643,
+          771
+        ]
+      },
+      {
+        "printed_label_bn": "প্রস্রাব পরীক্ষা — এলবুমিন (+/-)",
+        "printed_label_en": "Urine test — albumin (+/−)",
+        "section": "maternal_table",
+        "field_key": "urine_albumin",
+        "row_index": 13,
+        "column_index": 3,
+        "bbox_xyxy": [
+          643,
+          741,
+          775,
+          773
+        ],
+        "field_id": "maternal_table__urine_albumin__r13__c3",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          639,
+          740,
+          777,
+          768
+        ]
+      },
+      {
+        "printed_label_bn": "প্রস্রাব পরীক্ষা — এলবুমিন (+/-)",
+        "printed_label_en": "Urine test — albumin (+/−)",
+        "section": "maternal_table",
+        "field_key": "urine_albumin",
+        "row_index": 13,
+        "column_index": 4,
+        "bbox_xyxy": [
+          775,
+          738,
+          909,
+          769
+        ],
+        "field_id": "maternal_table__urine_albumin__r13__c4",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          773,
+          737,
+          910,
+          766
+        ]
+      },
+      {
+        "printed_label_bn": "প্রস্রাব পরীক্ষা — এলবুমিন (+/-)",
+        "printed_label_en": "Urine test — albumin (+/−)",
+        "section": "maternal_table",
+        "field_key": "urine_albumin",
+        "row_index": 13,
+        "column_index": 5,
+        "bbox_xyxy": [
+          909,
+          735,
+          1053,
+          767
+        ],
+        "field_id": "maternal_table__urine_albumin__r13__c5",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          906,
+          734,
+          1054,
+          764
+        ]
+      },
+      {
+        "printed_label_bn": "প্রস্রাব পরীক্ষা — এলবুমিন (+/-)",
+        "printed_label_en": "Urine test — albumin (+/−)",
+        "section": "maternal_table",
+        "field_key": "urine_albumin",
+        "row_index": 13,
+        "column_index": 6,
+        "bbox_xyxy": [
+          1053,
+          732,
+          1194,
+          764
+        ],
+        "field_id": "maternal_table__urine_albumin__r13__c6",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1050,
+          731,
+          1193,
+          761
+        ]
+      },
+      {
+        "printed_label_bn": "প্রস্রাব পরীক্ষা — এলবুমিন (+/-)",
+        "printed_label_en": "Urine test — albumin (+/−)",
+        "section": "maternal_table",
+        "field_key": "urine_albumin",
+        "row_index": 13,
+        "column_index": 7,
+        "bbox_xyxy": [
+          1194,
+          729,
+          1334,
+          761
+        ],
+        "field_id": "maternal_table__urine_albumin__r13__c7",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1190,
+          729,
+          1333,
+          759
+        ]
+      },
+      {
+        "printed_label_bn": "প্রস্রাব পরীক্ষা — এলবুমিন (+/-)",
+        "printed_label_en": "Urine test — albumin (+/−)",
+        "section": "maternal_table",
+        "field_key": "urine_albumin",
+        "row_index": 13,
+        "column_index": 8,
+        "bbox_xyxy": [
+          1334,
+          726,
+          1483,
+          759
+        ],
+        "field_id": "maternal_table__urine_albumin__r13__c8",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1330,
+          726,
+          1479,
+          756
+        ]
+      },
+      {
+        "printed_label_bn": "প্রস্রাব পরীক্ষা — এলবুমিন (+/-)",
+        "printed_label_en": "Urine test — albumin (+/−)",
+        "section": "maternal_table",
+        "field_key": "urine_albumin",
+        "row_index": 13,
+        "column_index": 9,
+        "bbox_xyxy": [
+          1483,
+          722,
+          1627,
+          755
+        ],
+        "field_id": "maternal_table__urine_albumin__r13__c9",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1476,
+          724,
+          1625,
+          754
+        ]
+      },
+      {
+        "printed_label_bn": "প্রস্রাব পরীক্ষা — বিলিরুবিন (+/-)",
+        "printed_label_en": "Urine test — bilirubin (+/−)",
+        "section": "maternal_table",
+        "field_key": "urine_bilirubin",
+        "row_index": 14,
+        "column_index": 1,
+        "bbox_xyxy": [
+          369,
+          771,
+          497,
+          810
+        ],
+        "field_id": "maternal_table__urine_bilirubin__r14__c1",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          364,
+          768,
+          497,
+          801
+        ]
+      },
+      {
+        "printed_label_bn": "প্রস্রাব পরীক্ষা — বিলিরুবিন (+/-)",
+        "printed_label_en": "Urine test — bilirubin (+/−)",
+        "section": "maternal_table",
+        "field_key": "urine_bilirubin",
+        "row_index": 14,
+        "column_index": 2,
+        "bbox_xyxy": [
+          497,
+          768,
+          643,
+          806
+        ],
+        "field_id": "maternal_table__urine_bilirubin__r14__c2",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          493,
+          765,
+          644,
+          799
+        ]
+      },
+      {
+        "printed_label_bn": "প্রস্রাব পরীক্ষা — বিলিরুবিন (+/-)",
+        "printed_label_en": "Urine test — bilirubin (+/−)",
+        "section": "maternal_table",
+        "field_key": "urine_bilirubin",
+        "row_index": 14,
+        "column_index": 3,
+        "bbox_xyxy": [
+          644,
+          765,
+          776,
+          803
+        ],
+        "field_id": "maternal_table__urine_bilirubin__r14__c3",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          640,
+          763,
+          778,
+          798
+        ]
+      },
+      {
+        "printed_label_bn": "প্রস্রাব পরীক্ষা — বিলিরুবিন (+/-)",
+        "printed_label_en": "Urine test — bilirubin (+/−)",
+        "section": "maternal_table",
+        "field_key": "urine_bilirubin",
+        "row_index": 14,
+        "column_index": 4,
+        "bbox_xyxy": [
+          776,
+          761,
+          910,
+          800
+        ],
+        "field_id": "maternal_table__urine_bilirubin__r14__c4",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          774,
+          761,
+          910,
+          796
+        ]
+      },
+      {
+        "printed_label_bn": "প্রস্রাব পরীক্ষা — বিলিরুবিন (+/-)",
+        "printed_label_en": "Urine test — bilirubin (+/−)",
+        "section": "maternal_table",
+        "field_key": "urine_bilirubin",
+        "row_index": 14,
+        "column_index": 5,
+        "bbox_xyxy": [
+          909,
+          759,
+          1053,
+          798
+        ],
+        "field_id": "maternal_table__urine_bilirubin__r14__c5",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          907,
+          758,
+          1054,
+          794
+        ]
+      },
+      {
+        "printed_label_bn": "প্রস্রাব পরীক্ষা — বিলিরুবিন (+/-)",
+        "printed_label_en": "Urine test — bilirubin (+/−)",
+        "section": "maternal_table",
+        "field_key": "urine_bilirubin",
+        "row_index": 14,
+        "column_index": 6,
+        "bbox_xyxy": [
+          1053,
+          756,
+          1194,
+          795
+        ],
+        "field_id": "maternal_table__urine_bilirubin__r14__c6",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1050,
+          756,
+          1194,
+          792
+        ]
+      },
+      {
+        "printed_label_bn": "প্রস্রাব পরীক্ষা — বিলিরুবিন (+/-)",
+        "printed_label_en": "Urine test — bilirubin (+/−)",
+        "section": "maternal_table",
+        "field_key": "urine_bilirubin",
+        "row_index": 14,
+        "column_index": 7,
+        "bbox_xyxy": [
+          1194,
+          753,
+          1334,
+          793
+        ],
+        "field_id": "maternal_table__urine_bilirubin__r14__c7",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1190,
+          753,
+          1333,
+          790
+        ]
+      },
+      {
+        "printed_label_bn": "প্রস্রাব পরীক্ষা — বিলিরুবিন (+/-)",
+        "printed_label_en": "Urine test — bilirubin (+/−)",
+        "section": "maternal_table",
+        "field_key": "urine_bilirubin",
+        "row_index": 14,
+        "column_index": 8,
+        "bbox_xyxy": [
+          1334,
+          751,
+          1482,
+          790
+        ],
+        "field_id": "maternal_table__urine_bilirubin__r14__c8",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1330,
+          751,
+          1479,
+          787
+        ]
+      },
+      {
+        "printed_label_bn": "প্রস্রাব পরীক্ষা — বিলিরুবিন (+/-)",
+        "printed_label_en": "Urine test — bilirubin (+/−)",
+        "section": "maternal_table",
+        "field_key": "urine_bilirubin",
+        "row_index": 14,
+        "column_index": 9,
+        "bbox_xyxy": [
+          1483,
+          747,
+          1627,
+          787
+        ],
+        "field_id": "maternal_table__urine_bilirubin__r14__c9",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1475,
+          749,
+          1625,
+          785
+        ]
+      },
+      {
+        "printed_label_bn": "USG (আল্ট্রাসনোগ্রাম) (✓/x)",
+        "printed_label_en": "Ultrasonogram",
+        "section": "maternal_table",
+        "field_key": "usg",
+        "row_index": 15,
+        "column_index": 1,
+        "bbox_xyxy": [
+          371,
+          802,
+          499,
+          838
+        ],
+        "field_id": "maternal_table__usg__r15__c1",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          365,
+          796,
+          498,
+          830
+        ]
+      },
+      {
+        "printed_label_bn": "USG (আল্ট্রাসনোগ্রাম) (✓/x)",
+        "printed_label_en": "Ultrasonogram",
+        "section": "maternal_table",
+        "field_key": "usg",
+        "row_index": 15,
+        "column_index": 2,
+        "bbox_xyxy": [
+          498,
+          798,
+          644,
+          835
+        ],
+        "field_id": "maternal_table__usg__r15__c2",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          494,
+          795,
+          645,
+          828
+        ]
+      },
+      {
+        "printed_label_bn": "USG (আল্ট্রাসনোগ্রাম) (✓/x)",
+        "printed_label_en": "Ultrasonogram",
+        "section": "maternal_table",
+        "field_key": "usg",
+        "row_index": 15,
+        "column_index": 3,
+        "bbox_xyxy": [
+          645,
+          795,
+          777,
+          831
+        ],
+        "field_id": "maternal_table__usg__r15__c3",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          641,
+          793,
+          778,
+          827
+        ]
+      },
+      {
+        "printed_label_bn": "USG (আল্ট্রাসনোগ্রাম) (✓/x)",
+        "printed_label_en": "Ultrasonogram",
+        "section": "maternal_table",
+        "field_key": "usg",
+        "row_index": 15,
+        "column_index": 4,
+        "bbox_xyxy": [
+          777,
+          792,
+          910,
+          828
+        ],
+        "field_id": "maternal_table__usg__r15__c4",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          774,
+          791,
+          910,
+          825
+        ]
+      },
+      {
+        "printed_label_bn": "USG (আল্ট্রাসনোগ্রাম) (✓/x)",
+        "printed_label_en": "Ultrasonogram",
+        "section": "maternal_table",
+        "field_key": "usg",
+        "row_index": 15,
+        "column_index": 5,
+        "bbox_xyxy": [
+          910,
+          789,
+          1053,
+          826
+        ],
+        "field_id": "maternal_table__usg__r15__c5",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          907,
+          789,
+          1054,
+          823
+        ]
+      },
+      {
+        "printed_label_bn": "USG (আল্ট্রাসনোগ্রাম) (✓/x)",
+        "printed_label_en": "Ultrasonogram",
+        "section": "maternal_table",
+        "field_key": "usg",
+        "row_index": 15,
+        "column_index": 6,
+        "bbox_xyxy": [
+          1053,
+          787,
+          1194,
+          823
+        ],
+        "field_id": "maternal_table__usg__r15__c6",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1051,
+          787,
+          1193,
+          821
+        ]
+      },
+      {
+        "printed_label_bn": "USG (আল্ট্রাসনোগ্রাম) (✓/x)",
+        "printed_label_en": "Ultrasonogram",
+        "section": "maternal_table",
+        "field_key": "usg",
+        "row_index": 15,
+        "column_index": 7,
+        "bbox_xyxy": [
+          1194,
+          782,
+          1626,
+          819
+        ],
+        "field_id": "maternal_table__usg__r15__c7",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1190,
+          780,
+          1624,
+          818
+        ]
+      },
+      {
+        "printed_label_bn": "টিটি টিকা (✓/x)",
+        "printed_label_en": "TT vaccination",
+        "section": "maternal_table",
+        "field_key": "tt",
+        "row_index": 16,
+        "column_index": 1,
+        "bbox_xyxy": [
+          372,
+          830,
+          500,
+          864
+        ],
+        "field_id": "maternal_table__tt__r16__c1",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          366,
+          825,
+          498,
+          856
+        ]
+      },
+      {
+        "printed_label_bn": "টিটি টিকা (✓/x)",
+        "printed_label_en": "TT vaccination",
+        "section": "maternal_table",
+        "field_key": "tt",
+        "row_index": 16,
+        "column_index": 2,
+        "bbox_xyxy": [
+          499,
+          827,
+          646,
+          860
+        ],
+        "field_id": "maternal_table__tt__r16__c2",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          495,
+          824,
+          645,
+          854
+        ]
+      },
+      {
+        "printed_label_bn": "টিটি টিকা (✓/x)",
+        "printed_label_en": "TT vaccination",
+        "section": "maternal_table",
+        "field_key": "tt",
+        "row_index": 16,
+        "column_index": 3,
+        "bbox_xyxy": [
+          646,
+          824,
+          778,
+          858
+        ],
+        "field_id": "maternal_table__tt__r16__c3",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          642,
+          822,
+          778,
+          852
+        ]
+      },
+      {
+        "printed_label_bn": "টিটি টিকা (✓/x)",
+        "printed_label_en": "TT vaccination",
+        "section": "maternal_table",
+        "field_key": "tt",
+        "row_index": 16,
+        "column_index": 4,
+        "bbox_xyxy": [
+          778,
+          820,
+          911,
+          855
+        ],
+        "field_id": "maternal_table__tt__r16__c4",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          774,
+          820,
+          911,
+          850
+        ]
+      },
+      {
+        "printed_label_bn": "টিটি টিকা (✓/x)",
+        "printed_label_en": "TT vaccination",
+        "section": "maternal_table",
+        "field_key": "tt",
+        "row_index": 16,
+        "column_index": 5,
+        "bbox_xyxy": [
+          911,
+          818,
+          1054,
+          852
+        ],
+        "field_id": "maternal_table__tt__r16__c5",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          907,
+          818,
+          1054,
+          848
+        ]
+      },
+      {
+        "printed_label_bn": "টিটি টিকা (✓/x)",
+        "printed_label_en": "TT vaccination",
+        "section": "maternal_table",
+        "field_key": "tt",
+        "row_index": 16,
+        "column_index": 6,
+        "bbox_xyxy": [
+          1054,
+          815,
+          1195,
+          850
+        ],
+        "field_id": "maternal_table__tt__r16__c6",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1051,
+          815,
+          1193,
+          847
+        ]
+      },
+      {
+        "printed_label_bn": "টিটি টিকা (✓/x)",
+        "printed_label_en": "TT vaccination",
+        "section": "maternal_table",
+        "field_key": "tt",
+        "row_index": 16,
+        "column_index": 7,
+        "bbox_xyxy": [
+          1194,
+          811,
+          1626,
+          845
+        ],
+        "field_id": "maternal_table__tt__r16__c7",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1190,
+          810,
+          1624,
+          845
+        ]
+      },
+      {
+        "printed_label_bn": "আয়রন ট্যাবলেট (✓/x)",
+        "printed_label_en": "Iron tablets",
+        "section": "maternal_table",
+        "field_key": "iron",
+        "row_index": 17,
+        "column_index": 1,
+        "bbox_xyxy": [
+          372,
+          856,
+          501,
+          887
+        ],
+        "field_id": "maternal_table__iron__r17__c1",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          366,
+          851,
+          499,
+          878
+        ]
+      },
+      {
+        "printed_label_bn": "আয়রন ট্যাবলেট (✓/x)",
+        "printed_label_en": "Iron tablets",
+        "section": "maternal_table",
+        "field_key": "iron",
+        "row_index": 17,
+        "column_index": 2,
+        "bbox_xyxy": [
+          501,
+          853,
+          647,
+          884
+        ],
+        "field_id": "maternal_table__iron__r17__c2",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          495,
+          849,
+          646,
+          876
+        ]
+      },
+      {
+        "printed_label_bn": "আয়রন ট্যাবলেট (✓/x)",
+        "printed_label_en": "Iron tablets",
+        "section": "maternal_table",
+        "field_key": "iron",
+        "row_index": 17,
+        "column_index": 3,
+        "bbox_xyxy": [
+          646,
+          850,
+          779,
+          881
+        ],
+        "field_id": "maternal_table__iron__r17__c3",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          642,
+          847,
+          778,
+          875
+        ]
+      },
+      {
+        "printed_label_bn": "আয়রন ট্যাবলেট (✓/x)",
+        "printed_label_en": "Iron tablets",
+        "section": "maternal_table",
+        "field_key": "iron",
+        "row_index": 17,
+        "column_index": 4,
+        "bbox_xyxy": [
+          779,
+          847,
+          912,
+          878
+        ],
+        "field_id": "maternal_table__iron__r17__c4",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          775,
+          845,
+          911,
+          873
+        ]
+      },
+      {
+        "printed_label_bn": "আয়রন ট্যাবলেট (✓/x)",
+        "printed_label_en": "Iron tablets",
+        "section": "maternal_table",
+        "field_key": "iron",
+        "row_index": 17,
+        "column_index": 5,
+        "bbox_xyxy": [
+          912,
+          844,
+          1055,
+          876
+        ],
+        "field_id": "maternal_table__iron__r17__c5",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          908,
+          844,
+          1054,
+          871
+        ]
+      },
+      {
+        "printed_label_bn": "আয়রন ট্যাবলেট (✓/x)",
+        "printed_label_en": "Iron tablets",
+        "section": "maternal_table",
+        "field_key": "iron",
+        "row_index": 17,
+        "column_index": 6,
+        "bbox_xyxy": [
+          1055,
+          842,
+          1195,
+          873
+        ],
+        "field_id": "maternal_table__iron__r17__c6",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1051,
+          842,
+          1194,
+          870
+        ]
+      },
+      {
+        "printed_label_bn": "আয়রন ট্যাবলেট (✓/x)",
+        "printed_label_en": "Iron tablets",
+        "section": "maternal_table",
+        "field_key": "iron",
+        "row_index": 17,
+        "column_index": 7,
+        "bbox_xyxy": [
+          1195,
+          840,
+          1336,
+          872
+        ],
+        "field_id": "maternal_table__iron__r17__c7",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1190,
+          840,
+          1333,
+          869
+        ]
+      },
+      {
+        "printed_label_bn": "আয়রন ট্যাবলেট (✓/x)",
+        "printed_label_en": "Iron tablets",
+        "section": "maternal_table",
+        "field_key": "iron",
+        "row_index": 17,
+        "column_index": 8,
+        "bbox_xyxy": [
+          1336,
+          837,
+          1482,
+          869
+        ],
+        "field_id": "maternal_table__iron__r17__c8",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1330,
+          838,
+          1478,
+          867
+        ]
+      },
+      {
+        "printed_label_bn": "আয়রন ট্যাবলেট (✓/x)",
+        "printed_label_en": "Iron tablets",
+        "section": "maternal_table",
+        "field_key": "iron",
+        "row_index": 17,
+        "column_index": 9,
+        "bbox_xyxy": [
+          1481,
+          834,
+          1625,
+          866
+        ],
+        "field_id": "maternal_table__iron__r17__c9",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1475,
+          836,
+          1623,
+          866
+        ]
+      },
+      {
+        "printed_label_bn": "ক্যালসিয়াম ট্যাবলেট (✓/x)",
+        "printed_label_en": "Calcium tablets",
+        "section": "maternal_table",
+        "field_key": "calcium",
+        "row_index": 18,
+        "column_index": 1,
+        "bbox_xyxy": [
+          374,
+          879,
+          502,
+          916
+        ],
+        "field_id": "maternal_table__calcium__r18__c1",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          367,
+          873,
+          500,
+          904
+        ]
+      },
+      {
+        "printed_label_bn": "ক্যালসিয়াম ট্যাবলেট (✓/x)",
+        "printed_label_en": "Calcium tablets",
+        "section": "maternal_table",
+        "field_key": "calcium",
+        "row_index": 18,
+        "column_index": 2,
+        "bbox_xyxy": [
+          502,
+          876,
+          647,
+          912
+        ],
+        "field_id": "maternal_table__calcium__r18__c2",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          496,
+          872,
+          646,
+          903
+        ]
+      },
+      {
+        "printed_label_bn": "ক্যালসিয়াম ট্যাবলেট (✓/x)",
+        "printed_label_en": "Calcium tablets",
+        "section": "maternal_table",
+        "field_key": "calcium",
+        "row_index": 18,
+        "column_index": 3,
+        "bbox_xyxy": [
+          647,
+          873,
+          780,
+          910
+        ],
+        "field_id": "maternal_table__calcium__r18__c3",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          642,
+          870,
+          779,
+          902
+        ]
+      },
+      {
+        "printed_label_bn": "ক্যালসিয়াম ট্যাবলেট (✓/x)",
+        "printed_label_en": "Calcium tablets",
+        "section": "maternal_table",
+        "field_key": "calcium",
+        "row_index": 18,
+        "column_index": 4,
+        "bbox_xyxy": [
+          779,
+          870,
+          912,
+          907
+        ],
+        "field_id": "maternal_table__calcium__r18__c4",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          775,
+          868,
+          911,
+          901
+        ]
+      },
+      {
+        "printed_label_bn": "ক্যালসিয়াম ট্যাবলেট (✓/x)",
+        "printed_label_en": "Calcium tablets",
+        "section": "maternal_table",
+        "field_key": "calcium",
+        "row_index": 18,
+        "column_index": 5,
+        "bbox_xyxy": [
+          912,
+          867,
+          1055,
+          905
+        ],
+        "field_id": "maternal_table__calcium__r18__c5",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          908,
+          867,
+          1055,
+          900
+        ]
+      },
+      {
+        "printed_label_bn": "ক্যালসিয়াম ট্যাবলেট (✓/x)",
+        "printed_label_en": "Calcium tablets",
+        "section": "maternal_table",
+        "field_key": "calcium",
+        "row_index": 18,
+        "column_index": 6,
+        "bbox_xyxy": [
+          1055,
+          865,
+          1195,
+          902
+        ],
+        "field_id": "maternal_table__calcium__r18__c6",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1051,
+          866,
+          1194,
+          899
+        ]
+      },
+      {
+        "printed_label_bn": "ক্যালসিয়াম ট্যাবলেট (✓/x)",
+        "printed_label_en": "Calcium tablets",
+        "section": "maternal_table",
+        "field_key": "calcium",
+        "row_index": 18,
+        "column_index": 7,
+        "bbox_xyxy": [
+          1195,
+          864,
+          1335,
+          901
+        ],
+        "field_id": "maternal_table__calcium__r18__c7",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1191,
+          864,
+          1333,
+          898
+        ]
+      },
+      {
+        "printed_label_bn": "ক্যালসিয়াম ট্যাবলেট (✓/x)",
+        "printed_label_en": "Calcium tablets",
+        "section": "maternal_table",
+        "field_key": "calcium",
+        "row_index": 18,
+        "column_index": 8,
+        "bbox_xyxy": [
+          1336,
+          861,
+          1482,
+          899
+        ],
+        "field_id": "maternal_table__calcium__r18__c8",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1330,
+          863,
+          1479,
+          897
+        ]
+      },
+      {
+        "printed_label_bn": "ক্যালসিয়াম ট্যাবলেট (✓/x)",
+        "printed_label_en": "Calcium tablets",
+        "section": "maternal_table",
+        "field_key": "calcium",
+        "row_index": 18,
+        "column_index": 9,
+        "bbox_xyxy": [
+          1481,
+          858,
+          1625,
+          895
+        ],
+        "field_id": "maternal_table__calcium__r18__c9",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1475,
+          861,
+          1623,
+          896
+        ]
+      },
+      {
+        "printed_label_bn": "দুর্গন্ধযুক্ত স্রাব/তলপেটে ব্যথা (✓/x)",
+        "printed_label_en": "Foul-smelling discharge / lower abdominal pain",
+        "section": "maternal_table",
+        "field_key": "discharge_pain",
+        "row_index": 19,
+        "column_index": 1,
+        "bbox_xyxy": [
+          376,
+          908,
+          503,
+          968
+        ],
+        "field_id": "maternal_table__discharge_pain__r19__c1",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          368,
+          900,
+          501,
+          953
+        ]
+      },
+      {
+        "printed_label_bn": "দুর্গন্ধযুক্ত স্রাব/তলপেটে ব্যথা (✓/x)",
+        "printed_label_en": "Foul-smelling discharge / lower abdominal pain",
+        "section": "maternal_table",
+        "field_key": "discharge_pain",
+        "row_index": 19,
+        "column_index": 2,
+        "bbox_xyxy": [
+          497,
+          895,
+          1194,
+          954
+        ],
+        "field_id": "maternal_table__discharge_pain__r19__c2",
+        "value_type": "mark",
+        "n_template_pages": 50
+      },
+      {
+        "printed_label_bn": "দুর্গন্ধযুক্ত স্রাব/তলপেটে ব্যথা (✓/x)",
+        "printed_label_en": "Foul-smelling discharge / lower abdominal pain",
+        "section": "maternal_table",
+        "field_key": "discharge_pain",
+        "row_index": 19,
+        "column_index": 7,
+        "bbox_xyxy": [
+          1196,
+          893,
+          1335,
+          955
+        ],
+        "field_id": "maternal_table__discharge_pain__r19__c7",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1191,
+          894,
+          1333,
+          952
+        ]
+      },
+      {
+        "printed_label_bn": "দুর্গন্ধযুক্ত স্রাব/তলপেটে ব্যথা (✓/x)",
+        "printed_label_en": "Foul-smelling discharge / lower abdominal pain",
+        "section": "maternal_table",
+        "field_key": "discharge_pain",
+        "row_index": 19,
+        "column_index": 8,
+        "bbox_xyxy": [
+          1335,
+          891,
+          1481,
+          952
+        ],
+        "field_id": "maternal_table__discharge_pain__r19__c8",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1330,
+          893,
+          1479,
+          952
+        ]
+      },
+      {
+        "printed_label_bn": "দুর্গন্ধযুক্ত স্রাব/তলপেটে ব্যথা (✓/x)",
+        "printed_label_en": "Foul-smelling discharge / lower abdominal pain",
+        "section": "maternal_table",
+        "field_key": "discharge_pain",
+        "row_index": 19,
+        "column_index": 9,
+        "bbox_xyxy": [
+          1481,
+          888,
+          1624,
+          950
+        ],
+        "field_id": "maternal_table__discharge_pain__r19__c9",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1475,
+          892,
+          1623,
+          951
+        ]
+      },
+      {
+        "printed_label_bn": "পেরিনিয়ামে সেলাই (✓/x)",
+        "printed_label_en": "Perineal sutures",
+        "section": "maternal_table",
+        "field_key": "perineal_suture",
+        "row_index": 20,
+        "column_index": 1,
+        "bbox_xyxy": [
+          370,
+          950,
+          502,
+          983
+        ],
+        "field_id": "maternal_table__perineal_suture__r20__c1",
+        "value_type": "mark",
+        "n_template_pages": 50
+      },
+      {
+        "printed_label_bn": "পেরিনিয়ামে সেলাই (✓/x)",
+        "printed_label_en": "Perineal sutures",
+        "section": "maternal_table",
+        "field_key": "perineal_suture",
+        "row_index": 20,
+        "column_index": 2,
+        "bbox_xyxy": [
+          497,
+          949,
+          1195,
+          983
+        ],
+        "field_id": "maternal_table__perineal_suture__r20__c2",
+        "value_type": "mark",
+        "n_template_pages": 50
+      },
+      {
+        "printed_label_bn": "পেরিনিয়ামে সেলাই (✓/x)",
+        "printed_label_en": "Perineal sutures",
+        "section": "maternal_table",
+        "field_key": "perineal_suture",
+        "row_index": 20,
+        "column_index": 7,
+        "bbox_xyxy": [
+          1196,
+          947,
+          1335,
+          981
+        ],
+        "field_id": "maternal_table__perineal_suture__r20__c7",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1191,
+          949,
+          1334,
+          979
+        ]
+      },
+      {
+        "printed_label_bn": "পেরিনিয়ামে সেলাই (✓/x)",
+        "printed_label_en": "Perineal sutures",
+        "section": "maternal_table",
+        "field_key": "perineal_suture",
+        "row_index": 20,
+        "column_index": 8,
+        "bbox_xyxy": [
+          1336,
+          944,
+          1480,
+          979
+        ],
+        "field_id": "maternal_table__perineal_suture__r20__c8",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1330,
+          948,
+          1478,
+          978
+        ]
+      },
+      {
+        "printed_label_bn": "পেরিনিয়ামে সেলাই (✓/x)",
+        "printed_label_en": "Perineal sutures",
+        "section": "maternal_table",
+        "field_key": "perineal_suture",
+        "row_index": 20,
+        "column_index": 9,
+        "bbox_xyxy": [
+          1480,
+          942,
+          1623,
+          976
+        ],
+        "field_id": "maternal_table__perineal_suture__r20__c9",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1474,
+          948,
+          1622,
+          977
+        ]
+      },
+      {
+        "printed_label_bn": "অতিরিক্ত রক্তস্রাব (✓/x)",
+        "printed_label_en": "Excessive bleeding",
+        "section": "maternal_table",
+        "field_key": "excess_bleeding",
+        "row_index": 21,
+        "column_index": 1,
+        "bbox_xyxy": [
+          379,
+          986,
+          506,
+          1019
+        ],
+        "field_id": "maternal_table__excess_bleeding__r21__c1",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          371,
+          980,
+          503,
+          1010
+        ]
+      },
+      {
+        "printed_label_bn": "অতিরিক্ত রক্তস্রাব (✓/x)",
+        "printed_label_en": "Excessive bleeding",
+        "section": "maternal_table",
+        "field_key": "excess_bleeding",
+        "row_index": 21,
+        "column_index": 2,
+        "bbox_xyxy": [
+          498,
+          976,
+          1195,
+          1009
+        ],
+        "field_id": "maternal_table__excess_bleeding__r21__c2",
+        "value_type": "mark",
+        "n_template_pages": 50
+      },
+      {
+        "printed_label_bn": "অতিরিক্ত রক্তস্রাব (✓/x)",
+        "printed_label_en": "Excessive bleeding",
+        "section": "maternal_table",
+        "field_key": "excess_bleeding",
+        "row_index": 21,
+        "column_index": 7,
+        "bbox_xyxy": [
+          1196,
+          973,
+          1336,
+          1007
+        ],
+        "field_id": "maternal_table__excess_bleeding__r21__c7",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1192,
+          975,
+          1334,
+          1005
+        ]
+      },
+      {
+        "printed_label_bn": "অতিরিক্ত রক্তস্রাব (✓/x)",
+        "printed_label_en": "Excessive bleeding",
+        "section": "maternal_table",
+        "field_key": "excess_bleeding",
+        "row_index": 21,
+        "column_index": 8,
+        "bbox_xyxy": [
+          1335,
+          971,
+          1479,
+          1005
+        ],
+        "field_id": "maternal_table__excess_bleeding__r21__c8",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1331,
+          974,
+          1477,
+          1004
+        ]
+      },
+      {
+        "printed_label_bn": "অতিরিক্ত রক্তস্রাব (✓/x)",
+        "printed_label_en": "Excessive bleeding",
+        "section": "maternal_table",
+        "field_key": "excess_bleeding",
+        "row_index": 21,
+        "column_index": 9,
+        "bbox_xyxy": [
+          1480,
+          968,
+          1622,
+          1002
+        ],
+        "field_id": "maternal_table__excess_bleeding__r21__c9",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1474,
+          973,
+          1621,
+          1003
+        ]
+      },
+      {
+        "printed_label_bn": "জটিলতা ও রেফার",
+        "printed_label_en": "Complications and referral",
+        "section": "maternal_table",
+        "field_key": "complication_referral",
+        "row_index": 22,
+        "column_index": 1,
+        "bbox_xyxy": [
+          380,
+          1011,
+          507,
+          1050
+        ],
+        "field_id": "maternal_table__complication_referral__r22__c1",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          372,
+          1006,
+          504,
+          1041
+        ]
+      },
+      {
+        "printed_label_bn": "জটিলতা ও রেফার",
+        "printed_label_en": "Complications and referral",
+        "section": "maternal_table",
+        "field_key": "complication_referral",
+        "row_index": 22,
+        "column_index": 2,
+        "bbox_xyxy": [
+          507,
+          1009,
+          652,
+          1048
+        ],
+        "field_id": "maternal_table__complication_referral__r22__c2",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          500,
+          1005,
+          650,
+          1041
+        ]
+      },
+      {
+        "printed_label_bn": "জটিলতা ও রেফার",
+        "printed_label_en": "Complications and referral",
+        "section": "maternal_table",
+        "field_key": "complication_referral",
+        "row_index": 22,
+        "column_index": 3,
+        "bbox_xyxy": [
+          652,
+          1007,
+          784,
+          1046
+        ],
+        "field_id": "maternal_table__complication_referral__r22__c3",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          646,
+          1005,
+          782,
+          1041
+        ]
+      },
+      {
+        "printed_label_bn": "জটিলতা ও রেফার",
+        "printed_label_en": "Complications and referral",
+        "section": "maternal_table",
+        "field_key": "complication_referral",
+        "row_index": 22,
+        "column_index": 4,
+        "bbox_xyxy": [
+          784,
+          1004,
+          916,
+          1043
+        ],
+        "field_id": "maternal_table__complication_referral__r22__c4",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          778,
+          1004,
+          913,
+          1040
+        ]
+      },
+      {
+        "printed_label_bn": "জটিলতা ও রেফার",
+        "printed_label_en": "Complications and referral",
+        "section": "maternal_table",
+        "field_key": "complication_referral",
+        "row_index": 22,
+        "column_index": 5,
+        "bbox_xyxy": [
+          916,
+          1002,
+          1058,
+          1041
+        ],
+        "field_id": "maternal_table__complication_referral__r22__c5",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          910,
+          1003,
+          1055,
+          1039
+        ]
+      },
+      {
+        "printed_label_bn": "জটিলতা ও রেফার",
+        "printed_label_en": "Complications and referral",
+        "section": "maternal_table",
+        "field_key": "complication_referral",
+        "row_index": 22,
+        "column_index": 6,
+        "bbox_xyxy": [
+          1058,
+          1000,
+          1197,
+          1040
+        ],
+        "field_id": "maternal_table__complication_referral__r22__c6",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1052,
+          1002,
+          1195,
+          1038
+        ]
+      },
+      {
+        "printed_label_bn": "জটিলতা ও রেফার",
+        "printed_label_en": "Complications and referral",
+        "section": "maternal_table",
+        "field_key": "complication_referral",
+        "row_index": 22,
+        "column_index": 7,
+        "bbox_xyxy": [
+          1197,
+          999,
+          1336,
+          1039
+        ],
+        "field_id": "maternal_table__complication_referral__r22__c7",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1192,
+          1001,
+          1334,
+          1037
+        ]
+      },
+      {
+        "printed_label_bn": "জটিলতা ও রেফার",
+        "printed_label_en": "Complications and referral",
+        "section": "maternal_table",
+        "field_key": "complication_referral",
+        "row_index": 22,
+        "column_index": 8,
+        "bbox_xyxy": [
+          1335,
+          997,
+          1479,
+          1036
+        ],
+        "field_id": "maternal_table__complication_referral__r22__c8",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1331,
+          1000,
+          1477,
+          1036
+        ]
+      },
+      {
+        "printed_label_bn": "জটিলতা ও রেফার",
+        "printed_label_en": "Complications and referral",
+        "section": "maternal_table",
+        "field_key": "complication_referral",
+        "row_index": 22,
+        "column_index": 9,
+        "bbox_xyxy": [
+          1480,
+          994,
+          1622,
+          1033
+        ],
+        "field_id": "maternal_table__complication_referral__r22__c9",
+        "value_type": "mark",
+        "n_template_pages": 50,
+        "bbox_xyxy_unsnapped": [
+          1474,
+          999,
+          1621,
+          1034
+        ]
+      },
+      {
+        "printed_label_bn": "জন্মতারিখ",
+        "printed_label_en": "Birth date",
+        "section": "newborn",
+        "field_key": "birth_date",
+        "row_index": 1,
+        "column_index": 1,
+        "bbox_xyxy": [
+          176,
+          1080,
+          399,
+          1113
+        ],
+        "field_id": "newborn__birth_date__r1__c1",
+        "value_type": "date",
+        "n_template_pages": 50
+      },
+      {
+        "printed_label_bn": "জন্ম ওজন",
+        "printed_label_en": "Birth weight",
+        "section": "newborn",
+        "field_key": "birth_weight",
+        "row_index": 1,
+        "column_index": 2,
+        "bbox_xyxy": [
+          399,
+          1077,
+          686,
+          1111
+        ],
+        "field_id": "newborn__birth_weight__r1__c2",
+        "value_type": "numeric",
+        "n_template_pages": 50
+      },
+      {
+        "printed_label_bn": "শ্বাসের হার/মিনিট",
+        "printed_label_en": "Respiratory rate per minute",
+        "section": "newborn",
+        "field_key": "respiration",
+        "row_index": 1,
+        "column_index": 3,
+        "bbox_xyxy": [
+          686,
+          1074,
+          974,
+          1107
+        ],
+        "field_id": "newborn__respiration__r1__c3",
+        "value_type": "mark",
+        "n_template_pages": 50
+      },
+      {
+        "printed_label_bn": "নাভি: স্বাভাবিক/অস্বাভাবিক",
+        "printed_label_en": "Umbilicus: normal/abnormal",
+        "section": "newborn",
+        "field_key": "umbilicus",
+        "row_index": 1,
+        "column_index": 4,
+        "bbox_xyxy": [
+          974,
+          1072,
+          1188,
+          1106
+        ],
+        "field_id": "newborn__umbilicus__r1__c4",
+        "value_type": "mark",
+        "n_template_pages": 50
+      },
+      {
+        "printed_label_bn": "চোখ: স্বাভাবিক/অস্বাভাবিক",
+        "printed_label_en": "Eyes: normal/abnormal",
+        "section": "newborn",
+        "field_key": "eyes",
+        "row_index": 1,
+        "column_index": 5,
+        "bbox_xyxy": [
+          1188,
+          1070,
+          1397,
+          1105
+        ],
+        "field_id": "newborn__eyes__r1__c5",
+        "value_type": "mark",
+        "n_template_pages": 50
+      },
+      {
+        "printed_label_bn": "ত্বক: স্বাভাবিক/অস্বাভাবিক",
+        "printed_label_en": "Skin: normal/abnormal",
+        "section": "newborn",
+        "field_key": "skin",
+        "row_index": 1,
+        "column_index": 6,
+        "bbox_xyxy": [
+          1397,
+          1067,
+          1618,
+          1102
+        ],
+        "field_id": "newborn__skin__r1__c6",
+        "value_type": "mark",
+        "n_template_pages": 50
+      },
+      {
+        "printed_label_bn": "জন্মগত ত্রুটি",
+        "printed_label_en": "Congenital defect",
+        "section": "newborn",
+        "field_key": "birth_defect",
+        "row_index": 2,
+        "column_index": 1,
+        "bbox_xyxy": [
+          178,
+          1113,
+          607,
+          1141
+        ],
+        "field_id": "newborn__birth_defect__r2__c1",
+        "value_type": "mark",
+        "n_template_pages": 50
+      },
+      {
+        "printed_label_bn": "প্রথম ১ ঘণ্টায় কি খাওয়ানো হয়েছে",
+        "printed_label_en": "Feeding in first hour",
+        "section": "newborn",
+        "field_key": "first_hour_feed",
+        "row_index": 2,
+        "column_index": 2,
+        "bbox_xyxy": [
+          607,
+          1108,
+          1117,
+          1135
+        ],
+        "field_id": "newborn__first_hour_feed__r2__c2",
+        "value_type": "mark",
+        "n_template_pages": 50
+      },
+      {
+        "printed_label_bn": "গত ২৪ ঘণ্টায় কি খাওয়ানো হয়েছে",
+        "printed_label_en": "Feeding in last 24 hours",
+        "section": "newborn",
+        "field_key": "last_day_feed",
+        "row_index": 2,
+        "column_index": 3,
+        "bbox_xyxy": [
+          1117,
+          1103,
+          1618,
+          1132
+        ],
+        "field_id": "newborn__last_day_feed__r2__c3",
+        "value_type": "mark",
+        "n_template_pages": 50
+      },
+      {
+        "printed_label_bn": "উচ্চতা (cm)",
+        "printed_label_en": "Height (cm)",
+        "section": "maternal_table",
+        "field_key": "height",
+        "row_index": 4,
+        "column_index": 7,
+        "bbox_xyxy": [
+          1188,
+          433,
+          1333,
+          463
+        ],
+        "field_id": "maternal_table__height__r4__c7",
+        "value_type": "numeric",
+        "n_template_pages": 0,
+        "column_span": 1,
+        "geometry_origin": "printed_delivery_grid_extension_from_native_row_lines"
+      },
+      {
+        "printed_label_bn": "উচ্চতা (cm)",
+        "printed_label_en": "Height (cm)",
+        "section": "maternal_table",
+        "field_key": "height",
+        "row_index": 4,
+        "column_index": 8,
+        "bbox_xyxy": [
+          1330,
+          429,
+          1480,
+          460
+        ],
+        "field_id": "maternal_table__height__r4__c8",
+        "value_type": "numeric",
+        "n_template_pages": 0,
+        "column_span": 1,
+        "geometry_origin": "printed_delivery_grid_extension_from_native_row_lines"
+      },
+      {
+        "printed_label_bn": "উচ্চতা (cm)",
+        "printed_label_en": "Height (cm)",
+        "section": "maternal_table",
+        "field_key": "height",
+        "row_index": 4,
+        "column_index": 9,
+        "bbox_xyxy": [
+          1477,
+          425,
+          1628,
+          456
+        ],
+        "field_id": "maternal_table__height__r4__c9",
+        "value_type": "numeric",
+        "n_template_pages": 0,
+        "column_span": 1,
+        "geometry_origin": "printed_delivery_grid_extension_from_native_row_lines"
+      }
+    ],
+    "native_grid": {
+      "image_size": [
+        2338,
+        1654
+      ],
+      "rows": [
+        "visit_date",
+        "gestational_month",
+        "weight_kg",
+        "height_cm",
+        "temp_f",
+        "pulse",
+        "bp",
+        "fundal_height_cm",
+        "fetal_movement",
+        "edema",
+        "glucose",
+        "hemoglobin",
+        "urine_albumin",
+        "urine_bilirubin",
+        "usg",
+        "tt_vaccine",
+        "iron_tablet",
+        "calcium_tablet",
+        "discharge_pain",
+        "perineal_stitch",
+        "excess_bleeding",
+        "complications_referral"
+      ],
+      "y_ref_top": 533.0,
+      "y_ref_bot": 1360.0,
+      "col_lines_top": [
+        465,
+        640,
+        840,
+        1021,
+        1202,
+        1399,
+        1590
+      ],
+      "col_lines_bot": [
+        506,
+        676,
+        869,
+        1045,
+        1221,
+        1411,
+        1597
+      ],
+      "row_lines_by_col": [
+        [
+          467,
+          532,
+          571,
+          608,
+          645,
+          682,
+          718,
+          754,
+          791,
+          827,
+          863,
+          929,
+          1000,
+          1032,
+          1073,
+          1110,
+          1144,
+          1175,
+          1213,
+          1283,
+          1318,
+          1352,
+          1393
+        ],
+        [
+          462,
+          527,
+          567,
+          604,
+          641,
+          678,
+          714,
+          751,
+          787,
+          823,
+          858,
+          925,
+          996,
+          1027,
+          1069,
+          1106,
+          1140,
+          1171,
+          1209,
+          1280,
+          1315,
+          1349,
+          1390
+        ],
+        [
+          457,
+          523,
+          562,
+          599,
+          636,
+          673,
+          710,
+          746,
+          782,
+          818,
+          854,
+          921,
+          991,
+          1023,
+          1064,
+          1101,
+          1136,
+          1167,
+          1205,
+          1275,
+          1311,
+          1344,
+          1386
+        ],
+        [
+          452,
+          518,
+          557,
+          595,
+          631,
+          669,
+          705,
+          742,
+          778,
+          814,
+          850,
+          917,
+          987,
+          1019,
+          1060,
+          1098,
+          1132,
+          1163,
+          1202,
+          1272,
+          1307,
+          1341,
+          1383
+        ],
+        [
+          446,
+          513,
+          552,
+          590,
+          626,
+          664,
+          701,
+          737,
+          773,
+          810,
+          845,
+          913,
+          984,
+          1015,
+          1057,
+          1094,
+          1129,
+          1160,
+          1199,
+          1269,
+          1305,
+          1339,
+          1381
+        ],
+        [
+          440,
+          506,
+          546,
+          584,
+          621,
+          658,
+          695,
+          732,
+          768,
+          805,
+          841,
+          908,
+          980,
+          1012,
+          1053,
+          1091,
+          1126,
+          1157,
+          1196,
+          1267,
+          1303,
+          1337,
+          1379
+        ]
+      ],
+      "reference_row_lines": [
+        447,
+        513,
+        553,
+        590,
+        627,
+        664,
+        701,
+        738,
+        774,
+        811,
+        846,
+        913,
+        984,
+        1016,
+        1057,
+        1095,
+        1129,
+        1160,
+        1199,
+        1270,
+        1306,
+        1339,
+        1381
+      ],
+      "max_interp_residual_px": 2.0
+    },
+    "geometry_snap": "table boxes snapped to printed lines of assets/registration/ANC.png by scripts/snap_layout_to_template.py"
+  },
+  "NCD": {
+    "card_type": "NCD",
+    "oriented_size": [
+      1755,
+      1240
+    ],
+    "source": "geometry_only_from_reference-codex_bboxes",
+    "note": "Templates store layout boxes and labels only. Never used as OCR predictions.",
+    "cells": [
+      {
+        "printed_label_bn": "",
+        "printed_label_en": "Unlabeled margin annotation",
+        "section": "margin",
+        "field_key": "margin_annotation",
+        "row_index": 0,
+        "column_index": 1,
+        "bbox_xyxy": [
+          0,
+          0,
+          1755,
+          115
+        ],
+        "field_id": "margin__margin_annotation__r0__c1",
+        "value_type": "text",
+        "n_template_pages": 48
+      },
+      {
+        "printed_label_bn": "তারিখ",
+        "printed_label_en": "Date",
+        "section": "table",
+        "field_key": "date",
+        "row_index": 1,
+        "column_index": 1,
+        "bbox_xyxy": [
+          197,
+          203,
+          365,
+          282
+        ],
+        "field_id": "table__date__r1__c1",
+        "value_type": "date",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          195,
+          199,
+          364,
+          274
+        ]
+      },
+      {
+        "printed_label_bn": "রক্তচাপ",
+        "printed_label_en": "Blood pressure",
+        "section": "table",
+        "field_key": "blood_pressure",
+        "row_index": 1,
+        "column_index": 2,
+        "bbox_xyxy": [
+          366,
+          203,
+          496,
+          283
+        ],
+        "field_id": "table__blood_pressure__r1__c2",
+        "value_type": "blood_pressure",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          364,
+          199,
+          496,
+          274
+        ]
+      },
+      {
+        "printed_label_bn": "ডায়াবেটিস — খালিপেটে",
+        "printed_label_en": "Diabetes — fasting",
+        "section": "table",
+        "field_key": "glucose_fasting",
+        "row_index": 1,
+        "column_index": 3,
+        "bbox_xyxy": [
+          496,
+          204,
+          598,
+          283
+        ],
+        "field_id": "table__glucose_fasting__r1__c3",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          496,
+          199,
+          598,
+          274
+        ]
+      },
+      {
+        "printed_label_bn": "ডায়াবেটিস — র‍্যান্ডম",
+        "printed_label_en": "Diabetes — random",
+        "section": "table",
+        "field_key": "glucose_random",
+        "row_index": 1,
+        "column_index": 4,
+        "bbox_xyxy": [
+          598,
+          204,
+          700,
+          284
+        ],
+        "field_id": "table__glucose_random__r1__c4",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          598,
+          199,
+          700,
+          274
+        ]
+      },
+      {
+        "printed_label_bn": "ওজন (কেজি)",
+        "printed_label_en": "Weight (kg)",
+        "section": "table",
+        "field_key": "weight",
+        "row_index": 1,
+        "column_index": 5,
+        "bbox_xyxy": [
+          700,
+          205,
+          802,
+          284
+        ],
+        "field_id": "table__weight__r1__c5",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          700,
+          199,
+          805,
+          274
+        ]
+      },
+      {
+        "printed_label_bn": "উচ্চতা (সে: মি:)",
+        "printed_label_en": "Height (cm)",
+        "section": "table",
+        "field_key": "height",
+        "row_index": 1,
+        "column_index": 6,
+        "bbox_xyxy": [
+          803,
+          204,
+          905,
+          284
+        ],
+        "field_id": "table__height__r1__c6",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          805,
+          199,
+          907,
+          274
+        ]
+      },
+      {
+        "printed_label_bn": "চক্ষু পরীক্ষা",
+        "printed_label_en": "Eye examination",
+        "section": "table",
+        "field_key": "eye_exam",
+        "row_index": 1,
+        "column_index": 7,
+        "bbox_xyxy": [
+          905,
+          204,
+          1007,
+          284
+        ],
+        "field_id": "table__eye_exam__r1__c7",
+        "value_type": "mark",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          907,
+          199,
+          1008,
+          274
+        ]
+      },
+      {
+        "printed_label_bn": "রেফারের স্থান",
+        "printed_label_en": "Referral location",
+        "section": "table",
+        "field_key": "referral",
+        "row_index": 1,
+        "column_index": 8,
+        "bbox_xyxy": [
+          1008,
+          203,
+          1480,
+          283
+        ],
+        "field_id": "table__referral__r1__c8",
+        "value_type": "text",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          1008,
+          199,
+          1482,
+          274
+        ]
+      },
+      {
+        "printed_label_bn": "মন্তব্য",
+        "printed_label_en": "Remarks",
+        "section": "table",
+        "field_key": "comment",
+        "row_index": 1,
+        "column_index": 9,
+        "bbox_xyxy": [
+          1480,
+          202,
+          1642,
+          281
+        ],
+        "field_id": "table__comment__r1__c9",
+        "value_type": "text",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          1482,
+          199,
+          1647,
+          274
+        ]
+      },
+      {
+        "printed_label_bn": "তারিখ",
+        "printed_label_en": "Date",
+        "section": "table",
+        "field_key": "date",
+        "row_index": 2,
+        "column_index": 1,
+        "bbox_xyxy": [
+          197,
+          274,
+          367,
+          362
+        ],
+        "field_id": "table__date__r2__c1",
+        "value_type": "date",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          195,
+          274,
+          364,
+          351
+        ]
+      },
+      {
+        "printed_label_bn": "রক্তচাপ",
+        "printed_label_en": "Blood pressure",
+        "section": "table",
+        "field_key": "blood_pressure",
+        "row_index": 2,
+        "column_index": 2,
+        "bbox_xyxy": [
+          367,
+          274,
+          498,
+          362
+        ],
+        "field_id": "table__blood_pressure__r2__c2",
+        "value_type": "blood_pressure",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          364,
+          274,
+          496,
+          351
+        ]
+      },
+      {
+        "printed_label_bn": "ডায়াবেটিস — খালিপেটে",
+        "printed_label_en": "Diabetes — fasting",
+        "section": "table",
+        "field_key": "glucose_fasting",
+        "row_index": 2,
+        "column_index": 3,
+        "bbox_xyxy": [
+          498,
+          276,
+          600,
+          362
+        ],
+        "field_id": "table__glucose_fasting__r2__c3",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          496,
+          274,
+          598,
+          351
+        ]
+      },
+      {
+        "printed_label_bn": "ডায়াবেটিস — র‍্যান্ডম",
+        "printed_label_en": "Diabetes — random",
+        "section": "table",
+        "field_key": "glucose_random",
+        "row_index": 2,
+        "column_index": 4,
+        "bbox_xyxy": [
+          600,
+          276,
+          700,
+          363
+        ],
+        "field_id": "table__glucose_random__r2__c4",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          598,
+          274,
+          700,
+          351
+        ]
+      },
+      {
+        "printed_label_bn": "ওজন (কেজি)",
+        "printed_label_en": "Weight (kg)",
+        "section": "table",
+        "field_key": "weight",
+        "row_index": 2,
+        "column_index": 5,
+        "bbox_xyxy": [
+          700,
+          276,
+          804,
+          363
+        ],
+        "field_id": "table__weight__r2__c5",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          700,
+          274,
+          805,
+          351
+        ]
+      },
+      {
+        "printed_label_bn": "উচ্চতা (সে: মি:)",
+        "printed_label_en": "Height (cm)",
+        "section": "table",
+        "field_key": "height",
+        "row_index": 2,
+        "column_index": 6,
+        "bbox_xyxy": [
+          803,
+          276,
+          905,
+          362
+        ],
+        "field_id": "table__height__r2__c6",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          805,
+          274,
+          907,
+          351
+        ]
+      },
+      {
+        "printed_label_bn": "চক্ষু পরীক্ষা",
+        "printed_label_en": "Eye examination",
+        "section": "table",
+        "field_key": "eye_exam",
+        "row_index": 2,
+        "column_index": 7,
+        "bbox_xyxy": [
+          905,
+          276,
+          1007,
+          362
+        ],
+        "field_id": "table__eye_exam__r2__c7",
+        "value_type": "mark",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          907,
+          274,
+          1008,
+          351
+        ]
+      },
+      {
+        "printed_label_bn": "রেফারের স্থান",
+        "printed_label_en": "Referral location",
+        "section": "table",
+        "field_key": "referral",
+        "row_index": 2,
+        "column_index": 8,
+        "bbox_xyxy": [
+          1008,
+          274,
+          1480,
+          361
+        ],
+        "field_id": "table__referral__r2__c8",
+        "value_type": "text",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          1008,
+          274,
+          1482,
+          351
+        ]
+      },
+      {
+        "printed_label_bn": "মন্তব্য",
+        "printed_label_en": "Remarks",
+        "section": "table",
+        "field_key": "comment",
+        "row_index": 2,
+        "column_index": 9,
+        "bbox_xyxy": [
+          1480,
+          273,
+          1644,
+          359
+        ],
+        "field_id": "table__comment__r2__c9",
+        "value_type": "text",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          1482,
+          274,
+          1647,
+          351
+        ]
+      },
+      {
+        "printed_label_bn": "তারিখ",
+        "printed_label_en": "Date",
+        "section": "table",
+        "field_key": "date",
+        "row_index": 3,
+        "column_index": 1,
+        "bbox_xyxy": [
+          198,
+          353,
+          368,
+          440
+        ],
+        "field_id": "table__date__r3__c1",
+        "value_type": "date",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          195,
+          351,
+          364,
+          431
+        ]
+      },
+      {
+        "printed_label_bn": "রক্তচাপ",
+        "printed_label_en": "Blood pressure",
+        "section": "table",
+        "field_key": "blood_pressure",
+        "row_index": 3,
+        "column_index": 2,
+        "bbox_xyxy": [
+          368,
+          354,
+          498,
+          441
+        ],
+        "field_id": "table__blood_pressure__r3__c2",
+        "value_type": "blood_pressure",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          364,
+          351,
+          496,
+          431
+        ]
+      },
+      {
+        "printed_label_bn": "ডায়াবেটিস — খালিপেটে",
+        "printed_label_en": "Diabetes — fasting",
+        "section": "table",
+        "field_key": "glucose_fasting",
+        "row_index": 3,
+        "column_index": 3,
+        "bbox_xyxy": [
+          498,
+          355,
+          602,
+          441
+        ],
+        "field_id": "table__glucose_fasting__r3__c3",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          496,
+          351,
+          598,
+          431
+        ]
+      },
+      {
+        "printed_label_bn": "ডায়াবেটিস — র‍্যান্ডম",
+        "printed_label_en": "Diabetes — random",
+        "section": "table",
+        "field_key": "glucose_random",
+        "row_index": 3,
+        "column_index": 4,
+        "bbox_xyxy": [
+          602,
+          355,
+          702,
+          441
+        ],
+        "field_id": "table__glucose_random__r3__c4",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          598,
+          351,
+          700,
+          431
+        ]
+      },
+      {
+        "printed_label_bn": "ওজন (কেজি)",
+        "printed_label_en": "Weight (kg)",
+        "section": "table",
+        "field_key": "weight",
+        "row_index": 3,
+        "column_index": 5,
+        "bbox_xyxy": [
+          702,
+          355,
+          804,
+          441
+        ],
+        "field_id": "table__weight__r3__c5",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          700,
+          351,
+          805,
+          431
+        ]
+      },
+      {
+        "printed_label_bn": "উচ্চতা (সে: মি:)",
+        "printed_label_en": "Height (cm)",
+        "section": "table",
+        "field_key": "height",
+        "row_index": 3,
+        "column_index": 6,
+        "bbox_xyxy": [
+          805,
+          355,
+          906,
+          441
+        ],
+        "field_id": "table__height__r3__c6",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          805,
+          351,
+          907,
+          431
+        ]
+      },
+      {
+        "printed_label_bn": "চক্ষু পরীক্ষা",
+        "printed_label_en": "Eye examination",
+        "section": "table",
+        "field_key": "eye_exam",
+        "row_index": 3,
+        "column_index": 7,
+        "bbox_xyxy": [
+          906,
+          355,
+          1008,
+          441
+        ],
+        "field_id": "table__eye_exam__r3__c7",
+        "value_type": "mark",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          907,
+          351,
+          1008,
+          431
+        ]
+      },
+      {
+        "printed_label_bn": "রেফারের স্থান",
+        "printed_label_en": "Referral location",
+        "section": "table",
+        "field_key": "referral",
+        "row_index": 3,
+        "column_index": 8,
+        "bbox_xyxy": [
+          1008,
+          353,
+          1482,
+          439
+        ],
+        "field_id": "table__referral__r3__c8",
+        "value_type": "text",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          1008,
+          351,
+          1482,
+          431
+        ]
+      },
+      {
+        "printed_label_bn": "মন্তব্য",
+        "printed_label_en": "Remarks",
+        "section": "table",
+        "field_key": "comment",
+        "row_index": 3,
+        "column_index": 9,
+        "bbox_xyxy": [
+          1482,
+          351,
+          1644,
+          437
+        ],
+        "field_id": "table__comment__r3__c9",
+        "value_type": "text",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          1482,
+          351,
+          1647,
+          431
+        ]
+      },
+      {
+        "printed_label_bn": "তারিখ",
+        "printed_label_en": "Date",
+        "section": "table",
+        "field_key": "date",
+        "row_index": 4,
+        "column_index": 1,
+        "bbox_xyxy": [
+          199,
+          432,
+          369,
+          519
+        ],
+        "field_id": "table__date__r4__c1",
+        "value_type": "date",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          195,
+          431,
+          364,
+          510
+        ]
+      },
+      {
+        "printed_label_bn": "রক্তচাপ",
+        "printed_label_en": "Blood pressure",
+        "section": "table",
+        "field_key": "blood_pressure",
+        "row_index": 4,
+        "column_index": 2,
+        "bbox_xyxy": [
+          368,
+          433,
+          500,
+          519
+        ],
+        "field_id": "table__blood_pressure__r4__c2",
+        "value_type": "blood_pressure",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          364,
+          431,
+          496,
+          510
+        ]
+      },
+      {
+        "printed_label_bn": "ডায়াবেটিস — খালিপেটে",
+        "printed_label_en": "Diabetes — fasting",
+        "section": "table",
+        "field_key": "glucose_fasting",
+        "row_index": 4,
+        "column_index": 3,
+        "bbox_xyxy": [
+          500,
+          433,
+          602,
+          519
+        ],
+        "field_id": "table__glucose_fasting__r4__c3",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          496,
+          431,
+          598,
+          510
+        ]
+      },
+      {
+        "printed_label_bn": "ডায়াবেটিস — র‍্যান্ডম",
+        "printed_label_en": "Diabetes — random",
+        "section": "table",
+        "field_key": "glucose_random",
+        "row_index": 4,
+        "column_index": 4,
+        "bbox_xyxy": [
+          602,
+          433,
+          702,
+          519
+        ],
+        "field_id": "table__glucose_random__r4__c4",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          598,
+          431,
+          700,
+          510
+        ]
+      },
+      {
+        "printed_label_bn": "ওজন (কেজি)",
+        "printed_label_en": "Weight (kg)",
+        "section": "table",
+        "field_key": "weight",
+        "row_index": 4,
+        "column_index": 5,
+        "bbox_xyxy": [
+          702,
+          433,
+          805,
+          519
+        ],
+        "field_id": "table__weight__r4__c5",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          700,
+          431,
+          805,
+          510
+        ]
+      },
+      {
+        "printed_label_bn": "উচ্চতা (সে: মি:)",
+        "printed_label_en": "Height (cm)",
+        "section": "table",
+        "field_key": "height",
+        "row_index": 4,
+        "column_index": 6,
+        "bbox_xyxy": [
+          805,
+          433,
+          907,
+          519
+        ],
+        "field_id": "table__height__r4__c6",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          805,
+          431,
+          907,
+          510
+        ]
+      },
+      {
+        "printed_label_bn": "চক্ষু পরীক্ষা",
+        "printed_label_en": "Eye examination",
+        "section": "table",
+        "field_key": "eye_exam",
+        "row_index": 4,
+        "column_index": 7,
+        "bbox_xyxy": [
+          907,
+          433,
+          1009,
+          519
+        ],
+        "field_id": "table__eye_exam__r4__c7",
+        "value_type": "mark",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          907,
+          431,
+          1008,
+          510
+        ]
+      },
+      {
+        "printed_label_bn": "রেফারের স্থান",
+        "printed_label_en": "Referral location",
+        "section": "table",
+        "field_key": "referral",
+        "row_index": 4,
+        "column_index": 8,
+        "bbox_xyxy": [
+          1008,
+          431,
+          1482,
+          517
+        ],
+        "field_id": "table__referral__r4__c8",
+        "value_type": "text",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          1008,
+          431,
+          1482,
+          510
+        ]
+      },
+      {
+        "printed_label_bn": "মন্তব্য",
+        "printed_label_en": "Remarks",
+        "section": "table",
+        "field_key": "comment",
+        "row_index": 4,
+        "column_index": 9,
+        "bbox_xyxy": [
+          1482,
+          429,
+          1646,
+          516
+        ],
+        "field_id": "table__comment__r4__c9",
+        "value_type": "text",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          1482,
+          431,
+          1647,
+          510
+        ]
+      },
+      {
+        "printed_label_bn": "তারিখ",
+        "printed_label_en": "Date",
+        "section": "table",
+        "field_key": "date",
+        "row_index": 5,
+        "column_index": 1,
+        "bbox_xyxy": [
+          200,
+          512,
+          370,
+          598
+        ],
+        "field_id": "table__date__r5__c1",
+        "value_type": "date",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          195,
+          510,
+          364,
+          588
+        ]
+      },
+      {
+        "printed_label_bn": "রক্তচাপ",
+        "printed_label_en": "Blood pressure",
+        "section": "table",
+        "field_key": "blood_pressure",
+        "row_index": 5,
+        "column_index": 2,
+        "bbox_xyxy": [
+          370,
+          512,
+          500,
+          598
+        ],
+        "field_id": "table__blood_pressure__r5__c2",
+        "value_type": "blood_pressure",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          364,
+          510,
+          496,
+          588
+        ]
+      },
+      {
+        "printed_label_bn": "ডায়াবেটিস — খালিপেটে",
+        "printed_label_en": "Diabetes — fasting",
+        "section": "table",
+        "field_key": "glucose_fasting",
+        "row_index": 5,
+        "column_index": 3,
+        "bbox_xyxy": [
+          500,
+          512,
+          602,
+          598
+        ],
+        "field_id": "table__glucose_fasting__r5__c3",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          496,
+          510,
+          598,
+          588
+        ]
+      },
+      {
+        "printed_label_bn": "ডায়াবেটিস — র‍্যান্ডম",
+        "printed_label_en": "Diabetes — random",
+        "section": "table",
+        "field_key": "glucose_random",
+        "row_index": 5,
+        "column_index": 4,
+        "bbox_xyxy": [
+          602,
+          511,
+          704,
+          598
+        ],
+        "field_id": "table__glucose_random__r5__c4",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          598,
+          510,
+          700,
+          588
+        ]
+      },
+      {
+        "printed_label_bn": "ওজন (কেজি)",
+        "printed_label_en": "Weight (kg)",
+        "section": "table",
+        "field_key": "weight",
+        "row_index": 5,
+        "column_index": 5,
+        "bbox_xyxy": [
+          704,
+          511,
+          806,
+          597
+        ],
+        "field_id": "table__weight__r5__c5",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          700,
+          510,
+          805,
+          588
+        ]
+      },
+      {
+        "printed_label_bn": "উচ্চতা (সে: মি:)",
+        "printed_label_en": "Height (cm)",
+        "section": "table",
+        "field_key": "height",
+        "row_index": 5,
+        "column_index": 6,
+        "bbox_xyxy": [
+          805,
+          510,
+          907,
+          596
+        ],
+        "field_id": "table__height__r5__c6",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          805,
+          510,
+          907,
+          588
+        ]
+      },
+      {
+        "printed_label_bn": "চক্ষু পরীক্ষা",
+        "printed_label_en": "Eye examination",
+        "section": "table",
+        "field_key": "eye_exam",
+        "row_index": 5,
+        "column_index": 7,
+        "bbox_xyxy": [
+          907,
+          510,
+          1009,
+          596
+        ],
+        "field_id": "table__eye_exam__r5__c7",
+        "value_type": "mark",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          907,
+          510,
+          1008,
+          588
+        ]
+      },
+      {
+        "printed_label_bn": "রেফারের স্থান",
+        "printed_label_en": "Referral location",
+        "section": "table",
+        "field_key": "referral",
+        "row_index": 5,
+        "column_index": 8,
+        "bbox_xyxy": [
+          1008,
+          510,
+          1483,
+          596
+        ],
+        "field_id": "table__referral__r5__c8",
+        "value_type": "text",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          1008,
+          510,
+          1482,
+          588
+        ]
+      },
+      {
+        "printed_label_bn": "মন্তব্য",
+        "printed_label_en": "Remarks",
+        "section": "table",
+        "field_key": "comment",
+        "row_index": 5,
+        "column_index": 9,
+        "bbox_xyxy": [
+          1483,
+          508,
+          1646,
+          594
+        ],
+        "field_id": "table__comment__r5__c9",
+        "value_type": "text",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          1482,
+          510,
+          1647,
+          588
+        ]
+      },
+      {
+        "printed_label_bn": "তারিখ",
+        "printed_label_en": "Date",
+        "section": "table",
+        "field_key": "date",
+        "row_index": 6,
+        "column_index": 1,
+        "bbox_xyxy": [
+          201,
+          590,
+          371,
+          677
+        ],
+        "field_id": "table__date__r6__c1",
+        "value_type": "date",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          195,
+          588,
+          364,
+          666
+        ]
+      },
+      {
+        "printed_label_bn": "রক্তচাপ",
+        "printed_label_en": "Blood pressure",
+        "section": "table",
+        "field_key": "blood_pressure",
+        "row_index": 6,
+        "column_index": 2,
+        "bbox_xyxy": [
+          370,
+          590,
+          500,
+          676
+        ],
+        "field_id": "table__blood_pressure__r6__c2",
+        "value_type": "blood_pressure",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          364,
+          588,
+          496,
+          666
+        ]
+      },
+      {
+        "printed_label_bn": "ডায়াবেটিস — খালিপেটে",
+        "printed_label_en": "Diabetes — fasting",
+        "section": "table",
+        "field_key": "glucose_fasting",
+        "row_index": 6,
+        "column_index": 3,
+        "bbox_xyxy": [
+          500,
+          590,
+          604,
+          676
+        ],
+        "field_id": "table__glucose_fasting__r6__c3",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          496,
+          588,
+          598,
+          666
+        ]
+      },
+      {
+        "printed_label_bn": "ডায়াবেটিস — র‍্যান্ডম",
+        "printed_label_en": "Diabetes — random",
+        "section": "table",
+        "field_key": "glucose_random",
+        "row_index": 6,
+        "column_index": 4,
+        "bbox_xyxy": [
+          604,
+          590,
+          704,
+          676
+        ],
+        "field_id": "table__glucose_random__r6__c4",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          598,
+          588,
+          700,
+          666
+        ]
+      },
+      {
+        "printed_label_bn": "ওজন (কেজি)",
+        "printed_label_en": "Weight (kg)",
+        "section": "table",
+        "field_key": "weight",
+        "row_index": 6,
+        "column_index": 5,
+        "bbox_xyxy": [
+          704,
+          589,
+          806,
+          674
+        ],
+        "field_id": "table__weight__r6__c5",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          700,
+          588,
+          805,
+          666
+        ]
+      },
+      {
+        "printed_label_bn": "উচ্চতা (সে: মি:)",
+        "printed_label_en": "Height (cm)",
+        "section": "table",
+        "field_key": "height",
+        "row_index": 6,
+        "column_index": 6,
+        "bbox_xyxy": [
+          806,
+          588,
+          907,
+          674
+        ],
+        "field_id": "table__height__r6__c6",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          805,
+          588,
+          907,
+          666
+        ]
+      },
+      {
+        "printed_label_bn": "চক্ষু পরীক্ষা",
+        "printed_label_en": "Eye examination",
+        "section": "table",
+        "field_key": "eye_exam",
+        "row_index": 6,
+        "column_index": 7,
+        "bbox_xyxy": [
+          907,
+          588,
+          1009,
+          674
+        ],
+        "field_id": "table__eye_exam__r6__c7",
+        "value_type": "mark",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          907,
+          588,
+          1008,
+          666
+        ]
+      },
+      {
+        "printed_label_bn": "রেফারের স্থান",
+        "printed_label_en": "Referral location",
+        "section": "table",
+        "field_key": "referral",
+        "row_index": 6,
+        "column_index": 8,
+        "bbox_xyxy": [
+          1010,
+          588,
+          1484,
+          674
+        ],
+        "field_id": "table__referral__r6__c8",
+        "value_type": "text",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          1008,
+          588,
+          1482,
+          666
+        ]
+      },
+      {
+        "printed_label_bn": "মন্তব্য",
+        "printed_label_en": "Remarks",
+        "section": "table",
+        "field_key": "comment",
+        "row_index": 6,
+        "column_index": 9,
+        "bbox_xyxy": [
+          1484,
+          586,
+          1647,
+          672
+        ],
+        "field_id": "table__comment__r6__c9",
+        "value_type": "text",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          1482,
+          588,
+          1647,
+          666
+        ]
+      },
+      {
+        "printed_label_bn": "তারিখ",
+        "printed_label_en": "Date",
+        "section": "table",
+        "field_key": "date",
+        "row_index": 7,
+        "column_index": 1,
+        "bbox_xyxy": [
+          202,
+          669,
+          371,
+          756
+        ],
+        "field_id": "table__date__r7__c1",
+        "value_type": "date",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          195,
+          666,
+          364,
+          744
+        ]
+      },
+      {
+        "printed_label_bn": "রক্তচাপ",
+        "printed_label_en": "Blood pressure",
+        "section": "table",
+        "field_key": "blood_pressure",
+        "row_index": 7,
+        "column_index": 2,
+        "bbox_xyxy": [
+          372,
+          668,
+          502,
+          754
+        ],
+        "field_id": "table__blood_pressure__r7__c2",
+        "value_type": "blood_pressure",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          364,
+          666,
+          496,
+          744
+        ]
+      },
+      {
+        "printed_label_bn": "ডায়াবেটিস — খালিপেটে",
+        "printed_label_en": "Diabetes — fasting",
+        "section": "table",
+        "field_key": "glucose_fasting",
+        "row_index": 7,
+        "column_index": 3,
+        "bbox_xyxy": [
+          502,
+          668,
+          604,
+          754
+        ],
+        "field_id": "table__glucose_fasting__r7__c3",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          496,
+          666,
+          598,
+          744
+        ]
+      },
+      {
+        "printed_label_bn": "ডায়াবেটিস — র‍্যান্ডম",
+        "printed_label_en": "Diabetes — random",
+        "section": "table",
+        "field_key": "glucose_random",
+        "row_index": 7,
+        "column_index": 4,
+        "bbox_xyxy": [
+          604,
+          668,
+          704,
+          753
+        ],
+        "field_id": "table__glucose_random__r7__c4",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          598,
+          666,
+          700,
+          744
+        ]
+      },
+      {
+        "printed_label_bn": "ওজন (কেজি)",
+        "printed_label_en": "Weight (kg)",
+        "section": "table",
+        "field_key": "weight",
+        "row_index": 7,
+        "column_index": 5,
+        "bbox_xyxy": [
+          704,
+          666,
+          806,
+          752
+        ],
+        "field_id": "table__weight__r7__c5",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          700,
+          666,
+          805,
+          744
+        ]
+      },
+      {
+        "printed_label_bn": "উচ্চতা (সে: মি:)",
+        "printed_label_en": "Height (cm)",
+        "section": "table",
+        "field_key": "height",
+        "row_index": 7,
+        "column_index": 6,
+        "bbox_xyxy": [
+          807,
+          666,
+          908,
+          752
+        ],
+        "field_id": "table__height__r7__c6",
+        "value_type": "numeric",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          805,
+          666,
+          907,
+          744
+        ]
+      },
+      {
+        "printed_label_bn": "চক্ষু পরীক্ষা",
+        "printed_label_en": "Eye examination",
+        "section": "table",
+        "field_key": "eye_exam",
+        "row_index": 7,
+        "column_index": 7,
+        "bbox_xyxy": [
+          908,
+          666,
+          1009,
+          752
+        ],
+        "field_id": "table__eye_exam__r7__c7",
+        "value_type": "mark",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          907,
+          666,
+          1008,
+          744
+        ]
+      },
+      {
+        "printed_label_bn": "রেফারের স্থান",
+        "printed_label_en": "Referral location",
+        "section": "table",
+        "field_key": "referral",
+        "row_index": 7,
+        "column_index": 8,
+        "bbox_xyxy": [
+          1010,
+          666,
+          1484,
+          752
+        ],
+        "field_id": "table__referral__r7__c8",
+        "value_type": "text",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          1008,
+          666,
+          1482,
+          744
+        ]
+      },
+      {
+        "printed_label_bn": "মন্তব্য",
+        "printed_label_en": "Remarks",
+        "section": "table",
+        "field_key": "comment",
+        "row_index": 7,
+        "column_index": 9,
+        "bbox_xyxy": [
+          1484,
+          664,
+          1648,
+          751
+        ],
+        "field_id": "table__comment__r7__c9",
+        "value_type": "text",
+        "n_template_pages": 48,
+        "bbox_xyxy_unsnapped": [
+          1482,
+          666,
+          1647,
+          744
+        ]
+      }
+    ],
+    "geometry_snap": "table boxes snapped to printed lines of assets/registration/NCD.png by scripts/snap_layout_to_template.py"
+  }
+}

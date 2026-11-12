@@ -1,0 +1,28 @@
+{
+  "repository": "Medtronic-LABS/uhis_lf_mobile",
+  "commit": "26380a20cdbaa2224ba6f1619ae92f62c8417139",
+  "retrieved_on": "2026-10-29",
+  "sources": [
+    {
+      "path": "assets/forms/layout_manifests.json",
+      "blob_sha": "56e845b1219e136767c5ab4133a1871a080f727b"
+    },
+    {
+      "path": "assets/forms/field_library.json",
+      "blob_sha": "473277e173098762bfef8b4d884d4475f9e42534"
+    },
+    {
+      "path": "lib/features/visit/README.md",
+      "blob_sha": "77599feb265007ef819d98875900dfb2964a0863"
+    },
+    {
+      "path": "lib/features/visit/forms/unified_section_rules.dart",
+      "blob_sha": "d32e3c22bd61fb48847f71298747b8d6cef32c8f"
+    },
+    {
+      "path": "assets/forms/epi_schedule.json",
+      "blob_sha": "43e19dedba679fffad7f0ab87656e82ec22a508c"
+    }
+  ],
+  "scope": "Offline review projection of app form sections; not a submission payload or a replica of patient-dependent visibility rules."
+}

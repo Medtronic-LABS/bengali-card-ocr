@@ -1,0 +1,276 @@
+{
+  "EPI": {
+    "title_en": "EPI — Immunization Record",
+    "title_bn": "ইপিআই — টিকাদান রেকর্ড",
+    "rows": [
+      {
+        "field_key": "bcg",
+        "label_bn": "বিসিজি",
+        "label_en": "BCG",
+        "cols": [
+          1
+        ]
+      },
+      {
+        "field_key": "penta",
+        "label_bn": "পেন্টা",
+        "label_en": "Penta",
+        "cols": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "field_key": "opv",
+        "label_bn": "ওপিভি",
+        "label_en": "OPV",
+        "cols": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "field_key": "pcv",
+        "label_bn": "পিসিভি",
+        "label_en": "PCV",
+        "cols": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "field_key": "ipv",
+        "label_bn": "আইপিভি",
+        "label_en": "IPV",
+        "cols": [
+          1,
+          3
+        ]
+      },
+      {
+        "field_key": "mr",
+        "label_bn": "এমআর",
+        "label_en": "MR",
+        "cols": [
+          4,
+          5
+        ]
+      }
+    ],
+    "column_labels_en": {
+      "1": "Dose 1",
+      "2": "Dose 2",
+      "3": "Dose 3",
+      "4": "Dose 4",
+      "5": "Dose 5"
+    },
+    "column_labels_bn": {
+      "1": "১ম",
+      "2": "২য়",
+      "3": "৩য়",
+      "4": "৪র্থ",
+      "5": "৫ম"
+    }
+  },
+  "ANC": {
+    "title_en": "ANC — Maternal & Newborn Health Card",
+    "title_bn": "এএনসি — মা ও নবজাতক স্বাস্থ্য তথ্যকার্ড",
+    "visit_columns": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "visit_labels_en": {
+      "1": "ANC 1",
+      "2": "ANC 2",
+      "3": "ANC 3",
+      "4": "ANC 4",
+      "5": "ANC 5",
+      "6": "ANC 6",
+      "7": "PNC 1",
+      "8": "PNC 2",
+      "9": "PNC 3"
+    },
+    "visit_labels_bn": {
+      "1": "এএনসি 1",
+      "2": "এএনসি 2",
+      "3": "এএনসি 3",
+      "4": "এএনসি 4",
+      "5": "এএনসি 5",
+      "6": "এএনসি 6",
+      "7": "পিএনসি 1",
+      "8": "পিএনসি 2",
+      "9": "পিএনসি 3"
+    },
+    "maternal_rows": [
+      [
+        "visit_date",
+        "ভিজিটের তারিখ",
+        "Visit date"
+      ],
+      [
+        "gestation_month",
+        "গর্ভের মাস",
+        "Gestation month"
+      ],
+      [
+        "weight",
+        "ওজন (কেজি)",
+        "Weight (kg)"
+      ],
+      [
+        "height",
+        "উচ্চতা (সে.মি.)",
+        "Height (cm)"
+      ],
+      [
+        "temperature",
+        "তাপমাত্রা",
+        "Temperature"
+      ],
+      [
+        "pulse",
+        "নাড়ি",
+        "Pulse"
+      ],
+      [
+        "blood_pressure",
+        "রক্তচাপ",
+        "Blood pressure"
+      ],
+      [
+        "fundal_height",
+        "জরায়ুর উচ্চতা",
+        "Fundal height"
+      ],
+      [
+        "fetal_movement",
+        "বাচ্চার নড়াচড়া",
+        "Fetal movement"
+      ],
+      [
+        "edema",
+        "এডিমা",
+        "Edema"
+      ],
+      [
+        "glucose",
+        "গ্লুকোজ",
+        "Glucose"
+      ],
+      [
+        "hemoglobin",
+        "হিমোগ্লোবিন",
+        "Hemoglobin"
+      ],
+      [
+        "urine_albumin",
+        "অ্যালবুমিন",
+        "Urine albumin"
+      ],
+      [
+        "urine_bilirubin",
+        "বিলিরুবিন",
+        "Urine bilirubin"
+      ],
+      [
+        "usg",
+        "ইউএসজি",
+        "USG"
+      ],
+      [
+        "tt",
+        "টিটি",
+        "TT"
+      ],
+      [
+        "iron",
+        "আয়রন",
+        "Iron"
+      ],
+      [
+        "calcium",
+        "ক্যালসিয়াম",
+        "Calcium"
+      ]
+    ],
+    "header_fields": [
+      "name",
+      "age",
+      "household_number",
+      "healthworker_contact",
+      "last_menstrual_period",
+      "expected_delivery",
+      "previous_pregnancy"
+    ]
+  },
+  "NCD": {
+    "title_en": "NCD — Diabetes / Blood Pressure Follow-up",
+    "title_bn": "এনসিডি — ডায়াবেটিস / রক্তচাপ ফলো-আপ",
+    "visit_rows": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "columns": [
+      [
+        "date",
+        "তারিখ",
+        "Date"
+      ],
+      [
+        "blood_pressure",
+        "রক্তচাপ",
+        "Blood pressure"
+      ],
+      [
+        "glucose_fasting",
+        "ডায়াবেটিস খালি পেটে",
+        "Glucose fasting"
+      ],
+      [
+        "glucose_random",
+        "ডায়াবেটিস র‍্যান্ডম",
+        "Glucose random"
+      ],
+      [
+        "weight",
+        "ওজন",
+        "Weight"
+      ],
+      [
+        "height",
+        "উচ্চতা",
+        "Height"
+      ],
+      [
+        "eye_exam",
+        "চক্ষু পরীক্ষা",
+        "Eye exam"
+      ],
+      [
+        "referral",
+        "রেফারের স্থান",
+        "Referral place"
+      ],
+      [
+        "comment",
+        "মন্তব্য",
+        "Remarks"
+      ]
+    ]
+  }
+}

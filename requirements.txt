@@ -1,0 +1,8 @@
+# App and pipeline. Tested on Python 3.14 (macOS, Apple Silicon); exact versions known to work.
+streamlit==1.66.1
+pillow==13.0.0
+numpy==2.5.4
+opencv-python-headless==5.0.0.93
+onnxruntime==1.31.1
+rapidfuzz==3.14.6
+pypdfium2==5.14.0

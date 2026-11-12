@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<style>
+  :root { --bg:#f7f7f5; --card:#fff; --ink:#1d1d1b; --muted:#6b6b66; --line:#d9d9d4; --accent:#1f6feb;
+          --ok:#1a7f37; --okbg:#e7f5ea; --blank:#6e40c9; --blankbg:#efe9fb; --bad:#b35900; --badbg:#fdf0e3; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#161615; --card:#21211f; --ink:#ececea; --muted:#a3a39e; --line:#3a3a37; --accent:#58a6ff;
+            --ok:#56d364; --okbg:#1b2e20; --blank:#b392f0; --blankbg:#2a2238; --bad:#f0a050; --badbg:#33261a; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.45 system-ui, "Noto Sans Bengali", sans-serif; }
+  header { position:sticky; top:0; z-index:2; background:var(--card); border-bottom:1px solid var(--line); padding:10px 16px; }
+  .bar { display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+  h1 { font-size:18px; margin:0 12px 0 0; }
+  input[type=text] { font:inherit; padding:6px 8px; border:1px solid var(--line); border-radius:6px; background:var(--bg); color:var(--ink); }
+  button { font:inherit; padding:6px 12px; border:1px solid var(--line); border-radius:6px; background:var(--card); color:var(--ink); cursor:pointer; }
+  button.primary { background:var(--accent); border-color:var(--accent); color:#fff; }
+  .progress { flex:1 1 200px; min-width:160px; height:10px; background:var(--line); border-radius:5px; overflow:hidden; }
+  .progress > div { height:100%; background:var(--ok); width:0; }
+  #count { color:var(--muted); font-variant-numeric:tabular-nums; }
+  main { max-width:900px; margin:0 auto; padding:16px; }
+  details.help { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:10px 14px; margin-bottom:16px; }
+  details.help li { margin:4px 0; }
+  .en { color:var(--muted); font-size:14px; }
+  article { background:var(--card); border:1px solid var(--line); border-left:5px solid var(--line); border-radius:8px; padding:12px 14px; margin:0 0 14px; }
+  article.readable { border-left-color:var(--ok); }
+  article.blank { border-left-color:var(--blank); }
+  article.illegible { border-left-color:var(--bad); }
+  .meta { display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap; font-size:14px; color:var(--muted); }
+  .label { font-weight:600; color:var(--ink); font-size:16px; }
+  img { display:block; max-width:100%; margin:8px 0; border:1px solid var(--line); border-radius:4px; background:#fff; }
+  textarea { width:100%; max-width:420px; height:62px; font:22px/1.3 system-ui, "Noto Sans Bengali", sans-serif; padding:6px 8px;
+             border:1px solid var(--line); border-radius:6px; background:var(--bg); color:var(--ink); }
+  .keys { display:flex; flex-wrap:wrap; gap:4px; margin:6px 0; }
+  .keys button { min-width:38px; padding:4px 8px; font-size:18px; }
+  .actions { display:flex; flex-wrap:wrap; gap:6px; margin-top:6px; }
+  .actions .save { border-color:var(--ok); color:var(--ok); }
+  .actions .blankb { border-color:var(--blank); color:var(--blank); }
+  .actions .ill { border-color:var(--bad); color:var(--bad); }
+  .chip { font-size:13px; padding:2px 8px; border-radius:10px; }
+  .chip.readable { background:var(--okbg); color:var(--ok); }
+  .chip.blank { background:var(--blankbg); color:var(--blank); }
+  .chip.illegible { background:var(--badbg); color:var(--bad); }
+  .hide-done article.readable, .hide-done article.blank, .hide-done article.illegible { display:none; }
+  @media (max-width:600px) { textarea { max-width:none; } h1 { font-size:16px; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <h1>কার্ড লেবেলিং <span class="en">· Card labeling</span></h1>
+    <input type="text" id="reviewer" placeholder="আপনার নাম · Your name" aria-label="Reviewer name">
+    <div class="progress" aria-hidden="true"><div id="fill"></div></div>
+    <span id="count"></span>
+  </div>
+  <div class="bar" style="margin-top:8px">
+    <button class="primary" id="download">ডাউনলোড · Download labels</button>
+    <button id="importBtn">ফাইল খুলুন · Resume from file</button>
+    <input type="file" id="importFile" accept="application/json" hidden>
+    <label><input type="checkbox" id="hideDone"> শুধু বাকিগুলো · Show only unfinished</label>
+  </div>
+</header>
+<main>
+  <details class="help" open>
+    <summary><b>নির্দেশনা · Instructions</b> (about 1 hour; progress saves automatically in this browser)</summary>
+    <ol>
+      <li>লাল বাক্সের ভিতরে যা লেখা আছে ঠিক তাই লিখুন। <span class="en">Type exactly what is written inside the red box.</span></li>
+      <li>বাংলা সংখ্যা বাংলায়, ইংরেজি সংখ্যা ইংরেজিতে লিখুন। <span class="en">Keep the numeral script as written (০১২ vs 012). Use the keypad if you have no Bengali keyboard.</span></li>
+      <li>দুই লাইনের তারিখ: উপরের লাইন, তারপর ↵, তারপর নিচের লাইন (যেমন ১.৩ ↵ ২৬)। <span class="en">Two-line dates: top line, new line (↵), bottom line, e.g. ১.৩ ↵ ২৬. Keep dots and slashes as written.</span></li>
+      <li>টিক বা ক্রস হলে ✓ বা ✗ চাপুন। <span class="en">Ticks/crosses: use ✓ or ✗.</span></li>
+      <li>ফাঁকা হলে "খালি" চাপুন। পড়া না গেলে "পড়া যায় না" চাপুন — অনুমান করবেন না। <span class="en">Empty box: press Blank. If you cannot read it, press Can't read. Never guess.</span></li>
+      <li>শেষ হলে (বা মাঝপথে) "ডাউনলোড" চাপুন এবং ফাইলটি লক্ষ্যকে পাঠান। <span class="en">When done (or to stop for now), press Download and send the file to Lakshya.</span></li>
+    </ol>
+    <p class="en">Shortcut: Ctrl/⌘ + Enter saves the box you are typing in and moves to the next one. Nothing on this page is sent over the internet. It shows patient handwriting: keep the file private.</p>
+  </details>
+  <div id="items"></div>
+</main>
+<script>
+const DATA = /*QUEUE_DATA*/null;
+const queue = DATA.queue, images = DATA.images, entries = queue.entries;
+const KEY = "labels:" + queue.queue_id;
+const KEYS = ["০","১","২","৩","৪","৫","৬","৭","৮","৯",".","/","-","✓","✗","↵"];
+let state = {};
+try { state = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { state = {}; }
+try { document.getElementById("reviewer").value = localStorage.getItem(KEY + ":reviewer") || ""; } catch (e) {}
+
+function persist() {
+  try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {}
+}
+const idOf = e => e.page_id + "|" + e.field_id;
+const LABELS = { readable: "সংরক্ষিত · Saved", blank: "খালি · Blank", illegible: "পড়া যায় না · Can't read" };
+
+function render() {
+  const root = document.getElementById("items");
+  const frag = document.createDocumentFragment();
+  entries.forEach((e, i) => {
+    const a = document.createElement("article");
+    a.id = "item" + i;
+    const label = esc(e.printed_label_bn || "") +(e.printed_label_en ? ` <span class="en">· ${esc(e.printed_label_en)}</span>` : "");
+    a.innerHTML = `
+      <div class="meta"><span class="label">${i + 1}. ${label || esc(e.field_key)}</span>
+        <span>${esc(e.card_type)} · ${esc(e.page_id)} · row ${e.row_index} / col ${e.column_index} <span class="chip" id="chip${i}"></span></span></div>
+      <img src="${images[i]}" alt="Handwritten field ${i + 1}" loading="lazy">
+      <textarea id="v${i}" lang="bn" placeholder="যা লেখা আছে · what is written"></textarea>
+      <div class="keys">${KEYS.map(k => `<button type="button" data-k="${k}">${k}</button>`).join("")}</div>
+      <div class="actions">
+        <button type="button" class="save">✓ সংরক্ষণ · Save</button>
+        <button type="button" class="blankb">খালি · Blank</button>
+        <button type="button" class="ill">পড়া যায় না · Can't read</button>
+        <button type="button" class="undo">মুছুন · Clear</button>
+      </div>`;
+    const ta = a.querySelector("textarea");
+    const s = state[idOf(e)];
+    if (s) ta.value = s.value || "";
+    a.querySelectorAll(".keys button").forEach(b => b.addEventListener("click", () => insert(ta, b.dataset.k === "↵" ? "\n" : b.dataset.k)));
+    a.querySelector(".save").addEventListener("click", () => mark(i, "readable"));
+    a.querySelector(".blankb").addEventListener("click", () => mark(i, "blank"));
+    a.querySelector(".ill").addEventListener("click", () => mark(i, "illegible"));
+    a.querySelector(".undo").addEventListener("click", () => { delete state[idOf(e)]; ta.value = ""; persist(); paint(i); count(); });
+    ta.addEventListener("keydown", ev => { if (ev.key === "Enter" && (ev.metaKey || ev.ctrlKey)) { ev.preventDefault(); mark(i, "readable"); } });
+    frag.appendChild(a);
+  });
+  root.appendChild(frag);
+  entries.forEach((_, i) => paint(i));
+  count();
+}
+
+function esc(t) { return String(t ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+
+function insert(ta, text) {
+  const start = ta.selectionStart ?? ta.value.length, end = ta.selectionEnd ?? ta.value.length;
+  ta.value = ta.value.slice(0, start) + text + ta.value.slice(end);
+  ta.focus();
+  ta.selectionStart = ta.selectionEnd = start + text.length;
+}
+
+function mark(i, status) {
+  const e = entries[i], ta = document.getElementById("v" + i);
+  const value = status === "readable" ? ta.value.replace(/\r/g, "").trim() : "";
+  if (status === "readable" && !value) { alert("লেখা খালি — কিছু লিখুন বা 'খালি' চাপুন।\nType the value, or press Blank."); return; }
+  if (status !== "readable") ta.value = "";
+  state[idOf(e)] = { status, value, at: new Date().toISOString() };
+  persist(); paint(i); count();
+  const next = entries.findIndex((x, j) => j > i && !state[idOf(x)]);
+  if (next >= 0) { const t = document.getElementById("v" + next); t.focus({ preventScroll: true }); document.getElementById("item" + next).scrollIntoView({ block: "center" }); }
+}
+
+function paint(i) {
+  const s = state[idOf(entries[i])], a = document.getElementById("item" + i), chip = document.getElementById("chip" + i);
+  a.className = s ? s.status : "";
+  chip.className = "chip" + (s ? " " + s.status : "");
+  chip.textContent = s ? LABELS[s.status] : "";
+}
+
+function count() {
+  const done = entries.filter(e => state[idOf(e)]).length;
+  document.getElementById("count").textContent = `${done} / ${entries.length}`;
+  document.getElementById("fill").style.width = (100 * done / entries.length) + "%";
+}
+
+document.getElementById("reviewer").addEventListener("input", ev => { try { localStorage.setItem(KEY + ":reviewer", ev.target.value); } catch (e) {} });
+document.getElementById("hideDone").addEventListener("change", ev => document.body.classList.toggle("hide-done", ev.target.checked));
+
+document.getElementById("download").addEventListener("click", () => {
+  const reviewer = document.getElementById("reviewer").value.trim();
+  if (!reviewer) { alert("উপরে আপনার নাম লিখুন।\nEnter your name at the top first."); return; }
+  const verified = [], illegible = [];
+  entries.forEach(e => {
+    const s = state[idOf(e)];
+    if (!s) return;
+    const row = { ...e, value_bn_raw: s.value, status: s.status, reviewer, verified_at_utc: s.at };
+    if (s.status === "illegible") illegible.push({ ...row, value_bn_raw: null, verification_status: "illegible_excluded" });
+    else verified.push({ ...row, verification_status: "manually_verified" });
+  });
+  const out = { schema_version: "human-gold-1", annotation_mode: queue.annotation_mode, queue_id: queue.queue_id,
+                exported_at_utc: new Date().toISOString(), reviewer, total_queued: entries.length, entries: verified, illegible };
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(out, null, 1)], { type: "application/json" }));
+  a.download = `human-verified-transcriptions-${queue.queue_id}.json`;
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+});
+
+document.getElementById("importBtn").addEventListener("click", () => document.getElementById("importFile").click());
+document.getElementById("importFile").addEventListener("change", async ev => {
+  const file = ev.target.files[0];
+  if (!file) return;
+  try {
+    const saved = JSON.parse(await file.text());
+    if (saved.queue_id && saved.queue_id !== queue.queue_id) { alert("This file belongs to a different labeling page."); return; }
+    for (const r of [...(saved.entries || []), ...(saved.illegible || [])]) {
+      state[r.page_id + "|" + r.field_id] = { status: r.status, value: r.value_bn_raw || "", at: r.verified_at_utc };
+    }
+    if (saved.reviewer) document.getElementById("reviewer").value = saved.reviewer;
+    persist();
+    entries.forEach((e, i) => { document.getElementById("v" + i).value = (state[idOf(e)] || {}).value || ""; paint(i); });
+    count();
+  } catch (e) { alert("Could not read that file."); }
+});
+
+render();
+</script>
+</body>
+</html>

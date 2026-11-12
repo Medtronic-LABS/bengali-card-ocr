@@ -1,0 +1,4 @@
+# Optional: retraining the recognizer and the mark model (training/), on top of requirements.txt.
+torch==2.14.1
+transformers==5.21.0
+safetensors==0.8.0

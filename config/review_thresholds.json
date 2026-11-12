@@ -1,0 +1,26 @@
+{
+ "engine": "ppocrv6-cards",
+ "chosen_on": "validation pages (AI-agreed labels), with the train-only model",
+ "target": 0.95,
+ "thresholds": {
+  "blood_pressure": 0.55,
+  "date": 0.55,
+  "numeric": 0.55
+ },
+ "blank_routine": true,
+ "val_blank_precision": 1.0,
+ "val_detail": {
+  "blood_pressure": {
+   "val_routine": 20,
+   "val_routine_agree": 20
+  },
+  "date": {
+   "val_routine": 76,
+   "val_routine_agree": 73
+  },
+  "numeric": {
+   "val_routine": 227,
+   "val_routine_agree": 222
+  }
+ }
+}

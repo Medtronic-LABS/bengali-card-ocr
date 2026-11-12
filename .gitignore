@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Patient data: card scans, labels, crops, exports. Never commit.
+data/
+assets/registration/
+*.executed.ipynb
+
+# Model weights are shared privately, never committed (trained on patient cards).
+models/
+*.pt
+*.onnx
+*.npz
+*.zip
+
+# Local secrets
+.streamlit/secrets.toml

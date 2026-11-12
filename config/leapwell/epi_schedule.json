@@ -1,0 +1,178 @@
+[
+  {
+    "_comment": "Product immunization workflow table — Birth: BCG; 6/10/14 weeks: Penta + PCV + OPV; 14 weeks + IPV1; 9 months: MR1 + IPV2; 15 months: MR2 + TCV. No Vitamin A / OPV0 / HepB / Rota. `display` stays the English wire vaccineName; UI labels come from Epi.vaccine.* translations.",
+    "milestone": "At Birth",
+    "milestoneKey": "atBirth",
+    "offsetType": "day",
+    "offsetValue": 0,
+    "doseClosureWeeks": 4,
+    "vaccines": [
+      {
+        "code": "BCG",
+        "display": "BCG",
+        "category": "birth",
+        "description": "Bacillus Calmette–Guérin",
+        "route": "Disease Name: Children's Tuberculosis",
+        "cardGroup": 1
+      }
+    ]
+  },
+  {
+    "milestone": "6 Weeks",
+    "milestoneKey": "week6",
+    "offsetType": "week",
+    "offsetValue": 6,
+    "doseClosureWeeks": 4,
+    "vaccines": [
+      {
+        "code": "PENTA1",
+        "display": "Pentavalent-1",
+        "category": "penta",
+        "description": "Diphtheria, Pertussis, and Tetanus, Hepatitis B, Hib",
+        "route": "Disease Name: Diphtheria, whooping cough, tetanus, hepatitis B and diseases caused by Haemophilus influenzae type B",
+        "cardGroup": 1
+      },
+      {
+        "code": "PCV1",
+        "display": "PCV-1",
+        "category": "pcv",
+        "description": "Pneumococcal Conjugate Vaccine (PCV)",
+        "route": "Disease Name: Pneumococcal pneumonia",
+        "cardGroup": 2
+      },
+      {
+        "code": "OPV1",
+        "display": "OPV-1",
+        "category": "opv",
+        "description": "Oral Polio Vaccine (OPV)",
+        "route": "Disease Name: Poliomyelitis (Polio)",
+        "cardGroup": 2
+      }
+    ]
+  },
+  {
+    "milestone": "10 Weeks",
+    "milestoneKey": "week10",
+    "offsetType": "week",
+    "offsetValue": 10,
+    "doseClosureWeeks": 4,
+    "vaccines": [
+      {
+        "code": "PENTA2",
+        "display": "Pentavalent-2",
+        "category": "penta",
+        "description": "Diphtheria, Pertussis, and Tetanus, Hepatitis B, Hib",
+        "route": "Disease Name: Diphtheria, whooping cough, tetanus, hepatitis B and diseases caused by Haemophilus influenzae type B",
+        "cardGroup": 1
+      },
+      {
+        "code": "PCV2",
+        "display": "PCV-2",
+        "category": "pcv",
+        "description": "Pneumococcal Conjugate Vaccine (PCV)",
+        "route": "Disease Name: Pneumococcal pneumonia",
+        "cardGroup": 2
+      },
+      {
+        "code": "OPV2",
+        "display": "OPV-2",
+        "category": "opv",
+        "description": "Oral Polio Vaccine (OPV)",
+        "route": "Disease Name: Poliomyelitis (Polio)",
+        "cardGroup": 2
+      }
+    ]
+  },
+  {
+    "milestone": "14 Weeks",
+    "milestoneKey": "week14",
+    "offsetType": "week",
+    "offsetValue": 14,
+    "doseClosureWeeks": 4,
+    "vaccines": [
+      {
+        "code": "PENTA3",
+        "display": "Pentavalent-3",
+        "category": "penta",
+        "description": "Diphtheria, Pertussis, and Tetanus, Hepatitis B, Hib",
+        "route": "Disease Name: Diphtheria, whooping cough, tetanus, hepatitis B and diseases caused by Haemophilus influenzae type B",
+        "cardGroup": 1
+      },
+      {
+        "code": "PCV3",
+        "display": "PCV-3",
+        "category": "pcv",
+        "description": "Pneumococcal Conjugate Vaccine (PCV)",
+        "route": "Disease Name: Pneumococcal pneumonia",
+        "cardGroup": 2
+      },
+      {
+        "code": "OPV3",
+        "display": "OPV-3",
+        "category": "opv",
+        "description": "Oral Polio Vaccine (OPV)",
+        "route": "Disease Name: Poliomyelitis (Polio)",
+        "cardGroup": 2
+      },
+      {
+        "code": "FIPV1",
+        "display": "fIPV — Dose 1",
+        "category": "ipv",
+        "description": "Inactivated Poliovirus Vaccine (IPV)",
+        "route": "Disease Name: Poliomyelitis (Polio)",
+        "cardGroup": 3
+      }
+    ]
+  },
+  {
+    "milestone": "9 Months",
+    "milestoneKey": "month9",
+    "offsetType": "month",
+    "offsetValue": 9,
+    "doseClosureWeeks": 4,
+    "vaccines": [
+      {
+        "code": "MR1",
+        "display": "MR Vaccine — Dose 1",
+        "category": "mr",
+        "description": "Measles-Rubella (MR) Vaccination",
+        "route": "Disease Name: Measles and rubella",
+        "cardGroup": 1
+      },
+      {
+        "code": "FIPV2",
+        "display": "fIPV — Dose 2",
+        "category": "ipv",
+        "description": "Inactivated Poliovirus Vaccine (IPV)",
+        "route": "Disease Name: Poliomyelitis (Polio)",
+        "cardGroup": 2
+      }
+    ]
+  },
+  {
+    "milestone": "15 Months",
+    "milestoneKey": "month15",
+    "offsetType": "month",
+    "offsetValue": 15,
+    "doseClosureWeeks": 4,
+    "vaccines": [
+      {
+        "code": "MR2",
+        "display": "MR Vaccine — Dose 2",
+        "category": "mr",
+        "description": "Measles-Rubella (MR) Vaccination",
+        "route": "Disease Name: Measles and rubella",
+        "cardGroup": 1
+      },
+      {
+        "code": "TCV",
+        "display": "TCV",
+        "category": "tcv",
+        "description": "Typhoid Conjugate Vaccine (TCV)",
+        "route": "Disease Name: Typhoid fever",
+        "cardGroup": 2
+      }
+    ]
+  }
+]
+
