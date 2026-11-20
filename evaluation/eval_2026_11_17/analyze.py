@@ -1,4 +1,4 @@
-"""Eval matrix for the EPI/ANC/NCD zip (Aditya, 2026-11-17).
+"""Eval matrix for the EPI/ANC/NCD re-scanned card set (2026-11-17).
 
 The zip's 142 cards are re-exported scans of our existing 142 pages (p-N = page-(N+1)),
 rotated to portrait at higher resolution. Two runs are compared:
