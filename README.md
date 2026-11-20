@@ -4,7 +4,7 @@
 
 Reads handwritten values from paper health cards and turns them into structured fields that a health worker reviews before anything is saved. It supports three card types: **EPI** (vaccination), **ANC** (antenatal) and **NCD** (chronic disease). Everything runs locally on the CPU, with no network calls and no cloud APIs.
 
-> **Status:** pilot-ready as a review tool. A person confirms every card. Fields that have proven accurate on cards the model never saw are pre-marked **routine** and can be accepted in one click. Everything else is flagged **check**, with a reason. The full method, experiments and results are in [DOCUMENTATION.md](DOCUMENTATION.md).
+> **Status:** working offline OCR model: 0.4 s per card, 97% on unseen cards (AI labels), 88% on hand labels. As required, every value is confirmed by a person before it reaches Leap Well. Full method, experiments and results: [DOCUMENTATION.md](DOCUMENTATION.md).
 
 ## Table of Contents
 
