@@ -1,0 +1,625 @@
+{
+ "headline": [
+  {
+   "label": "ALL",
+   "cards": 142,
+   "filled_fields": 3811,
+   "same_value": 0.9755969561794805,
+   "same_value_ci": [
+    0.9691040164778579,
+    0.9810693271936557
+   ],
+   "exact": 0.9685122015219103,
+   "routine_share_filled": 0.6977171346103385,
+   "routine_accuracy": 0.9913501316284318,
+   "silent_errors": 30,
+   "silent_rate_scored": 0.002627660506262591,
+   "invented_in_blank": 92,
+   "blank_cells": 7606,
+   "missed_as_blank": 1
+  },
+  {
+   "label": "ANC",
+   "cards": 50,
+   "filled_fields": 2754,
+   "same_value": 0.9803921568627451,
+   "same_value_ci": [
+    0.9743112434847356,
+    0.9858670741023682
+   ],
+   "exact": 0.9731299927378358,
+   "routine_share_filled": 0.8718228031953522,
+   "routine_accuracy": 0.9908371511870054,
+   "silent_errors": 29,
+   "silent_rate_scored": 0.0036802030456852793,
+   "invented_in_blank": 61,
+   "blank_cells": 5126,
+   "missed_as_blank": 1
+  },
+  {
+   "label": "NCD",
+   "cards": 48,
+   "filled_fields": 693,
+   "same_value": 0.9682539682539683,
+   "same_value_ci": [
+    0.9491525423728814,
+    0.9840116279069767
+   ],
+   "exact": 0.9581529581529582,
+   "routine_share_filled": 0.3722943722943723,
+   "routine_accuracy": 0.9961240310077519,
+   "silent_errors": 1,
+   "silent_rate_scored": 0.0003714710252600297,
+   "invented_in_blank": 5,
+   "blank_cells": 1999,
+   "missed_as_blank": 0
+  },
+  {
+   "label": "EPI",
+   "cards": 44,
+   "filled_fields": 364,
+   "same_value": 0.9532967032967034,
+   "same_value_ci": [
+    0.9235127478753541,
+    0.9768637532133676
+   ],
+   "exact": 0.9532967032967034,
+   "routine_share_filled": 0.0,
+   "routine_accuracy": null,
+   "silent_errors": 0,
+   "silent_rate_scored": 0.0,
+   "invented_in_blank": 26,
+   "blank_cells": 481,
+   "missed_as_blank": 0
+  }
+ ],
+ "by_type": [
+  {
+   "label": "blood_pressure",
+   "cards": 98,
+   "filled_fields": 160,
+   "same_value": 0.96875,
+   "same_value_ci": [
+    0.9393939393939394,
+    0.9932885906040269
+   ],
+   "exact": 0.96875,
+   "routine_share_filled": 0.0,
+   "routine_accuracy": null,
+   "silent_errors": 0,
+   "silent_rate_scored": 0.0,
+   "invented_in_blank": 4,
+   "blank_cells": 456,
+   "missed_as_blank": 0
+  },
+  {
+   "label": "date",
+   "cards": 142,
+   "filled_fields": 520,
+   "same_value": 0.9461538461538461,
+   "same_value_ci": [
+    0.9211908931698775,
+    0.9666048237476809
+   ],
+   "exact": 0.9461538461538461,
+   "routine_share_filled": 0.0,
+   "routine_accuracy": null,
+   "silent_errors": 0,
+   "silent_rate_scored": 0.0,
+   "invented_in_blank": 4,
+   "blank_cells": 497,
+   "missed_as_blank": 0
+  },
+  {
+   "label": "mark",
+   "cards": 98,
+   "filled_fields": 1430,
+   "same_value": 0.9797202797202798,
+   "same_value_ci": [
+    0.9692570452604612,
+    0.9884559884559885
+   ],
+   "exact": 0.9797202797202798,
+   "routine_share_filled": 0.9034965034965035,
+   "routine_accuracy": 0.9953560371517027,
+   "silent_errors": 8,
+   "silent_rate_scored": 0.0017929179740026895,
+   "invented_in_blank": 32,
+   "blank_cells": 3032,
+   "missed_as_blank": 0
+  },
+  {
+   "label": "numeric",
+   "cards": 98,
+   "filled_fields": 1582,
+   "same_value": 0.9829329962073325,
+   "same_value_ci": [
+    0.9766990291262136,
+    0.9888033589923023
+   ],
+   "exact": 0.9677623261694058,
+   "routine_share_filled": 0.8640960809102401,
+   "routine_accuracy": 0.9875640087783467,
+   "silent_errors": 22,
+   "silent_rate_scored": 0.0051813471502590676,
+   "invented_in_blank": 20,
+   "blank_cells": 2664,
+   "missed_as_blank": 1
+  },
+  {
+   "label": "text",
+   "cards": 142,
+   "filled_fields": 119,
+   "same_value": 0.9663865546218487,
+   "same_value_ci": [
+    0.9191176470588235,
+    1.0
+   ],
+   "exact": 0.9411764705882353,
+   "routine_share_filled": 0.0,
+   "routine_accuracy": null,
+   "silent_errors": 0,
+   "silent_rate_scored": 0.0,
+   "invented_in_blank": 32,
+   "blank_cells": 957,
+   "missed_as_blank": 0
+  }
+ ],
+ "old_vs_new": [
+  {
+   "card": "ALL",
+   "old": {
+    "label": "ALL",
+    "cards": 142,
+    "filled_fields": 3811,
+    "same_value": 0.9787457360272894,
+    "same_value_ci": [
+     0.9718656104889375,
+     0.9843429158110883
+    ],
+    "exact": 0.9713985830490685,
+    "routine_share_filled": 0.9102597743374442,
+    "routine_accuracy": 0.9899106370712021,
+    "silent_errors": 51,
+    "silent_rate_scored": 0.004467022860646404,
+    "invented_in_blank": 91,
+    "blank_cells": 7606,
+    "missed_as_blank": 1
+   },
+   "new": {
+    "label": "ALL",
+    "cards": 142,
+    "filled_fields": 3811,
+    "same_value": 0.9755969561794805,
+    "same_value_ci": [
+     0.9691040164778579,
+     0.9810693271936557
+    ],
+    "exact": 0.9685122015219103,
+    "routine_share_filled": 0.6977171346103385,
+    "routine_accuracy": 0.9913501316284318,
+    "silent_errors": 30,
+    "silent_rate_scored": 0.002627660506262591,
+    "invented_in_blank": 92,
+    "blank_cells": 7606,
+    "missed_as_blank": 1
+   }
+  },
+  {
+   "card": "ANC",
+   "old": {
+    "label": "ANC",
+    "cards": 50,
+    "filled_fields": 2754,
+    "same_value": 0.985838779956427,
+    "same_value_ci": [
+     0.9807412790697675,
+     0.9908825674690007
+    ],
+    "exact": 0.9782135076252724,
+    "routine_share_filled": 0.9920116194625999,
+    "routine_accuracy": 0.9930453879941434,
+    "silent_errors": 35,
+    "silent_rate_scored": 0.004441624365482234,
+    "invented_in_blank": 63,
+    "blank_cells": 5126,
+    "missed_as_blank": 1
+   },
+   "new": {
+    "label": "ANC",
+    "cards": 50,
+    "filled_fields": 2754,
+    "same_value": 0.9803921568627451,
+    "same_value_ci": [
+     0.9743112434847356,
+     0.9858670741023682
+    ],
+    "exact": 0.9731299927378358,
+    "routine_share_filled": 0.8718228031953522,
+    "routine_accuracy": 0.9908371511870054,
+    "silent_errors": 29,
+    "silent_rate_scored": 0.0036802030456852793,
+    "invented_in_blank": 61,
+    "blank_cells": 5126,
+    "missed_as_blank": 1
+   }
+  },
+  {
+   "card": "NCD",
+   "old": {
+    "label": "NCD",
+    "cards": 48,
+    "filled_fields": 693,
+    "same_value": 0.9696969696969697,
+    "same_value_ci": [
+     0.9506172839506173,
+     0.9858934169278997
+    ],
+    "exact": 0.9595959595959596,
+    "routine_share_filled": 0.6031746031746031,
+    "routine_accuracy": 0.9856459330143541,
+    "silent_errors": 6,
+    "silent_rate_scored": 0.002228826151560178,
+    "invented_in_blank": 2,
+    "blank_cells": 1999,
+    "missed_as_blank": 0
+   },
+   "new": {
+    "label": "NCD",
+    "cards": 48,
+    "filled_fields": 693,
+    "same_value": 0.9682539682539683,
+    "same_value_ci": [
+     0.9491525423728814,
+     0.9840116279069767
+    ],
+    "exact": 0.9581529581529582,
+    "routine_share_filled": 0.3722943722943723,
+    "routine_accuracy": 0.9961240310077519,
+    "silent_errors": 1,
+    "silent_rate_scored": 0.0003714710252600297,
+    "invented_in_blank": 5,
+    "blank_cells": 1999,
+    "missed_as_blank": 0
+   }
+  },
+  {
+   "card": "EPI",
+   "old": {
+    "label": "EPI",
+    "cards": 44,
+    "filled_fields": 364,
+    "same_value": 0.9423076923076923,
+    "same_value_ci": [
+     0.9053708439897699,
+     0.9728997289972899
+    ],
+    "exact": 0.9423076923076923,
+    "routine_share_filled": 0.8763736263736264,
+    "routine_accuracy": 0.9686520376175548,
+    "silent_errors": 10,
+    "silent_rate_scored": 0.011834319526627219,
+    "invented_in_blank": 26,
+    "blank_cells": 481,
+    "missed_as_blank": 0
+   },
+   "new": {
+    "label": "EPI",
+    "cards": 44,
+    "filled_fields": 364,
+    "same_value": 0.9532967032967034,
+    "same_value_ci": [
+     0.9235127478753541,
+     0.9768637532133676
+    ],
+    "exact": 0.9532967032967034,
+    "routine_share_filled": 0.0,
+    "routine_accuracy": null,
+    "silent_errors": 0,
+    "silent_rate_scored": 0.0,
+    "invented_in_blank": 26,
+    "blank_cells": 481,
+    "missed_as_blank": 0
+   }
+  }
+ ],
+ "shipped": [
+  {
+   "label": "train",
+   "cards": 78,
+   "filled_fields": 2126,
+   "same_value": 0.9920037629350894,
+   "same_value_ci": [
+    0.9870898332436794,
+    0.9962993421052632
+   ],
+   "exact": 0.9868297271872061,
+   "routine_share_filled": 0.6989651928504234,
+   "routine_accuracy": 0.9986541049798116,
+   "silent_errors": 7,
+   "silent_rate_scored": 0.0011257639112254745,
+   "invented_in_blank": 87,
+   "blank_cells": 4092,
+   "missed_as_blank": 0
+  },
+  {
+   "label": "val",
+   "cards": 22,
+   "filled_fields": 559,
+   "same_value": 0.9892665474060823,
+   "same_value_ci": [
+    0.9796839729119639,
+    0.9968798751950078
+   ],
+   "exact": 0.9874776386404294,
+   "routine_share_filled": 0.6994633273703041,
+   "routine_accuracy": 1.0,
+   "silent_errors": 2,
+   "silent_rate_scored": 0.0011098779134295228,
+   "invented_in_blank": 17,
+   "blank_cells": 1243,
+   "missed_as_blank": 0
+  },
+  {
+   "label": "test",
+   "cards": 42,
+   "filled_fields": 1126,
+   "same_value": 0.9706927175843695,
+   "same_value_ci": [
+    0.9543568464730291,
+    0.9830747531734838
+   ],
+   "exact": 0.9600355239786856,
+   "routine_share_filled": 0.6909413854351687,
+   "routine_accuracy": 0.9961439588688946,
+   "silent_errors": 4,
+   "silent_rate_scored": 0.0011775095672652341,
+   "invented_in_blank": 46,
+   "blank_cells": 2271,
+   "missed_as_blank": 0
+  }
+ ],
+ "card_level": {
+  "EPI": {
+   "cards": 44,
+   "all_correct": 21,
+   "no_silent_error": 44
+  },
+  "ALL": {
+   "cards": 142,
+   "all_correct": 60,
+   "no_silent_error": 119
+  },
+  "ANC": {
+   "cards": 50,
+   "all_correct": 7,
+   "no_silent_error": 28
+  },
+  "NCD": {
+   "cards": 48,
+   "all_correct": 32,
+   "no_silent_error": 47
+  }
+ },
+ "detection_confusion": {
+  "filled->value": 3810,
+  "blank->blank": 7514,
+  "blank->value": 92,
+  "filled->blank": 1
+ },
+ "per_field": [
+  {
+   "field": "EPI:bcg",
+   "ok": 16,
+   "n": 19,
+   "acc": 0.8421052631578947
+  },
+  {
+   "field": "EPI:mr",
+   "ok": 22,
+   "n": 25,
+   "acc": 0.88
+  },
+  {
+   "field": "NCD:eye_exam",
+   "ok": 109,
+   "n": 119,
+   "acc": 0.9159663865546218
+  },
+  {
+   "field": "NCD:date",
+   "ok": 52,
+   "n": 56,
+   "acc": 0.9285714285714286
+  },
+  {
+   "field": "ANC:visit_date",
+   "ok": 93,
+   "n": 100,
+   "acc": 0.93
+  },
+  {
+   "field": "ANC:fetal_movement",
+   "ok": 159,
+   "n": 167,
+   "acc": 0.9520958083832335
+  },
+  {
+   "field": "EPI:penta",
+   "ok": 82,
+   "n": 86,
+   "acc": 0.9534883720930233
+  },
+  {
+   "field": "EPI:pcv",
+   "ok": 84,
+   "n": 88,
+   "acc": 0.9545454545454546
+  },
+  {
+   "field": "NCD:referral",
+   "ok": 87,
+   "n": 91,
+   "acc": 0.9560439560439561
+  },
+  {
+   "field": "ANC:blood_pressure",
+   "ok": 72,
+   "n": 75,
+   "acc": 0.96
+  },
+  {
+   "field": "ANC:hemoglobin",
+   "ok": 168,
+   "n": 174,
+   "acc": 0.9655172413793104
+  },
+  {
+   "field": "EPI:opv",
+   "ok": 88,
+   "n": 91,
+   "acc": 0.967032967032967
+  },
+  {
+   "field": "ANC:tt",
+   "ok": 178,
+   "n": 183,
+   "acc": 0.9726775956284153
+  },
+  {
+   "field": "ANC:temperature",
+   "ok": 145,
+   "n": 149,
+   "acc": 0.9731543624161074
+  },
+  {
+   "field": "ANC:glucose",
+   "ok": 163,
+   "n": 167,
+   "acc": 0.9760479041916168
+  },
+  {
+   "field": "NCD:blood_pressure",
+   "ok": 83,
+   "n": 85,
+   "acc": 0.9764705882352941
+  },
+  {
+   "field": "ANC:urine_albumin",
+   "ok": 184,
+   "n": 188,
+   "acc": 0.9787234042553191
+  },
+  {
+   "field": "ANC:edema",
+   "ok": 184,
+   "n": 187,
+   "acc": 0.983957219251337
+  },
+  {
+   "field": "ANC:urine_bilirubin",
+   "ok": 187,
+   "n": 190,
+   "acc": 0.9842105263157894
+  },
+  {
+   "field": "NCD:glucose_random",
+   "ok": 90,
+   "n": 91,
+   "acc": 0.989010989010989
+  },
+  {
+   "field": "ANC:calcium",
+   "ok": 184,
+   "n": 186,
+   "acc": 0.989247311827957
+  },
+  {
+   "field": "ANC:iron",
+   "ok": 185,
+   "n": 187,
+   "acc": 0.9893048128342246
+  },
+  {
+   "field": "NCD:height",
+   "ok": 104,
+   "n": 105,
+   "acc": 0.9904761904761905
+  },
+  {
+   "field": "ANC:fundal_height",
+   "ok": 134,
+   "n": 135,
+   "acc": 0.9925925925925926
+  },
+  {
+   "field": "ANC:weight",
+   "ok": 149,
+   "n": 150,
+   "acc": 0.9933333333333333
+  },
+  {
+   "field": "ANC:pulse",
+   "ok": 155,
+   "n": 156,
+   "acc": 0.9935897435897436
+  },
+  {
+   "field": "EPI:ipv",
+   "ok": 55,
+   "n": 55,
+   "acc": 1.0
+  },
+  {
+   "field": "ANC:gestation_month",
+   "ok": 170,
+   "n": 170,
+   "acc": 1.0
+  },
+  {
+   "field": "ANC:usg",
+   "ok": 189,
+   "n": 189,
+   "acc": 1.0
+  },
+  {
+   "field": "NCD:weight",
+   "ok": 84,
+   "n": 84,
+   "acc": 1.0
+  },
+  {
+   "field": "NCD:comment",
+   "ok": 28,
+   "n": 28,
+   "acc": 1.0
+  },
+  {
+   "field": "NCD:glucose_fasting",
+   "ok": 34,
+   "n": 34,
+   "acc": 1.0
+  },
+  {
+   "field": "ANC:complication_referral",
+   "ok": 1,
+   "n": 1,
+   "acc": 1.0
+  }
+ ],
+ "format_robustness": {
+  "cells_compared": 13462,
+  "prediction_changed": 437,
+  "filled_old_ok_new_ok": 3702,
+  "fixed": 16,
+  "broken": 28,
+  "both_wrong": 65
+ },
+ "error_kinds": {
+  "one digit wrong": 36,
+  "wrong mark": 29,
+  "digit dropped/added": 15,
+  "other": 12,
+  "missed (read blank)": 1
+ }
+}

@@ -94,7 +94,7 @@ def separator(ch, h, rng):
     return img
 
 
-def compose(text, digits, rng, h=40):
+def compose(text, digits, rng, h=40, edge_rule=True):
     pieces = []
     for ch in text:
         if ch in BN:
@@ -117,7 +117,7 @@ def compose(text, digits, rng, h=40):
     angle = rng.uniform(-6, 6)
     m = cv2.getRotationMatrix2D((canvas.shape[1] / 2, canvas.shape[0] / 2), angle, 1.0)
     canvas = cv2.warpAffine(canvas, m, (canvas.shape[1], canvas.shape[0]), borderValue=255)
-    if rng.random() < 0.35:  # a printed rule fragment at the top or bottom edge
+    if edge_rule and rng.random() < 0.35:  # a printed rule fragment at the top or bottom edge
         y = int(rng.integers(0, 3)) if rng.random() < 0.5 else canvas.shape[0] - 1 - int(rng.integers(0, 3))
         cv2.line(canvas, (0, y), (canvas.shape[1] - 1, y + int(rng.integers(-2, 3))), 0, int(rng.integers(1, 3)))
     return canvas

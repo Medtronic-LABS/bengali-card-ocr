@@ -193,6 +193,9 @@ def main():
                 break
         elif acc > best[0]:
             best = (acc, epoch, {k: v.detach().cpu().clone() for k, v in model.state_dict().items()}, types)
+        if best[1] == epoch:
+            OUT.mkdir(parents=True, exist_ok=True)
+            torch.save({"model": best[2], "chars": CHARS, "name": "PP-OCRv6_small_rec+cards-ft", "step": best[1]}, OUT / args.out)
     OUT.mkdir(parents=True, exist_ok=True)
     torch.save({"model": best[2], "chars": CHARS, "name": "PP-OCRv6_small_rec+cards-ft", "step": best[1]}, OUT / args.out)
     report = {

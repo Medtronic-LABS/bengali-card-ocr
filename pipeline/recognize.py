@@ -162,6 +162,9 @@ class PPCardsEngine:
             return "", 0.0
         if allowed is not None:
             text, conf, _ = max(self._read_restricted(logits, allowed), key=lambda r: r[2])
+            from .digits import refine
+
+            text = refine(np.asarray(img.convert("L")), logits, text, self.chars, allowed)
             return text, conf
         pr = np.exp(logits - logits.max(-1, keepdims=True))
         pr /= pr.sum(-1, keepdims=True)
@@ -177,7 +180,14 @@ class PPCardsEngine:
             return [("", 0.0)] * len(imgs)
         per_part = [self._read_restricted(lg, allowed) for lg in logits]
         best = max(range(2), key=lambda k: sum(reads[k][2] for reads in per_part))
-        return [reads[best][:2] for reads in per_part]
+        from .digits import refine
+
+        out = []
+        for img, lg, reads in zip(imgs, logits, per_part):
+            text, conf = reads[best][:2]
+            text = refine(np.asarray(img.convert("L")), lg, text, self.chars, allowed)
+            out.append((text, conf))
+        return out
 
     def read_vocabulary(self, img: Image.Image, words) -> Optional[Tuple[str, float]]:
         """(word, share of probability among words) for the most likely of words."""
